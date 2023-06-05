@@ -7,9 +7,9 @@
 ##
 ## Tipos de Variáveis
 
-    int main(){
+int main(){
 
-        Printf("Teste de implementação de código no GitHub\n");
+    Printf("Teste de implementação de código no GitHub\n");
 
-        return 0;
-    }
+    return 0;
+}
