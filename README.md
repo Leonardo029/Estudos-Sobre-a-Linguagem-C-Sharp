@@ -4,7 +4,7 @@
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
 * A linguagem escolhida foi C#;
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais serviram como base para o estudo também.
-## O que é uma linguagem de programação?
+## 🖥 O que é uma linguagem de programação?
 
 * Uma linguagem de programação é um conjunto de regras e símbolos usados para escrever programas de computador. É uma forma padronizada de comunicação entre humanos e computadores, permitindo que os programadores expressem suas instruções de forma estruturada e compreensível para a máquina.
 
