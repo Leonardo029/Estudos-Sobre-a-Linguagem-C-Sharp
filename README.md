@@ -12,4 +12,4 @@
 
 * Existem muitas linguagens de programação diferentes, cada uma com suas próprias regras sintáticas e semânticas. Algumas das linguagens mais populares incluem C, C++, Java, Python, JavaScript e Ruby. Cada linguagem tem suas próprias características e finalidades específicas, e a escolha da linguagem depende do tipo de aplicativo ou sistema que está sendo desenvolvido, bem como das preferências do programador.
 
-## 1.Tipos de Variáveis
+## 1. Tipos de Variáveis
