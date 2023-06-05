@@ -12,7 +12,7 @@
 
 * Existem muitas linguagens de programação diferentes, cada uma com suas próprias regras sintáticas e semânticas. Algumas das linguagens mais populares incluem C, C++, Java, Python, JavaScript e Ruby. Cada linguagem tem suas próprias características e finalidades específicas, e a escolha da linguagem depende do tipo de aplicativo ou sistema que está sendo desenvolvido, bem como das preferências do programador.
 
-## Área de atuação da linguagem:
+## :globe_with_meridians: Área de atuação da linguagem:
 
 *   Desenvolvimento de software para Windows: C# é uma das principais linguagens usadas para desenvolver aplicativos e sistemas para a plataforma Windows. O framework .NET, que inclui o ambiente de execução e bibliotecas, é amplamente utilizado para criar aplicativos desktop, serviços web e outros tipos de software para Windows;
 
