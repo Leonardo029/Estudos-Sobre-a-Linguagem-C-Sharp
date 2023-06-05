@@ -24,6 +24,10 @@
 
 *   **Desenvolvimento de aplicações empresariais:** C# é frequentemente usado no desenvolvimento de aplicações empresariais devido à sua robustez, desempenho e integração com o ambiente Windows. Muitos sistemas de gerenciamento de conteúdo (CMS), sistemas de gerenciamento de relacionamento com o cliente (CRM) e aplicativos de negócios são desenvolvidos em C#.
 
-![](Media/C2.png)
+<!-- ![](Media/C2.png) -->
+
+<p align="center">
+  <img width="720" height="227" src="Media/C2.png">
+</p>
 
 #TESTE
