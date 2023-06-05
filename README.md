@@ -6,10 +6,3 @@
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais serviram como base para o estudo também.
 ##
 ## Tipos de Variáveis
-
-int main(){
-
-    Printf("Teste de implementação de código no GitHub\n");
-
-    return 0;
-}
