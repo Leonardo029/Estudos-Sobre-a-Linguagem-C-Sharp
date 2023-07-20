@@ -49,3 +49,13 @@
   * Generics: A utilização de tipos genéricos em C# permite criar algoritmos e estruturas de dados que podem ser reutilizados com diferentes tipos, aumentando a eficiência da redação do código.
 
   * Sintaxe amigável: A linguagem possui uma sintaxe clara e natural, permitindo expressar ideias de forma concisa.
+
+* **Confiabilidade:** A confiabilidade de uma linguagem de programação está diretamente relacionada à previsibilidade e segurança do código gerado. O C# tem algumas características que o tornam uma linguagem confiável:
+
+  * Tipagem estática: O C# é uma linguagem com tipagem estática, o que significa que os tipos de dados das variáveis são verificados em tempo de compilação. Isso ajuda a capturar erros de tipo antes que o programa seja executado, tornando-o mais seguro.
+
+  * Gerenciamento de memória: O C# usa o Common Language Runtime (CLR) para gerenciar a memória, o que inclui coleta automática de lixo (garbage collection), ajudando a evitar vazamentos de memória e erros relacionados.
+
+  * Tratamento de exceções: O C# oferece um mecanismo de tratamento de exceções robusto, permitindo que os programadores capturem e lidem com erros de forma mais eficiente, melhorando a estabilidade dos programas.
+
+  * Programação assíncrona: O C# possui suporte nativo para programação assíncrona, o que facilita a criação de aplicativos que são mais responsivos e escaláveis.
