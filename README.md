@@ -1,4 +1,4 @@
-![](Media/Livros.jpg)
+![](Media/Study.jpeg)
 
 # :closed_book: Estudo sobre a linguagem C#
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
@@ -24,8 +24,6 @@
 
 *   **Desenvolvimento de aplicações empresariais:** C# é frequentemente usado no desenvolvimento de aplicações empresariais devido à sua robustez, desempenho e integração com o ambiente Windows. Muitos sistemas de gerenciamento de conteúdo (CMS), sistemas de gerenciamento de relacionamento com o cliente (CRM) e aplicativos de negócios são desenvolvidos em C#.
 
-![](Media/Stude.jpeg)
-
-<!-- <p align="center">
+<p align="center">
   <img width="720" height="227" src="Media/Logo.png">
-</p> -->
+</p>
