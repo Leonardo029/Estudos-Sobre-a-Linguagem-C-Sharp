@@ -24,10 +24,6 @@
 
 *   **Desenvolvimento de aplicações empresariais:** C# é frequentemente usado no desenvolvimento de aplicações empresariais devido à sua robustez, desempenho e integração com o ambiente Windows. Muitos sistemas de gerenciamento de conteúdo (CMS), sistemas de gerenciamento de relacionamento com o cliente (CRM) e aplicativos de negócios são desenvolvidos em C#.
 
-<p align="center">
-  <img width="720" height="227" src="Media/Logo.png">
-</p>
-
 ## :clipboard: Critérios de Avaliação
 
 * **Legibilidade:** A legibilidade de uma linguagem de programação refere-se à facilidade de leitura do código fonte. O C# é conhecido por sua sintaxe clara e bem estruturada, o que facilita a compreensão e o acompanhamento do fluxo de lógica. Alguns aspectos que contribuem para a legibilidade são:
@@ -59,3 +55,7 @@
   * Tratamento de exceções: oferece um mecanismo de tratamento de exceções robusto, permitindo que os programadores capturem e lidem com erros de forma mais eficiente, melhorando a estabilidade dos programas;
 
   * Programação assíncrona: possui suporte nativo para programação assíncrona, o que facilita a criação de aplicativos que são mais responsivos e escaláveis.
+
+<p align="center">
+  <img width="720" height="227" src="Media/Logo.png">
+</p>
