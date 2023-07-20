@@ -32,10 +32,10 @@
 
 * **Legibilidade:** A legibilidade de uma linguagem de programação refere-se à facilidade de leitura do código fonte. O C# é conhecido por sua sintaxe clara e bem estruturada, o que facilita a compreensão e o acompanhamento do fluxo de lógica. Alguns aspectos que contribuem para a legibilidade do C# incluem:
 
-    Uso de palavras-chave intuitivas: O C# utiliza palavras-chave que são facilmente compreendidas pelos programadores, tornando o código mais expressivo e claro.
+  *  Uso de palavras-chave intuitivas: O C# utiliza palavras-chave que são facilmente compreendidas pelos programadores, tornando o código mais expressivo e claro.
 
-    Blocos de código bem definidos: O C# usa chaves {} para delimitar blocos de código, tornando mais fácil identificar o escopo das instruções.
+  *  Blocos de código bem definidos: O C# usa chaves {} para delimitar blocos de código, tornando mais fácil identificar o escopo das instruções.
 
-    Identação consistente: A linguagem incentiva o uso consistente de espaçamento e indentação para melhorar a legibilidade.
+  *  Identação consistente: A linguagem incentiva o uso consistente de espaçamento e indentação para melhorar a legibilidade.
 
-    Nomes de variáveis descritivos: A prática de dar nomes descritivos para variáveis e funções é incentivada, tornando o propósito das entidades do programa mais claro.
+  *  Nomes de variáveis descritivos: A prática de dar nomes descritivos para variáveis e funções é incentivada, tornando o propósito das entidades do programa mais claro.
