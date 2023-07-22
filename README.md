@@ -132,7 +132,7 @@ ______________________
 
 * **Tipos:**
 
-  * bool:  Verdadeiro ou Falso (Valores booleandos);
+<!--   * bool:  Verdadeiro ou Falso (Valores booleandos);
   * byte:  0 a 255 (8 bits);
   * sbyte:  -128 a 127 (8 bits);
   * char:  Um caractere (16 bits);
@@ -146,7 +146,7 @@ ______________________
   * object:  Qualquer tipo;
   * short:  -32,768 a 32,767 (16 bits);
   * ushort:  0 a 65,535 (16 bits);
-  * string:  Seqüência de caracteres (16 bits por caractere).
+  * string:  Seqüência de caracteres (16 bits por caractere). -->
 
 |Tipo | Valor |
 | ----------- | ----------- |
