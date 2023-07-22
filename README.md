@@ -152,7 +152,7 @@ ______________________
 
   * Exemplo das variáveis em forma de código:
 
-    ```
+    ```csharp
     using System;
 
     class Program
