@@ -1,11 +1,11 @@
 ![](Media/Study.jpeg)
 
-# :closed_book: Estudo sobre a linguagem C#
+# :closed_book: `Estudo sobre a linguagem C#`
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
 * A linguagem escolhida foi C#;
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais também serviram como base para o estudo.
 
-## 🖥 O que é uma linguagem de programação?
+## 🖥 `O que é uma linguagem de programação?`
 
 * Uma linguagem de programação é um conjunto de regras e símbolos usados para escrever programas de computador. É uma forma padronizada de comunicação entre humanos e computadores, permitindo que os programadores expressem suas instruções de forma estruturada e compreensível para a máquina;
 
@@ -13,7 +13,7 @@
 
 * Existem muitas linguagens de programação diferentes, cada uma com suas próprias regras sintáticas e semânticas. Algumas das linguagens mais populares incluem C, C++, Java, Python, JavaScript e Ruby. Cada linguagem tem suas próprias características e finalidades específicas, e a escolha da linguagem depende do tipo de aplicativo ou sistema que está sendo desenvolvido, bem como das preferências do programador.
 
-## :globe_with_meridians: Áreas de atuação da linguagem
+## :globe_with_meridians: `Áreas de atuação da linguagem`
 
 *   **Desenvolvimento de software para Windows:** C# é uma das principais linguagens usadas para desenvolver aplicativos e sistemas para a plataforma Windows. O framework .NET, que inclui o ambiente de execução e bibliotecas, é amplamente utilizado para criar aplicativos desktop, serviços web e outros tipos de software para Windows;
 
@@ -25,7 +25,7 @@
 
 *   **Desenvolvimento de aplicações empresariais:** C# é frequentemente usado no desenvolvimento de aplicações empresariais devido à sua robustez, desempenho e integração com o ambiente Windows. Muitos sistemas de gerenciamento de conteúdo (CMS), sistemas de gerenciamento de relacionamento com o cliente (CRM) e aplicativos de negócios são desenvolvidos em C#.
 
-## :clipboard: Critérios de Avaliação
+## :clipboard: `Critérios de Avaliação`
 
 * **Legibilidade:** A legibilidade de uma linguagem de programação refere-se à facilidade de leitura do código fonte. O C# é conhecido por sua sintaxe clara e bem estruturada, o que facilita a compreensão e o acompanhamento do fluxo de lógica. Alguns aspectos que contribuem para a legibilidade são:
 
@@ -57,7 +57,7 @@
 
   * Programação assíncrona: possui suporte nativo para programação assíncrona, o que facilita a criação de aplicativos que são mais responsivos e escaláveis.
 
-## :interrobang: Categorias da Linguagem
+## :interrobang: `Categorias da Linguagem`
 
 * C# é principalmente uma linguagem de programação imperativa e orientada a objetos. No entanto, a partir da versão C# 3.0, ela também incorporou recursos do paradigma funcional, permitindo que os desenvolvedores usem conceitos funcionais em suas abordagens de programação.
 
@@ -69,7 +69,7 @@
 
   * Funcional: A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
 
-##  :inbox_tray: Métodos de Implementação
+##  :inbox_tray: `Métodos de Implementação`
 
 * A linguagem C# é implementada através de um compilador e de uma máquina virtual.
 
