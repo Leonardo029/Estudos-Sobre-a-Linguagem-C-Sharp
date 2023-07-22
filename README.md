@@ -4,6 +4,9 @@
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
 * A linguagem escolhida foi C#;
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais também serviram como base para o estudo.
+
+______________________
+
 ## 🖥 O que é uma linguagem de programação?
 
 * Uma linguagem de programação é um conjunto de regras e símbolos usados para escrever programas de computador. É uma forma padronizada de comunicação entre humanos e computadores, permitindo que os programadores expressem suas instruções de forma estruturada e compreensível para a máquina;
@@ -78,14 +81,10 @@
 
 * Portanto, o processo de implementação da linguagem C# envolve o uso do compilador C# para gerar código intermediário (CIL) e a execução desse código no ambiente da máquina virtual CLR da plataforma .NET. Isso permite que os programas escritos em C# sejam executados em diferentes sistemas operacionais que suportem o CLR, tornando a linguagem portátil e multiplataforma.
 
+______________________
+
 <p align="center">
   <img width="720" height="227" src="Media/Logo.png">
 </p>
-
-----------------------
-
-______________________
-
-**********************
 
 ##  :1234: Variáveis
