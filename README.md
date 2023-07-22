@@ -112,27 +112,8 @@ ______________________
 
     * Segue uma lista que identifica todas estas palavras:
 
-    ```
-    abstract  as	base	Bool
-    break	byte	case	Catch
-    char	checked	class	Const
-    continue	decimal	default	Delegate
-    do	double	else	Enum
-    event	explicit	extern	false
-    finally	fixed	float	for
-    foreach	goto	if	implicit
-    in	int	interface	internal
-    is	lock	long	namespace
-    new	null	object	operator
-    out	override	params	private
-    protected	public	readonly	ref
-    return	sbyte	sealed	short
-    sizeof	stackalloc	static	string
-    struct	switch	this	throw
-    ```
-
-    | abstract | Cabeçalho 2 | Cabeçalho 3 |
-    | ----------- | ----------- | ----------- |
+    <!-- | abstract | Cabeçalho 2 | Cabeçalho 3 |
+    | ----------- | ----------- | ----------- | -->
     | abstract | as       | base    | Bool     |
     | break    | byte     | case    | Catch    |
     | char     | checked  | class   | Const    |
@@ -149,7 +130,6 @@ ______________________
     | return   | sbyte    | sealed  | short    |
     | sizeof   | stackalloc | static | string   |
     | struct   | switch   | this    | throw    |
-
 
 * **Tipos:**
 
