@@ -72,7 +72,7 @@
 
   * Funcional: A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
 
-## :wrench: Métodos de Implementação
+## :wrench: :inbox_tray: Métodos de Implementação
 
 * A linguagem C# é implementada através de um compilador e de uma máquina virtual.
 
