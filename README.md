@@ -71,3 +71,13 @@
   * Orientada a objetos: C# é uma linguagem fortemente orientada a objetos, o que significa que os programas são estruturados em torno de classes e objetos. Os objetos são instâncias de classes que contêm dados e comportamentos relacionados, permitindo uma modelagem mais organizada e modular do software;
 
   * Funcional: A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
+
+## :wrench: Métodos de Implementação
+
+* A linguagem C# é implementada através de um compilador e de uma máquina virtual.
+
+  * Compilador: O compilador de C# é responsável por transformar o código-fonte escrito em C# em código intermediário, conhecido como CIL (Common Intermediate Language) ou IL (Intermediate Language). O compilador C# converte o código-fonte em CIL, garantindo que ele siga a sintaxe e semântica da linguagem. O resultado é um arquivo com extensão .dll (biblioteca dinâmica) ou .exe (executável) contendo o código intermediário;
+
+  * Máquina virtual: O código intermediário (CIL) é executado na máquina virtual da plataforma .NET, chamada CLR (Common Language Runtime). O CLR é responsável por carregar e executar o código intermediário gerado pelo compilador C#. Ele fornece várias funcionalidades, como gerenciamento de memória, coleta de lixo, segurança e verificação de tipos, garantindo que o código seja executado de forma segura e eficiente em diferentes ambientes de sistema operacional.
+
+* Portanto, o processo de implementação da linguagem C# envolve o uso do compilador C# para gerar código intermediário (CIL) e a execução desse código no ambiente da máquina virtual CLR da plataforma .NET. Isso permite que os programas escritos em C# sejam executados em diferentes sistemas operacionais que suportem o CLR, tornando a linguagem portátil e multiplataforma.
