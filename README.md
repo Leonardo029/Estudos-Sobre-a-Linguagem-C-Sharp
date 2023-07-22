@@ -182,19 +182,47 @@ ______________________
     ```
 * **Amarração de tipo:**
 
-  * Em C#, o tipo de amarração (binding) das variáveis é estático. Isso significa que o tipo de uma variável é definido em tempo de compilação e não pode ser alterado durante a execução do programa. Quando você declara uma variável, precisa especificar explicitamente o tipo dela.
+  * Estática
 
-    ```csharp
-    //Exemplo de amarração estática
-    int idade = 25;
-    string nome = "João";
-    ```
+    * Em C#, o tipo de amarração (binding) das variáveis é estático. Isso significa que o tipo de uma variável é definido em tempo de compilação e não pode ser alterado durante a execução do programa. Quando você declara uma variável, precisa especificar explicitamente o tipo dela.
+
+      ```csharp
+      //Exemplo de amarração estática
+      int idade = 25;
+      string nome = "João";
+      ```
   
-  * C# também suporta o recurso de inferência de tipo, introduzido na versão 3.0 através do recurso "var". Com a inferência de tipo, o compilador é capaz de deduzir automaticamente o tipo da variável com base no valor atribuído a ela.
+  * Inferência
+
+    * C# também suporta o recurso de inferência de tipo, introduzido na versão 3.0 através do recurso "var". Com a inferência de tipo, o compilador é capaz de deduzir automaticamente o tipo da variável com base no valor atribuído a ela.
+
+      ```csharp
+      //Exemplo de inferência
+      var numero = 42; // O compilador infere que "numero" é do tipo int.
+      var texto = "Hello, world!"; // O compilador infere que "texto" é do tipo string.
+      ```
+    * Apesar do uso de "var", é importante notar que o tipo da variável é definido em tempo de compilação, e não há mudança na natureza estática do C#. A inferência de tipo é apenas uma forma de escrever o código de forma mais concisa, sem perder a tipagem estática do C#.
+
+  * Dinâmica
+
+    * C# existe a possibilidade de utilizar amarração dinâmica de tipos através do tipo especial "dynamic". O tipo "dynamic" foi introduzido no C# 4.0 e permite que você defina variáveis cujos tipos são resolvidos em tempo de execução, em vez de serem definidos em tempo de compilação.
+
+    * Quando você declara uma variável com o tipo "dynamic", o compilador não faz a verificação de tipo em tempo de compilação. Isso significa que você pode realizar operações em variáveis "dynamic" sem que o compilador verifique se essas operações são válidas para o tipo atribuído a ela. Em vez disso, essas verificações são feitas em tempo de execução.
 
     ```csharp
-    //Exemplo de inferência
-    var numero = 42; // O compilador infere que "numero" é do tipo int.
-    var texto = "Hello, world!"; // O compilador infere que "texto" é do tipo string.
+    dynamic valor = 10;
+    Console.WriteLine(valor); // Saída: 10
+
+    valor = "Olá";
+    Console.WriteLine(valor); // Saída: Olá
+
+    valor = DateTime.Now;
+    Console.WriteLine(valor); // Saída: A data e hora atual
+
+    valor = 3 + 4;
+    Console.WriteLine(valor); // Saída: 7
     ```
-  * Apesar do uso de "var", é importante notar que o tipo da variável é definido em tempo de compilação, e não há mudança na natureza estática do C#. A inferência de tipo é apenas uma forma de escrever o código de forma mais concisa, sem perder a tipagem estática do C#.
+
+    * Observe que o tipo da variável "valor" é definido dinamicamente conforme o valor que é atribuído a ela. No primeiro caso, o tipo é inferido como int, no segundo caso, como string e assim por diante.
+
+    * É importante ter cuidado ao usar "dynamic", pois você perde as verificações de tipo em tempo de compilação, o que pode levar a erros em tempo de execução se as operações não forem compatíveis com o tipo real da variável. A utilização de "dynamic" é recomendada apenas em situações específicas em que é realmente necessário lidar com tipos desconhecidos ou em interoperação com APIs dinâmicas, como COM ou linguagens dinâmicas. Em geral, é preferível utilizar a tipagem estática do C# para obter maior segurança e desempenho.
