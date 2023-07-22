@@ -184,7 +184,7 @@ ______________________
 
   * Estática
 
-    * Em C#, o tipo de amarração (binding) das variáveis é estático. Isso significa que o tipo de uma variável é definido em tempo de compilação e não pode ser alterado durante a execução do programa. Quando você declara uma variável, precisa especificar explicitamente o tipo dela.
+    * O tipo de amarração (binding) das variáveis é estático. Isso significa que o tipo de uma variável é definido em tempo de compilação e não pode ser alterado durante a execução do programa. Quando você declara uma variável, precisa especificar explicitamente o tipo dela.
 
       ```csharp
       //Exemplo de amarração estática
