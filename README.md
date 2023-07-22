@@ -29,33 +29,33 @@
 
 * **Legibilidade:** A legibilidade de uma linguagem de programação refere-se à facilidade de leitura do código fonte. O C# é conhecido por sua sintaxe clara e bem estruturada, o que facilita a compreensão e o acompanhamento do fluxo de lógica. Alguns aspectos que contribuem para a legibilidade são:
 
-  * Uso de palavras-chave intuitivas: utiliza palavras-chave que são facilmente compreendidas pelos programadores, tornando o código mais expressivo e claro;
+  * **Uso de palavras-chave intuitivas:** utiliza palavras-chave que são facilmente compreendidas pelos programadores, tornando o código mais expressivo e claro;
 
-  * Blocos de código bem definidos: usa chaves {} para delimitar blocos de código, tornando mais fácil identificar o escopo das instruções;
+  * **Blocos de código bem definidos:** usa chaves {} para delimitar blocos de código, tornando mais fácil identificar o escopo das instruções;
 
-  * Identação consistente: a linguagem incentiva o uso consistente de espaçamento e indentação para melhorar a legibilidade;
+  * **Identação consistente:** a linguagem incentiva o uso consistente de espaçamento e indentação para melhorar a legibilidade;
 
-  * Nomes de variáveis descritivos: a prática de dar nomes descritivos para variáveis e funções é incentivada, tornando o propósito das entidades do programa mais claro.
+  * **Nomes de variáveis descritivos:** a prática de dar nomes descritivos para variáveis e funções é incentivada, tornando o propósito das entidades do programa mais claro.
 
 * **Redigibilidade:** A redigibilidade refere-se à facilidade com que um programador pode escrever código limpo e funcional. O C# oferece recursos que tornam a tarefa de desenvolvimento mais agradável e eficiente. Alguns aspectos que melhoram a redigibilidade são:
 
-  * Biblioteca padrão rica: possui uma biblioteca padrão extensa, que fornece muitas estruturas de dados e funções úteis, evitando que os desenvolvedores tenham que reinventar a roda ao criar aplicativos;
+  * **Biblioteca padrão rica:** possui uma biblioteca padrão extensa, que fornece muitas estruturas de dados e funções úteis, evitando que os desenvolvedores tenham que reinventar a roda ao criar aplicativos;
 
-  * OOP (Programação Orientada a Objetos): suporta totalmente conceitos de OOP, como classes, herança, polimorfismo e encapsulamento, tornando a estruturação do código mais organizada e reutilizável;
+  * **OOP (Programação Orientada a Objetos):** suporta totalmente conceitos de OOP, como classes, herança, polimorfismo e encapsulamento, tornando a estruturação do código mais organizada e reutilizável;
 
-  * Generics: a utilização de tipos genéricos permite criar algoritmos e estruturas de dados que podem ser reutilizados com diferentes tipos, aumentando a eficiência da redação do código;
+  * **Generics:** a utilização de tipos genéricos permite criar algoritmos e estruturas de dados que podem ser reutilizados com diferentes tipos, aumentando a eficiência da redação do código;
 
-  * Sintaxe amigável: a linguagem possui uma sintaxe clara e natural, permitindo expressar ideias de forma concisa.
+  * **Sintaxe amigável:** a linguagem possui uma sintaxe clara e natural, permitindo expressar ideias de forma concisa.
 
 * **Confiabilidade:** A confiabilidade de uma linguagem de programação está diretamente relacionada à previsibilidade e segurança do código gerado. O C# tem algumas características que o tornam uma linguagem confiável:
 
-  * Tipagem estática: é uma linguagem com tipagem estática, o que significa que os tipos de dados das variáveis são verificados em tempo de compilação. Isso ajuda a capturar erros de tipo antes que o programa seja executado, tornando-o mais seguro;
+  * **Tipagem estática:** é uma linguagem com tipagem estática, o que significa que os tipos de dados das variáveis são verificados em tempo de compilação. Isso ajuda a capturar erros de tipo antes que o programa seja executado, tornando-o mais seguro;
 
-  * Gerenciamento de memória: usa o Common Language Runtime (CLR) para gerenciar a memória, o que inclui coleta automática de lixo (garbage collection), ajudando a evitar vazamentos de memória e erros relacionados;
+  * **Gerenciamento de memória:** usa o Common Language Runtime (CLR) para gerenciar a memória, o que inclui coleta automática de lixo (garbage collection), ajudando a evitar vazamentos de memória e erros relacionados;
 
-  * Tratamento de exceções: oferece um mecanismo de tratamento de exceções robusto, permitindo que os programadores capturem e lidem com erros de forma mais eficiente, melhorando a estabilidade dos programas;
+  * **Tratamento de exceções:** oferece um mecanismo de tratamento de exceções robusto, permitindo que os programadores capturem e lidem com erros de forma mais eficiente, melhorando a estabilidade dos programas;
 
-  * Programação assíncrona: possui suporte nativo para programação assíncrona, o que facilita a criação de aplicativos que são mais responsivos e escaláveis.
+  * **Programação assíncrona:** possui suporte nativo para programação assíncrona, o que facilita a criação de aplicativos que são mais responsivos e escaláveis.
 
 ## :interrobang: Categorias da Linguagem
 
@@ -63,19 +63,19 @@
 
 * Vamos detalhar cada aspecto:
 
-  * Imperativa: Em C#, os programas são escritos como uma sequência de instruções que especificam como as tarefas devem ser executadas. Os desenvolvedores usam estruturas de controle, como loops e condicionais, para definir o fluxo do programa;
+  * **Imperativa:** Em C#, os programas são escritos como uma sequência de instruções que especificam como as tarefas devem ser executadas. Os desenvolvedores usam estruturas de controle, como loops e condicionais, para definir o fluxo do programa;
 
-  * Orientada a objetos: C# é uma linguagem fortemente orientada a objetos, o que significa que os programas são estruturados em torno de classes e objetos. Os objetos são instâncias de classes que contêm dados e comportamentos relacionados, permitindo uma modelagem mais organizada e modular do software;
+  * **Orientada a objetos:** C# é uma linguagem fortemente orientada a objetos, o que significa que os programas são estruturados em torno de classes e objetos. Os objetos são instâncias de classes que contêm dados e comportamentos relacionados, permitindo uma modelagem mais organizada e modular do software;
 
-  * Funcional: A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
+  * **Funcional:** A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
 
 ##  :inbox_tray: Métodos de Implementação
 
 * A linguagem C# é implementada através de um compilador e de uma máquina virtual.
 
-  * Compilador: O compilador de C# é responsável por transformar o código-fonte escrito em C# em código intermediário, conhecido como CIL (Common Intermediate Language) ou IL (Intermediate Language). O compilador C# converte o código-fonte em CIL, garantindo que ele siga a sintaxe e semântica da linguagem. O resultado é um arquivo com extensão .dll (biblioteca dinâmica) ou .exe (executável) contendo o código intermediário;
+  * **Compilador:** O compilador de C# é responsável por transformar o código-fonte escrito em C# em código intermediário, conhecido como CIL (Common Intermediate Language) ou IL (Intermediate Language). O compilador C# converte o código-fonte em CIL, garantindo que ele siga a sintaxe e semântica da linguagem. O resultado é um arquivo com extensão .dll (biblioteca dinâmica) ou .exe (executável) contendo o código intermediário;
 
-  * Máquina virtual: O código intermediário (CIL) é executado na máquina virtual da plataforma .NET, chamada CLR (Common Language Runtime). O CLR é responsável por carregar e executar o código intermediário gerado pelo compilador C#. Ele fornece várias funcionalidades, como gerenciamento de memória, coleta de lixo, segurança e verificação de tipos, garantindo que o código seja executado de forma segura e eficiente em diferentes ambientes de sistema operacional.
+  * **Máquina virtual:** O código intermediário (CIL) é executado na máquina virtual da plataforma .NET, chamada CLR (Common Language Runtime). O CLR é responsável por carregar e executar o código intermediário gerado pelo compilador C#. Ele fornece várias funcionalidades, como gerenciamento de memória, coleta de lixo, segurança e verificação de tipos, garantindo que o código seja executado de forma segura e eficiente em diferentes ambientes de sistema operacional.
 
 * Portanto, o processo de implementação da linguagem C# envolve o uso do compilador C# para gerar código intermediário (CIL) e a execução desse código no ambiente da máquina virtual CLR da plataforma .NET. Isso permite que os programas escritos em C# sejam executados em diferentes sistemas operacionais que suportem o CLR, tornando a linguagem portátil e multiplataforma.
 
