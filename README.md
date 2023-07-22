@@ -131,11 +131,24 @@ ______________________
     struct	switch	this	throw
     ```
 
-    | Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |
+    | abstract | Cabeçalho 2 | Cabeçalho 3 |
     | ----------- | ----------- | ----------- |
-    | Dado 1      | Dado 2      | Dado 3      |
-    | Dado 4      | Dado 5      | Dado 6      |
-    | Dado 7      | Dado 8      | Dado 9      |
+    | abstract | as       | base    | Bool     |
+    | break    | byte     | case    | Catch    |
+    | char     | checked  | class   | Const    |
+    | continue | decimal  | default | Delegate |
+    | do       | double   | else    | Enum     |
+    | event    | explicit | extern  | false    |
+    | finally  | fixed    | float   | for      |
+    | foreach  | goto     | if      | implicit |
+    | in       | int      | interface | internal |
+    | is       | lock     | long    | namespace|
+    | new      | null     | object  | operator |
+    | out      | override | params  | private  |
+    | protected| public   | readonly| ref      |
+    | return   | sbyte    | sealed  | short    |
+    | sizeof   | stackalloc | static | string   |
+    | struct   | switch   | this    | throw    |
 
 
 * **Tipos:**
