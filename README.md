@@ -146,4 +146,4 @@ ______________________
   * object:  Qualquer tipo;
   * short:  -32,768 a 32,767 (16 bits);
   * ushort:  0 a 65,535 (16 bits);
-  * string:  Seqüência de caracteres (16 bits por caractere).
+  * string:   Seqüência de caracteres (16 bits por caractere).
