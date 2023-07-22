@@ -209,19 +209,19 @@ ______________________
 
     * Quando você declara uma variável com o tipo "dynamic", o compilador não faz a verificação de tipo em tempo de compilação. Isso significa que você pode realizar operações em variáveis "dynamic" sem que o compilador verifique se essas operações são válidas para o tipo atribuído a ela. Em vez disso, essas verificações são feitas em tempo de execução.
 
-    ```csharp
-    dynamic valor = 10;
-    Console.WriteLine(valor); // Saída: 10
+      ```csharp
+      dynamic valor = 10;
+      Console.WriteLine(valor); // Saída: 10
 
-    valor = "Olá";
-    Console.WriteLine(valor); // Saída: Olá
+      valor = "Olá";
+      Console.WriteLine(valor); // Saída: Olá
 
-    valor = DateTime.Now;
-    Console.WriteLine(valor); // Saída: A data e hora atual
+      valor = DateTime.Now;
+      Console.WriteLine(valor); // Saída: A data e hora atual
 
-    valor = 3 + 4;
-    Console.WriteLine(valor); // Saída: 7
-    ```
+      valor = 3 + 4;
+      Console.WriteLine(valor); // Saída: 7
+      ```
 
     * Observe que o tipo da variável "valor" é definido dinamicamente conforme o valor que é atribuído a ela. No primeiro caso, o tipo é inferido como int, no segundo caso, como string e assim por diante.
 
