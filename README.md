@@ -131,7 +131,7 @@ ______________________
       | sizeof   | stackalloc | static | string   |
       | struct   | switch   | this    | throw    |
 
-* **Tipos:**
+* **Tipos e seus intervalos de valores:**
 
   |Tipo | Valor |
   | ----------- | ----------- |
