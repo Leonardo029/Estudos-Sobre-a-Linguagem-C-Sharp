@@ -108,5 +108,5 @@ ______________________
 
   * Palavras especiais (palavras reservadas ou palavras-chave):
 
-    * Palavras especiais são palavras reservadas pela linguagem e têm um significado específico no C#. Essas palavras não podem ser usadas como nomes de variáveis, pois são destinadas a fins específicos no código;
+    * Palavras especiais são palavras reservadas pela linguagem e têm um significado específico. Essas palavras não podem ser usadas como nomes de variáveis, pois são destinadas a fins específicos no código;
     * Alguns exemplos de palavras especiais em C# incluem "int", "string", "if", "for", "class", "public", "private", entre outros.
