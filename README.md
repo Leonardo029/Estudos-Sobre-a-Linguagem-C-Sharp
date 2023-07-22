@@ -87,7 +87,7 @@ ______________________
 
 ##  :1234: Atributos das Variáveis
 
-* **Nome:**
+* `**Nome:**`
   * Forma:
 
     * Os nomes de variáveis em C# podem ser compostos por letras, dígitos numéricos e caracteres de sublinhado (underscore "_");
