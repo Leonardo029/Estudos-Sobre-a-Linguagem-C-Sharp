@@ -149,3 +149,31 @@ ______________________
   |short | -32,768 a 32,767 (16 bits) |
   |ushort | 0 a 65,535 (16 bits) |
   |string | Seqüência de caracteres (16 bits por caractere) |
+
+  ```
+  using System;
+
+  class Program
+  {
+      static void Main()
+      {
+          // Declaração e inicialização de variáveis
+          bool isTrue = true;
+          bool isFalse = false;
+          byte myByte = 200;
+          sbyte mySByte = -50;
+          char myChar = 'A';
+          decimal myDecimal = 1234.56789M;
+          double myDouble = 3.141592653589793;
+          float myFloat = 2.718281828459045f;
+          int myInt = 42;
+          uint myUInt = 4294967295;
+          long myLong = 9223372036854775807;
+          ulong myULong = 18446744073709551615;
+          object myObject = "Qualquer tipo pode ser armazenado aqui.";
+          short myShort = -1000;
+          ushort myUShort = 5000;
+          string myString = "Exemplo de sequência de caracteres.";
+      }
+  }
+  ```
