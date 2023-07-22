@@ -59,3 +59,15 @@
 <p align="center">
   <img width="720" height="227" src="Media/Logo.png">
 </p>
+
+## :interrobang: Categorias da Linguagem
+
+C# é principalmente uma linguagem de programação imperativa e orientada a objetos. No entanto, a partir da versão C# 3.0, ela também incorporou recursos do paradigma funcional, permitindo que os desenvolvedores usem conceitos funcionais em suas abordagens de programação.
+
+Vamos detalhar cada aspecto:
+
+  * Imperativa: Em C#, os programas são escritos como uma sequência de instruções que especificam como as tarefas devem ser executadas. Os desenvolvedores usam estruturas de controle, como loops e condicionais, para definir o fluxo do programa;
+
+  * Orientada a objetos: C# é uma linguagem fortemente orientada a objetos, o que significa que os programas são estruturados em torno de classes e objetos. Os objetos são instâncias de classes que contêm dados e comportamentos relacionados, permitindo uma modelagem mais organizada e modular do software;
+
+  * Funcional: A partir da versão C# 3.0, a linguagem incorporou recursos do paradigma funcional, como funções de alta ordem, expressões lambda, delegados e LINQ (Language-Integrated Query). Isso permite que os desenvolvedores adotem uma abordagem mais funcional em certas partes do código, enfatizando a imutabilidade de dados e a avaliação de funções.
