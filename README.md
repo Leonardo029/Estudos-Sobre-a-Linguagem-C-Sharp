@@ -113,7 +113,7 @@ ______________________
     * Segue uma lista que identifica todas estas palavras:
 
     ```
-    abstract | as | base | Bool
+    abstract  as	base	Bool
     break	byte	case	Catch
     char	checked	class	Const
     continue	decimal	default	Delegate
@@ -130,6 +130,13 @@ ______________________
     sizeof	stackalloc	static	string
     struct	switch	this	throw
     ```
+
+    | Cabeçalho 1 | Cabeçalho 2 | Cabeçalho 3 |
+    | ----------- | ----------- | ----------- |
+    | Dado 1      | Dado 2      | Dado 3      |
+    | Dado 4      | Dado 5      | Dado 6      |
+    | Dado 7      | Dado 8      | Dado 9      |
+
 
 * **Tipos:**
 
