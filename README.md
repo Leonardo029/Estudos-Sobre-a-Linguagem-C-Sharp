@@ -226,3 +226,37 @@ ______________________
     * Observe que o tipo da variável "valor" é definido dinamicamente conforme o valor que é atribuído a ela. No primeiro caso, o tipo é inferido como int, no segundo caso, como string e assim por diante.
 
     * É importante ter cuidado ao usar "dynamic", pois você perde as verificações de tipo em tempo de compilação, o que pode levar a erros em tempo de execução se as operações não forem compatíveis com o tipo real da variável. A utilização de "dynamic" é recomendada apenas em situações específicas em que é realmente necessário lidar com tipos desconhecidos ou em interoperação com APIs dinâmicas, como COM ou linguagens dinâmicas. Em geral, é preferível utilizar a tipagem estática para obter maior segurança e desempenho.
+
+* **Escopo:**
+
+  * Em C#, o tempo de vida de uma variável depende do escopo em que ela é declarada. Existem três principais escopos em que as variáveis podem ser declaradas:
+
+    * Escopo de bloco (local): Variáveis declaradas dentro de um bloco de código, como dentro de um método, têm tempo de vida restrito ao bloco em que foram declaradas. Quando o bloco é concluído, a variável é destruída e a memória que ocupava é liberada. Isso é conhecido como "variável local".
+
+      ```csharp
+      public void ExemploMetodo()
+      {
+          int variavelLocal = 10; // variável local
+          // outras operações com variavelLocal
+      } // variavelLocal será destruída após a conclusão do método
+      ```
+    
+    * Escopo de classe (campo): Variáveis declaradas em nível de classe têm tempo de vida igual ao tempo de vida da instância da classe. Elas existem enquanto o objeto da classe existe e são destruídas quando o objeto é liberado da memória.
+
+      ```csharp
+      public class MinhaClasse
+      {
+          private int campo = 20; // variável de classe (campo)
+          // outras operações com campo
+      } // campo será destruída quando a instância de MinhaClasse for liberada da memória
+      ```
+
+    * Escopo estático (variáveis estáticas): Variáveis declaradas como "static" têm tempo de vida igual ao tempo de vida do programa. Elas são criadas quando o programa começa sua execução e só são destruídas quando o programa termina.
+
+      ```csharp
+      public class MinhaClasse
+      {
+          private static int variavelEstatica = 30; // variável estática
+          // outras operações com variavelEstatica
+      } // variavelEstatica será destruída quando o programa terminar
+      ```
