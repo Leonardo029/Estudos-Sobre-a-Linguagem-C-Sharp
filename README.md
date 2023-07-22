@@ -201,11 +201,11 @@ ______________________
       var numero = 42; // O compilador infere que "numero" é do tipo int.
       var texto = "Hello, world!"; // O compilador infere que "texto" é do tipo string.
       ```
-    * Apesar do uso de "var", é importante notar que o tipo da variável é definido em tempo de compilação, e não há mudança na natureza estática do C#. A inferência de tipo é apenas uma forma de escrever o código de forma mais concisa, sem perder a tipagem estática do C#.
+    * Apesar do uso de "var", é importante notar que o tipo da variável é definido em tempo de compilação, e não há mudança na natureza estática. A inferência de tipo é apenas uma forma de escrever o código de forma mais concisa, sem perder a tipagem estática da linguagem.
 
   * Dinâmica
 
-    * C# existe a possibilidade de utilizar amarração dinâmica de tipos através do tipo especial "dynamic". O tipo "dynamic" foi introduzido no C# 4.0 e permite que você defina variáveis cujos tipos são resolvidos em tempo de execução, em vez de serem definidos em tempo de compilação.
+    * Em C# existe a possibilidade de utilizar amarração dinâmica de tipos através do tipo especial "dynamic". O tipo "dynamic" foi introduzido na versão 4.0 da linguagem e permite que você defina variáveis cujos tipos são resolvidos em tempo de execução, em vez de serem definidos em tempo de compilação.
 
     * Quando você declara uma variável com o tipo "dynamic", o compilador não faz a verificação de tipo em tempo de compilação. Isso significa que você pode realizar operações em variáveis "dynamic" sem que o compilador verifique se essas operações são válidas para o tipo atribuído a ela. Em vez disso, essas verificações são feitas em tempo de execução.
 
@@ -225,4 +225,4 @@ ______________________
 
     * Observe que o tipo da variável "valor" é definido dinamicamente conforme o valor que é atribuído a ela. No primeiro caso, o tipo é inferido como int, no segundo caso, como string e assim por diante.
 
-    * É importante ter cuidado ao usar "dynamic", pois você perde as verificações de tipo em tempo de compilação, o que pode levar a erros em tempo de execução se as operações não forem compatíveis com o tipo real da variável. A utilização de "dynamic" é recomendada apenas em situações específicas em que é realmente necessário lidar com tipos desconhecidos ou em interoperação com APIs dinâmicas, como COM ou linguagens dinâmicas. Em geral, é preferível utilizar a tipagem estática do C# para obter maior segurança e desempenho.
+    * É importante ter cuidado ao usar "dynamic", pois você perde as verificações de tipo em tempo de compilação, o que pode levar a erros em tempo de execução se as operações não forem compatíveis com o tipo real da variável. A utilização de "dynamic" é recomendada apenas em situações específicas em que é realmente necessário lidar com tipos desconhecidos ou em interoperação com APIs dinâmicas, como COM ou linguagens dinâmicas. Em geral, é preferível utilizar a tipagem estática para obter maior segurança e desempenho.
