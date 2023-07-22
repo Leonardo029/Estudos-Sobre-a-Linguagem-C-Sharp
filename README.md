@@ -131,6 +131,7 @@ ______________________
     struct	switch	this	throw
     ```
     
+    | ----------- | ----------- | ----------- |
     | Dado 1      | Dado 2      | Dado 3      |
     | Dado 4      | Dado 5      | Dado 6      |
     | Dado 7      | Dado 8      | Dado 9      |
