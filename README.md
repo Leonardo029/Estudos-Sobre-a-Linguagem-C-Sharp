@@ -112,7 +112,7 @@ ______________________
 
     * Segue uma lista que identifica todas estas palavras:
 
-    <!-- | abstract | Cabeçalho 2 | Cabeçalho 3 | -->
+    | Palavras reservadas |
     | ----------- | ----------- | ----------- |
     | abstract | as       | base    | Bool     |
     | break    | byte     | case    | Catch    |
