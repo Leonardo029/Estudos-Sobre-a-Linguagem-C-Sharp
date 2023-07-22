@@ -113,7 +113,7 @@ ______________________
     * Segue uma lista que identifica todas estas palavras:
 
     ```
-    abstract	as	base	Bool
+    abstract | as | base | Bool
     break	byte	case	Catch
     char	checked	class	Const
     continue	decimal	default	Delegate
