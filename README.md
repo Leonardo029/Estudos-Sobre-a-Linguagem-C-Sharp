@@ -4,9 +4,7 @@
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
 * A linguagem escolhida foi C#;
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais também serviram como base para o estudo.
-
 ______________________
-
 ## 🖥 O que é uma linguagem de programação?
 
 * Uma linguagem de programação é um conjunto de regras e símbolos usados para escrever programas de computador. É uma forma padronizada de comunicação entre humanos e computadores, permitindo que os programadores expressem suas instruções de forma estruturada e compreensível para a máquina;
@@ -14,7 +12,7 @@ ______________________
 * As linguagens de programação são usadas para desenvolver uma ampla variedade de software, desde aplicativos simples até sistemas complexos. Elas fornecem um conjunto de comandos e estruturas de controle que permitem aos programadores criar algoritmos e instruções que serão executadas pelo computador;
 
 * Existem muitas linguagens de programação diferentes, cada uma com suas próprias regras sintáticas e semânticas. Algumas das linguagens mais populares incluem C, C++, Java, Python, JavaScript e Ruby. Cada linguagem tem suas próprias características e finalidades específicas, e a escolha da linguagem depende do tipo de aplicativo ou sistema que está sendo desenvolvido, bem como das preferências do programador.
-
+_____________________
 ## :globe_with_meridians: Áreas de atuação da linguagem
 
 *   **Desenvolvimento de software para Windows:** C# é uma das principais linguagens usadas para desenvolver aplicativos e sistemas para a plataforma Windows. O framework .NET, que inclui o ambiente de execução e bibliotecas, é amplamente utilizado para criar aplicativos desktop, serviços web e outros tipos de software para Windows;
