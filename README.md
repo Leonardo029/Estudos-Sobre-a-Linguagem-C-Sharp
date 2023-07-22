@@ -112,8 +112,8 @@ ______________________
 
     * Segue uma lista que identifica todas estas palavras:
 
-    <!-- | abstract | Cabeçalho 2 | Cabeçalho 3 |
-    | ----------- | ----------- | ----------- | -->
+    <!-- | abstract | Cabeçalho 2 | Cabeçalho 3 | -->
+    | ----------- | ----------- | ----------- |
     | abstract | as       | base    | Bool     |
     | break    | byte     | case    | Catch    |
     | char     | checked  | class   | Const    |
