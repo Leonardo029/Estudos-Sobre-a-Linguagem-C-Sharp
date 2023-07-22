@@ -85,9 +85,9 @@ ______________________
   <img width="720" height="227" src="Media/Logo.png">
 </p>
 
-##  :1234: Atributos das Variáveis
+##  :1234: `Atributos das Variáveis`
 
-* **`Nome:`**
+* **Nome:**
   * Forma:
 
     * Os nomes de variáveis em C# podem ser compostos por letras, dígitos numéricos e caracteres de sublinhado (underscore "_");
