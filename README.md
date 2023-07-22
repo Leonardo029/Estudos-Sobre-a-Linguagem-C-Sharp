@@ -197,3 +197,4 @@ ______________________
     var numero = 42; // O compilador infere que "numero" é do tipo int.
     var texto = "Hello, world!"; // O compilador infere que "texto" é do tipo string.
     ```
+  * Apesar do uso de "var", é importante notar que o tipo da variável é definido em tempo de compilação, e não há mudança na natureza estática do C#. A inferência de tipo é apenas uma forma de escrever o código de forma mais concisa, sem perder a tipagem estática do C#.
