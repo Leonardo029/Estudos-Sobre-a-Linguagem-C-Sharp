@@ -1,6 +1,6 @@
 ![](Media/Study.jpeg)
 
-# :closed_book: `Estudo sobre a linguagem C#`
+# `:closed_book: Estudo sobre a linguagem C#`
 * Diário de bordo realizado para a matéria de Linguagens e Paradigmas de Programação;
 * A linguagem escolhida foi C#;
 * Os tópicos abordados nesse estudo foram retirados dos slides das aulas, as quais também serviram como base para o estudo.
