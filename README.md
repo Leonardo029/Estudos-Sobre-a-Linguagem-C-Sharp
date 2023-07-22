@@ -64,7 +64,7 @@
 
 C# é principalmente uma linguagem de programação imperativa e orientada a objetos. No entanto, a partir da versão C# 3.0, ela também incorporou recursos do paradigma funcional, permitindo que os desenvolvedores usem conceitos funcionais em suas abordagens de programação.
 
-Vamos detalhar cada aspecto:
+* Vamos detalhar cada aspecto:
 
   * Imperativa: Em C#, os programas são escritos como uma sequência de instruções que especificam como as tarefas devem ser executadas. Os desenvolvedores usam estruturas de controle, como loops e condicionais, para definir o fluxo do programa;
 
