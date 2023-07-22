@@ -231,7 +231,7 @@ ______________________
 
   * Em C#, o tempo de vida de uma variável depende do escopo em que ela é declarada. Existem três principais escopos em que as variáveis podem ser declaradas:
 
-    * Escopo de bloco (local): Variáveis declaradas dentro de um bloco de código, como dentro de um método, têm tempo de vida restrito ao bloco em que foram declaradas. Quando o bloco é concluído, a variável é destruída e a memória que ocupava é liberada. Isso é conhecido como "variável local".
+    * **Escopo de bloco (local):** Variáveis declaradas dentro de um bloco de código, como dentro de um método, têm tempo de vida restrito ao bloco em que foram declaradas. Quando o bloco é concluído, a variável é destruída e a memória que ocupava é liberada. Isso é conhecido como "variável local".
 
       ```csharp
       public void ExemploMetodo()
@@ -241,7 +241,7 @@ ______________________
       } // variavelLocal será destruída após a conclusão do método
       ```
     
-    * Escopo de classe (campo): Variáveis declaradas em nível de classe têm tempo de vida igual ao tempo de vida da instância da classe. Elas existem enquanto o objeto da classe existe e são destruídas quando o objeto é liberado da memória.
+    * **Escopo de classe (campo):** Variáveis declaradas em nível de classe têm tempo de vida igual ao tempo de vida da instância da classe. Elas existem enquanto o objeto da classe existe e são destruídas quando o objeto é liberado da memória.
 
       ```csharp
       public class MinhaClasse
@@ -251,7 +251,7 @@ ______________________
       } // campo será destruída quando a instância de MinhaClasse for liberada da memória
       ```
 
-    * Escopo estático (variáveis estáticas): Variáveis declaradas como "static" têm tempo de vida igual ao tempo de vida do programa. Elas são criadas quando o programa começa sua execução e só são destruídas quando o programa termina.
+    * **Escopo estático (variáveis estáticas):** Variáveis declaradas como "static" têm tempo de vida igual ao tempo de vida do programa. Elas são criadas quando o programa começa sua execução e só são destruídas quando o programa termina.
 
       ```csharp
       public class MinhaClasse
