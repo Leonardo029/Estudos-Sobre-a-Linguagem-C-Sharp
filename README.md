@@ -180,3 +180,20 @@ ______________________
         }
     }
     ```
+* **Amarração de tipo:**
+
+  * Em C#, o tipo de amarração (binding) das variáveis é estático. Isso significa que o tipo de uma variável é definido em tempo de compilação e não pode ser alterado durante a execução do programa. Quando você declara uma variável, precisa especificar explicitamente o tipo dela.
+
+    ```csharp
+    //Exemplo de amarração estática
+    int idade = 25;
+    string nome = "João";
+    ```
+  
+  * C# também suporta o recurso de inferência de tipo, introduzido na versão 3.0 através do recurso "var". Com a inferência de tipo, o compilador é capaz de deduzir automaticamente o tipo da variável com base no valor atribuído a ela.
+
+    ```csharp
+    //Exemplo de inferência
+    var numero = 42; // O compilador infere que "numero" é do tipo int.
+    var texto = "Hello, world!"; // O compilador infere que "texto" é do tipo string.
+    ```
