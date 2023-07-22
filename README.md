@@ -87,11 +87,11 @@ ______________________
 
 ##  :1234: Atributos das Variáveis
 
-* **Nome**
+* **Nome:**
   * Forma:
 
-    * Os nomes de variáveis em C# podem ser compostos por letras, dígitos numéricos e caracteres de sublinhado (underscore "_").
-    * O nome deve começar com uma letra (a-z, A-Z) ou um caractere de sublinhado ("_").
+    * Os nomes de variáveis em C# podem ser compostos por letras, dígitos numéricos e caracteres de sublinhado (underscore "_");
+    * O nome deve começar com uma letra (a-z, A-Z) ou um caractere de sublinhado ("_");
     * Não é permitido começar um nome com um dígito numérico.
 
   * Tamanho:
@@ -108,5 +108,5 @@ ______________________
 
   * Palavras especiais (palavras reservadas ou palavras-chave):
 
-    * Palavras especiais são palavras reservadas pela linguagem e têm um significado específico no C#. Essas palavras não podem ser usadas como nomes de variáveis, pois são destinadas a fins específicos no código.
+    * Palavras especiais são palavras reservadas pela linguagem e têm um significado específico no C#. Essas palavras não podem ser usadas como nomes de variáveis, pois são destinadas a fins específicos no código;
     * Alguns exemplos de palavras especiais em C# incluem "int", "string", "if", "for", "class", "public", "private", entre outros.
