@@ -106,10 +106,30 @@ ______________________
 
     * Sim, C# é uma linguagem case sensitive, ou seja, faz distinção entre maiúsculas e minúsculas nos nomes de variáveis. Isso significa que as letras maiúsculas e minúsculas são tratadas como caracteres diferentes. Por exemplo, "minha_variavel" e "Minha_Variavel" são considerados nomes de variáveis distintos.
 
-  * Palavras especiais (palavras reservadas ou palavras-chave):
+  * Palavras reservadas:
 
-    * Palavras especiais são palavras reservadas pela linguagem e têm um significado específico. Essas palavras não podem ser usadas como nomes de variáveis, pois são destinadas a fins específicos no código;
-    * Alguns exemplos de palavras especiais em C# incluem "int", "string", "if", "for", "class", "public", "private", entre outros.
+    * A linguagem C# reserva setenta e cinco palavras para seu próprio uso. Estas palavras são chamadas de palavras reservadas e cada uma tem um uso particular. Palavras reservadas não são permitidas como nome de variáveis.
+
+    * Segue uma lista que identifica todas estas palavras:
+
+    ```
+    abstract	as	base	Bool
+    break	byte	case	Catch
+    char	checked	class	Const
+    continue	decimal	default	Delegate
+    do	double	else	Enum
+    event	explicit	extern	false
+    finally	fixed	float	for
+    foreach	goto	if	implicit
+    in	int	interface	internal
+    is	lock	long	namespace
+    new	null	object	operator
+    out	override	params	private
+    protected	public	readonly	ref
+    return	sbyte	sealed	short
+    sizeof	stackalloc	static	string
+    struct	switch	this	throw
+    ```
 
 * **Tipos:**
 
