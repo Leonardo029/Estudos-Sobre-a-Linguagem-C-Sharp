@@ -263,8 +263,7 @@ ______________________
 
 * **Ambiente de referênciação:**
 
-  * Ambiente de referenciação de uma sentença é o conjunto de todas as variáveis visíveis naquela posição.
-  * Em uma linguagem de escopo estático (que é o caso da nossa linguagem C#) são as variáveis declaradas em seu escopo local, mais o conjunto de todas as variáveis de seus escopos ancestrais visíveis.
+  * Ambiente de referenciação de uma sentença é o conjunto de todas as variáveis visíveis naquela posição. Em uma linguagem de escopo estático (que é o caso da nossa linguagem C#) são as variáveis declaradas em seu escopo local, mais o conjunto de todas as variáveis de seus escopos ancestrais visíveis.
 
 * **Constantes:**
 
