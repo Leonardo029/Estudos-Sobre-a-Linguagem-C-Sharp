@@ -260,3 +260,38 @@ ______________________
           // outras operações com variavelEstatica
       } // variavelEstatica será destruída quando o programa terminar
       ```
+* **Constantes:**
+
+  * Em C#, existem constantes nomeadas, que são valores fixos que não podem ser alterados durante a execução do programa. Em vez de usar valores literais diretamente no código, as constantes nomeadas permitem atribuir um nome significativo a um valor constante, tornando o código mais legível e facilitando a manutenção.
+
+  * Para definir uma constante nomeada em C#, você pode usar a palavra-chave const ou readonly.
+
+  * Constantes com a palavra-chave const:
+
+    ```csharp
+    public class MinhaClasse
+    {
+        // Constante nomeada usando a palavra-chave 'const'
+        public const int MinhaConstante = 42;
+
+        // Outros membros da classe
+    }
+    ```
+    * Neste exemplo, MinhaConstante é uma constante nomeada que foi atribuída ao valor inteiro 42. O valor de uma constante definida com const é avaliado em tempo de compilação, e a constante é considerada uma constante literal. Isso significa que o valor deve ser conhecido em tempo de compilação e deve ser um tipo de dado primitivo ou uma string.
+
+  * Constantes com a palavra-chave readonly:
+
+    ```csharp
+    public class MinhaClasse
+    {
+        // Constante nomeada usando a palavra-chave 'readonly'
+        public static readonly int MinhaConstante = 100;
+
+        // Outros membros da classe
+    }
+    ```
+    * Neste caso, MinhaConstante é uma constante nomeada definida com a palavra-chave readonly. O valor de uma constante readonly é avaliado em tempo de execução, o que significa que ele pode ser atribuído durante a inicialização da variável ou em um construtor, permitindo a inicialização com base em lógica mais complexa.
+
+  * Uma diferença importante entre const e readonly é que as constantes readonly podem ser usadas em classes e estruturas, enquanto as constantes const são restritas a tipos primitivos ou strings e só podem ser usadas em nível de classe.
+
+  * Independente da palavra-chave utilizada, as constantes nomeadas em C# são uma maneira eficaz de tornar o código mais legível, manutenível e de evitar erros ao usar valores constantes em várias partes do programa.
