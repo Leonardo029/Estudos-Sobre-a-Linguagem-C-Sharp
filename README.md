@@ -260,9 +260,15 @@ ______________________
           // outras operações com variavelEstatica
       } // variavelEstatica será destruída quando o programa terminar
       ```
+
+* **Ambiente de referênciação:**
+
+  * Ambiente de referenciação de uma sentença é o conjunto de todas as variáveis visíveis naquela posição.
+  * Em uma linguagem de escopo estático (que é o caso da nossa linguagem C#) são as variáveis declaradas em seu escopo local, mais o conjunto de todas as variáveis de seus escopos ancestrais visíveis.
+
 * **Constantes:**
 
-  * Em C#, existem constantes nomeadas, que são valores fixos que não podem ser alterados durante a execução do programa. Em vez de usar valores literais diretamente no código, as constantes nomeadas permitem atribuir um nome significativo a um valor constante, tornando o código mais legível e facilitando a manutenção.
+  * Em C# existem constantes nomeadas, que são valores fixos que não podem ser alterados durante a execução do programa. Em vez de usar valores literais diretamente no código, as constantes nomeadas permitem atribuir um nome significativo a um valor constante, tornando o código mais legível e facilitando a manutenção.
 
   * Para definir uma constante nomeada em C#, você pode usar a palavra-chave const ou readonly.
 
