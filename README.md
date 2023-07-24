@@ -305,7 +305,7 @@ ______________________
 
   * **Tipos primitivos:** 
 
-    * Em C#, os tipos de dados primitivos, também conhecidos como tipos de valor, são usados para armazenar valores individuais. Esses tipos são fornecidos pela linguagem e não requerem instância de objetos. Os tipos de dados primitivos incluem:
+    * Os tipos de dados primitivos, também conhecidos como tipos de valor, são usados para armazenar valores individuais. Esses tipos são fornecidos pela linguagem e não requerem instância de objetos. Os tipos de dados primitivos incluem:
 
       * Tipos Numéricos Inteiros:
         *  **int:** Representa números inteiros com sinal de 32 bits/ 4 bytes;
@@ -330,7 +330,7 @@ ______________________
 
   * **Tipos não primitivos:**
 
-    * Em C#, os tipos de dados não primitivos, também conhecidos como tipos de referência, são usados para armazenar referências a objetos. Eles exigem uma instância de objeto para serem utilizados e são armazenados na memória gerenciada. Os tipos de dados não primitivos incluem:
+    * Os tipos de dados não primitivos, também conhecidos como tipos de referência, são usados para armazenar referências a objetos. Eles exigem uma instância de objeto para serem utilizados e são armazenados na memória gerenciada. Os tipos de dados não primitivos incluem:
 
       *  **string:** Representa uma sequência de caracteres Unicode. É usado para armazenar e manipular texto.
 
