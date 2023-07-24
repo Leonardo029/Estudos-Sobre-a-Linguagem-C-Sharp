@@ -349,3 +349,50 @@ ______________________
       *  **Struct (struct):** É um tipo de valor personalizado, semelhante a uma classe, mas geralmente usado para tipos de valor mais simples e leves.
 
       *  **Nullable (Tipos Nullable):** Permitem que tipos de valor aceitem valores nulos além de seus valores normais. Por exemplo, int? é usado para um inteiro que pode ser nulo.
+
+  * **Tipos ordinais:**
+
+    * Os tipos ordinais (também conhecidos como enums) definidos pelo usuário são tipos enumerados personalizados que permitem definir um conjunto nomeado de constantes com valores associados. Eles são úteis para representar conjuntos discretos de valores, como dias da semana, estados, opções, etc.
+
+    * Para criar um tipo ordinal definido pelo usuário (enum) em C#, você pode usar a palavra-chave enum. Aqui está um exemplo de como definir um tipo enum para representar os dias da semana:
+
+      ```csharp
+      public enum DiaDaSemana
+      {
+        Domingo,
+        Segunda,
+        Terca,
+        Quarta,
+        Quinta,
+        Sexta,
+        Sabado
+      }
+      ```
+
+    * Neste exemplo, definimos um tipo enum chamado DiaDaSemana e listamos os dias da semana como constantes nomeadas. Por padrão, os valores associados começam a partir de 0 (Domingo = 0, Segunda = 1, Terça = 2, etc.), mas você pode atribuir valores específicos se necessário.
+
+    * Exemplo com valores específicos:
+
+      ```csharp
+      public enum DiaDaSemana
+      {
+        Domingo = 1,
+        Segunda = 2,
+        Terca = 3,
+        Quarta = 4,
+        Quinta = 5,
+        Sexta = 6,
+        Sabado = 7
+      }
+      ```
+
+    * Aqui, atribuímos explicitamente valores numéricos aos dias da semana, começando por 1.
+
+    * Com a definição do enum, podemos usar esse tipo como qualquer outro tipo de dados, e as constantes nomeadas facilitam o uso e a legibilidade do código:
+
+      ```csharp
+      DiaDaSemana dia = DiaDaSemana.Segunda;
+      Console.WriteLine("Hoje é " + dia); // Saída: Hoje é Segunda
+      ```
+    
+    * Os tipos ordinais definidos pelo usuário são uma forma conveniente e segura de representar um conjunto limitado de valores em C#, e eles ajudam a tornar o código mais legível e autodocumentado.
