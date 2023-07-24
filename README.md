@@ -369,7 +369,7 @@ ______________________
       }
       ```
 
-    * Neste exemplo, definimos um tipo enum chamado DiaDaSemana e listamos os dias da semana como constantes nomeadas. Por padrão, os valores associados começam a partir de 0 (Domingo = 0, Segunda = 1, Terça = 2, etc.), mas você pode atribuir valores específicos se necessário.
+      * Neste exemplo, definimos um tipo enum chamado DiaDaSemana e listamos os dias da semana como constantes nomeadas. Por padrão, os valores associados começam a partir de 0 (Domingo = 0, Segunda = 1, Terça = 2, etc.), mas você pode atribuir valores específicos se necessário.
 
     * Exemplo com valores específicos:
 
@@ -386,7 +386,7 @@ ______________________
       }
       ```
 
-    * Aqui, atribuímos explicitamente valores numéricos aos dias da semana, começando por 1.
+       * Aqui, atribuímos explicitamente valores numéricos aos dias da semana, começando por 1.
 
     * Com a definição do enum, podemos usar esse tipo como qualquer outro tipo de dados, e as constantes nomeadas facilitam o uso e a legibilidade do código:
 
