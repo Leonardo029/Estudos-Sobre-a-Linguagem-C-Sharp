@@ -330,7 +330,7 @@ ______________________
 
   * **Tipos não primitivos:**
 
-    * Em C#, os tipos de dados não primitivos, também conhecidos como tipos de referência, são usados para armazenar referências a objetos. Eles exigem uma instância de objeto para serem utilizados e são armazenados na memória gerenciada. Os tipos de dados não primitivos em C# incluem:
+    * Em C#, os tipos de dados não primitivos, também conhecidos como tipos de referência, são usados para armazenar referências a objetos. Eles exigem uma instância de objeto para serem utilizados e são armazenados na memória gerenciada. Os tipos de dados não primitivos incluem:
 
       *  **string:** Representa uma sequência de caracteres Unicode. É usado para armazenar e manipular texto.
 
