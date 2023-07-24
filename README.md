@@ -300,3 +300,52 @@ ______________________
   * Uma diferença importante entre const e readonly é que as constantes readonly podem ser usadas em classes e estruturas, enquanto as constantes const são restritas a tipos primitivos ou strings e só podem ser usadas em nível de classe.
 
   * Independente da palavra-chave utilizada, as constantes nomeadas em C# são uma maneira eficaz de tornar o código mais legível, manutenível e de evitar erros ao usar valores constantes em várias partes do programa.
+
+##  :game_die: Tipos de Dados
+
+  * **Tipos primitivos:** 
+
+    * Em C#, os tipos de dados primitivos, também conhecidos como tipos de valor, são usados para armazenar valores individuais. Esses tipos são fornecidos pela linguagem e não requerem instância de objetos. Os tipos de dados primitivos incluem:
+
+      * Tipos Numéricos Inteiros:
+        *  **int:** Representa números inteiros com sinal de 32 bits/ 4 bytes.
+        *  **uint:** Representa números inteiros sem sinal de 32 bits/ 4 bytes.
+        *  **short:** Representa números inteiros com sinal de 16 bits/ 2 bytes.
+        *  **ushort:** Representa números inteiros sem sinal de 16 bits/ 2 bytes.
+        *  **long:** Representa números inteiros com sinal de 64 bits/ 8 bytes.
+        *  **ulong:** Representa números inteiros sem sinal de 64 bits/ 8 bytes.
+        *  **byte:** Representa números inteiros sem sinal de 8 bits/ 1 byte.
+        *  **sbyte:** Representa números inteiros com sinal de 8 bits/ 1 byte.
+
+      * Tipos Numéricos de Ponto Flutuante:
+        *  **float:** Representa números de ponto flutuante de precisão simples de 32 bits/ 4 bytes.
+        *  **double:** Representa números de ponto flutuante de precisão dupla de 64 bits/ 8 bytes.
+        *  **decimal:** Representa números de ponto flutuante de alta precisão de 128 bits/ 16 bytes.
+
+      * Tipo Char:
+        *  **char:** Representa um único caractere Unicode de 16 bits/ 2 bytes.
+
+      * Tipo Booleano:
+        * **bool:** Representa um valor verdadeiro ou falso (true ou false).
+
+  * **Tipos não primitivos:**
+
+    * Em C#, os tipos de dados não primitivos, também conhecidos como tipos de referência, são usados para armazenar referências a objetos. Eles exigem uma instância de objeto para serem utilizados e são armazenados na memória gerenciada. Os tipos de dados não primitivos em C# incluem:
+
+      *  **string:** Representa uma sequência de caracteres Unicode. É usado para armazenar e manipular texto.
+
+      *  **object:** É a classe base de todos os tipos em C#. Pode armazenar qualquer valor de qualquer tipo e é comumente usado quando a especificação exata do tipo é desconhecida ou não é relevante.
+
+      *  **Array:** Representa uma coleção fixa de elementos do mesmo tipo. Os arrays podem ser unidimensionais, multidimensionais ou jagged (arrays de arrays).
+
+      *  **Classe (class):** É um tipo de referência personalizado definido pelo programador. Uma classe é uma estrutura de dados que encapsula dados e comportamentos relacionados.
+
+      *  **Interface (interface):** É uma referência a um contrato que define um conjunto de métodos que uma classe deve implementar. As interfaces permitem a implementação de múltiplas interfaces por uma classe.
+
+      *  **Delegate (delegado):** Representa uma referência a um método, permitindo tratar métodos como entidades que podem ser passadas como parâmetros e invocadas.
+
+      *  **Enumeração (enum):** É um tipo de valor que consiste em um conjunto de constantes nomeadas, representando valores simbólicos associados a um tipo de dados integral.
+
+      *  **Struct (struct):** É um tipo de valor personalizado, semelhante a uma classe, mas geralmente usado para tipos de valor mais simples e leves.
+
+      *  **Nullable (Tipos Nullable):** Permitem que tipos de valor aceitem valores nulos além de seus valores normais. Por exemplo, int? é usado para um inteiro que pode ser nulo.
