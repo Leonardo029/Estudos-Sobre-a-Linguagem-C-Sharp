@@ -308,18 +308,18 @@ ______________________
     * Em C#, os tipos de dados primitivos, também conhecidos como tipos de valor, são usados para armazenar valores individuais. Esses tipos são fornecidos pela linguagem e não requerem instância de objetos. Os tipos de dados primitivos incluem:
 
       * Tipos Numéricos Inteiros:
-        *  **int:** Representa números inteiros com sinal de 32 bits/ 4 bytes.
-        *  **uint:** Representa números inteiros sem sinal de 32 bits/ 4 bytes.
-        *  **short:** Representa números inteiros com sinal de 16 bits/ 2 bytes.
-        *  **ushort:** Representa números inteiros sem sinal de 16 bits/ 2 bytes.
-        *  **long:** Representa números inteiros com sinal de 64 bits/ 8 bytes.
-        *  **ulong:** Representa números inteiros sem sinal de 64 bits/ 8 bytes.
-        *  **byte:** Representa números inteiros sem sinal de 8 bits/ 1 byte.
+        *  **int:** Representa números inteiros com sinal de 32 bits/ 4 bytes;
+        *  **uint:** Representa números inteiros sem sinal de 32 bits/ 4 bytes;
+        *  **short:** Representa números inteiros com sinal de 16 bits/ 2 bytes;
+        *  **ushort:** Representa números inteiros sem sinal de 16 bits/ 2 bytes;
+        *  **long:** Representa números inteiros com sinal de 64 bits/ 8 bytes;
+        *  **ulong:** Representa números inteiros sem sinal de 64 bits/ 8 bytes;
+        *  **byte:** Representa números inteiros sem sinal de 8 bits/ 1 byte;
         *  **sbyte:** Representa números inteiros com sinal de 8 bits/ 1 byte.
 
       * Tipos Numéricos de Ponto Flutuante:
-        *  **float:** Representa números de ponto flutuante de precisão simples de 32 bits/ 4 bytes.
-        *  **double:** Representa números de ponto flutuante de precisão dupla de 64 bits/ 8 bytes.
+        *  **float:** Representa números de ponto flutuante de precisão simples de 32 bits/ 4 bytes;
+        *  **double:** Representa números de ponto flutuante de precisão dupla de 64 bits/ 8 bytes;
         *  **decimal:** Representa números de ponto flutuante de alta precisão de 128 bits/ 16 bytes.
 
       * Tipo Char:
