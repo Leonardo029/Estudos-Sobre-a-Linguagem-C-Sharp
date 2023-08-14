@@ -664,3 +664,7 @@ ______________________
     * Verificação de Tipo para Segurança:
 
       * A verificação de tipo em C# também desempenha um papel fundamental na segurança. A linguagem é projetada para prevenir operações inseguras que poderiam levar a problemas de acesso à memória ou corrupção de dados. Isso é especialmente importante para prevenir vulnerabilidades como buffer overflows e vazamentos de memória.
+
+  * Tipagem Forte (Strong Typing):
+
+    * A tipagem forte em C# significa que os tipos de dados são rigorosamente aplicados e verificados durante o desenvolvimento e a execução do programa. Isso implica que operações inválidas entre tipos diferentes não são permitidas, e todas as conversões de tipo devem ser feitas explicitamente. Essa abordagem ajuda a prevenir erros de tipo e promove a segurança e integridade do código.
