@@ -436,7 +436,7 @@ ______________________
         int[] repeatedArray = Enumerable.Repeat(10, 5).ToArray(); // Cria um array com 5 elementos, todos com valor 10.
         ```
       
-      * **Inicialização com array existente:** você pode inicializar um novo array com os elementos de outro array já existente.
+      * **Inicialização com array existente:** você pode inicializar um novo array com os elementos de um outro array já existente.
         ```csharp
         int[] sourceArray = { 1, 2, 3 };
         int[] newArray = new int[sourceArray.Length];
@@ -455,3 +455,34 @@ ______________________
         jaggedArray[1] = new int[] { 3, 4, 5 };
         jaggedArray[2] = new int[] { 6 };
         ```
+    
+    * Informações sobre a implementação:
+
+      * Tipo Base:
+        * Em C#, todos os tipos de arrays são derivados da classe base System.Array. Isso inclui arrays unidimensionais, multidimensionais e arrays de arrays (jagged arrays).
+
+      * Alocação de Memória:
+        * Quando você cria um array usando o operador new, a memória é alocada no heap (memória gerenciada). Isso é verdade mesmo para arrays primitivos, pois o C# trata todos os tipos como objetos.
+        * A memória alocada é contígua e igual ao tamanho do array multiplicado pelo tamanho do tipo de elemento.
+
+      * Acesso aos Elementos:
+        * Os elementos de um array são acessados usando índices baseados em zero. Por exemplo, array[0] acessa o primeiro elemento do array.
+        * O acesso direto aos elementos é rápido, pois os arrays mantêm informações sobre o tipo de elemento e a localização na memória, o que permite calcular rapidamente a posição do elemento.
+
+      * Tamanho Fixo:
+        * Os arrays em C# têm tamanho fixo, o que significa que você precisa definir o tamanho do array no momento da criação e não pode alterá-lo posteriormente.
+        * Se você precisar de uma coleção dinâmica, pode usar outras estruturas de dados como listas (List<T>) ou coleções genéricas.
+
+      * Performance:
+        * Os arrays oferecem acesso rápido aos elementos, pois eles estão armazenados em memória contígua, permitindo um acesso direto e eficiente aos endereços de memória.
+        * A busca e a modificação de elementos em arrays são operações O(1) (constante), desde que o índice seja conhecido.
+        
+      * Comprimento do Array:
+        * O comprimento de um array (número de elementos) é armazenado como uma propriedade chamada Length. Essa propriedade é usada para iterar pelos elementos de um array.
+      
+      * Limitações:
+        * Os arrays têm limitações, como tamanho fixo e ineficiência na inserção/remoção de elementos. Para casos onde a flexibilidade é mais importante, outras estruturas de dados, como listas, podem ser mais adequadas.
+
+      * Array Multidimensional e Jagged Arrays:
+        * Arrays multidimensionais (matrizes) são implementados como arrays de arrays. Cada elemento do array principal contém um sub-array.
+        * Jagged arrays (arrays de arrays) são arrays onde cada elemento é um array separado. Eles podem ter comprimentos diferentes para cada sub-array.
