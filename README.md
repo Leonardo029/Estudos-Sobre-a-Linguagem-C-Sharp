@@ -620,16 +620,20 @@ ______________________
           Para acessar o valor apontado por um ponteiro, você usa o operador de desreferenciamento `*`.
 
         * **Atribuição de Valor:**
+
           Você pode atribuir um valor a um endereço apontado por um ponteiro.
 
         * **Aritmética de Ponteiro:**
+
           Em C#, a aritmética de ponteiro é restrita a adição e subtração de valores inteiros constantes.
 
         * **Comparação de Ponteiro:**
-        Você pode comparar ponteiros usando os operadores de comparação (==, !=, <, <=, >, >=).
+
+          Você pode comparar ponteiros usando os operadores de comparação (==, !=, <, <=, >, >=).
 
         * **Uso com Arrays:**
-        Ponteiros podem ser usados para percorrer arrays.
+        
+          Ponteiros podem ser usados para percorrer arrays.
 
     * Operadores:
 
