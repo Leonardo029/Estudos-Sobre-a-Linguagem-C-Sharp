@@ -456,7 +456,7 @@ ______________________
         jaggedArray[2] = new int[] { 6 };
         ```
     
-    * Informações sobre a implementação:
+    * Implementação:
 
       * **Tipo Base:**  
         * Em C#, todos os tipos de arrays são derivados da classe base System.Array. Isso inclui arrays unidimensionais, multidimensionais e arrays de arrays (jagged arrays).
@@ -551,3 +551,53 @@ ______________________
           ```
 
   * **Ponteiro:**
+
+    * Unsafe: 
+
+      * A maior parte do código C# que você escreve é "código seguro verificável". Código seguro verificável significa que as ferramentas do .NET podem confirmar que o código é seguro. Em geral, o código seguro não acessa diretamente a memória usando ponteiros. Ele também não aloca memória bruta. Em vez disso, ele cria objetos gerenciados.
+
+      * O C# dá suporte a um contexto unsafe em que você pode escrever códigos não verificáveis. Em um contexto `unsafe`, o código pode usar ponteiros, alocar e liberar blocos de memória e chamar métodos usando ponteiros de função. O código não seguro em C# não é necessariamente perigoso; é apenas um código cuja segurança não pode ser verificada.
+
+      * O código não seguro tem as propriedades a seguir:
+
+        * Blocos de código, tipos e métodos podem ser definidos como não seguros;
+        * Em alguns casos, o código não seguro pode aumentar o desempenho de um aplicativo removendo as verificações de limites de matriz;
+        * O código não seguro é necessário quando você chama funções nativas que exigem ponteiros;
+        * Usar o código não seguro apresenta riscos de segurança e estabilidade;
+        * O código que contém blocos não seguros deve ser compilado com a opção do compilador AllowUnsafeBlocks.
+
+    * Tipos de Ponteiro:
+
+      * Em um contexto não seguro, os tipos podem ser de ponteiro, além de tipo de valor ou tipo de referência. Uma declaração de tipo de ponteiro usa uma das seguintes formas:
+        ```csharp
+        type* identifier;
+        void* identifier; //permitido, mas não recomendado
+        ```
+
+      * O tipo especificado antes do `*` em um tipo de ponteiro é chamado de tipo *referent*. Somente um tipo não gerenciado pode ser um tipo referent.
+
+      * Os tipos de ponteiro não são herdados de object e não há conversão entre tipos de ponteiro e `object`. Além disso, as conversões boxing e unboxing não oferecem suporte a ponteiros. No entanto, você pode converter entre diferentes tipos de ponteiro e tipos de ponteiro e tipos integrais.
+
+      * Ao declarar vários ponteiros na mesma declaração, você escreve o asterisco (`*`) juntamente com o tipo subjacente apenas. Ele não é usado como um prefixo para cada nome de ponteiro. Por exemplo:
+        ```csharp
+        int* p1, p2, p3;   // Ok
+        int *p1, *p2, *p3;   // Inválido em C#
+        ```
+      
+      * Um ponteiro não pode apontar para uma referência ou um struct que contenha referências, pois uma referência de objeto pode ser coletada como lixo mesmo se um ponteiro estiver apontando para ela. O coletor de lixo não se dá conta de que um objeto está sendo apontado por qualquer tipo de ponteiro.
+
+      * O valor da variável de ponteiro do tipo `MyType*` é o endereço de uma variável do tipo `MyType`. Estes são exemplos de declarações de tipos de ponteiro:
+
+        * `int* p`: p é um ponteiro para um inteiro.  
+        * `int** p`: p é um ponteiro para um ponteiro para um inteiro.
+        * `int*[] p`: p é uma matriz unidimensional de ponteiros para inteiros.
+        * `char* p`: p é um ponteiro para um caractere.
+        * `void* p`: p é um ponteiro para um tipo desconhecido.
+
+      * O operador de indireção de ponteiro * pode ser usado para acessar o conteúdo no local apontado pela variável de ponteiro. Por exemplo, considere a seguinte declaração:
+
+        ```csharp
+        int* myVariable;
+        ```
+
+      * A expressão *myVariable denota a variável int encontrada no endereço contido em myVariable.
