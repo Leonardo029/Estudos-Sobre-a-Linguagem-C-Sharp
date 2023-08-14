@@ -401,13 +401,13 @@ ______________________
 
     * Tipos:
 
-      * Array estático: Um array estático em C# é uma coleção de elementos do mesmo tipo com tamanho fixo, onde o tamanho precisa ser definido em tempo de compilação e não pode ser alterado durante a execução do programa.
+      * **Array estático:** Um array estático em C# é uma coleção de elementos do mesmo tipo com tamanho fixo, onde o tamanho precisa ser definido em tempo de compilação e não pode ser alterado durante a execução do programa.
 
         ```csharp
           int[] staticArray = new int[5]; // Cria um array estático de inteiros com tamanho 5.
         ```
 
-      * Array heap-dinâmico: Em C#, os arrays são alocados no heap (memória gerenciada) e o tamanho do array pode ser definido em tempo de execução usando o construtor new.
+      * **Array heap-dinâmico:** Em C#, os arrays são alocados no heap (memória gerenciada) e o tamanho do array pode ser definido em tempo de execução usando o construtor new.
 
         ```csharp
           int size = 3;
@@ -416,39 +416,39 @@ ______________________
 
     * Inicialização:
 
-      * Inicialização direta: você pode inicializar um array diretamente com os valores dos elementos entre chaves {}.
+      * **Inicialização direta:** você pode inicializar um array diretamente com os valores dos elementos entre chaves {}.
         ```csharp
         int[] numbers = { 1, 2, 3, 4, 5 };
         ```
 
-      * Usando o construtor new: você pode usar o construtor new para criar um array e definir o tamanho explicitamente.
+      * **Usando o construtor new:** você pode usar o construtor new para criar um array e definir o tamanho explicitamente.
         ```csharp
         int[] dynamicArray = new int[3]; // Cria um array de inteiros com tamanho 3.
         ```      
       
-      * Inicialização com valores padrão: um array é automaticamente preenchido com valores padrão (zero, no caso de inteiros) se você não definir valores para todos os elementos.
+      * **Inicialização com valores padrão:** um array é automaticamente preenchido com valores padrão (zero, no caso de inteiros) se você não definir valores para todos os elementos.
         ```csharp
         int[] uninitializedArray = new int[5]; // Todos os elementos serão 0.
         ```      
       
-      * Inicialização com valor único: você pode inicializar todos os elementos do array com o mesmo valor usando Enumerable.Repeat().
+      * **Inicialização com valor único:** você pode inicializar todos os elementos do array com o mesmo valor usando Enumerable.Repeat().
         ```csharp
         int[] repeatedArray = Enumerable.Repeat(10, 5).ToArray(); // Cria um array com 5 elementos, todos com valor 10.
         ```
       
-      * Inicialização com array existente: você pode inicializar um novo array com os elementos de outro array já existente.
+      * **Inicialização com array existente:** você pode inicializar um novo array com os elementos de outro array já existente.
         ```csharp
         int[] sourceArray = { 1, 2, 3 };
         int[] newArray = new int[sourceArray.Length];
         Array.Copy(sourceArray, newArray, sourceArray.Length);
         ```
       
-      * Array multidimensional: além de arrays unidimensionais, você pode criar arrays multidimensionais (matrizes).
+      * **Array multidimensional:** além de arrays unidimensionais, você pode criar arrays multidimensionais (matrizes).
         ```csharp
         int[,] matrix = { { 1, 2 }, { 3, 4 } }; // Cria uma matriz 2x2.
         ```
 
-      * Array de arrays (jagged arrays): você pode criar arrays que contêm outros arrays.
+      * **Array de arrays (jagged arrays):** você pode criar arrays que contêm outros arrays.
         ```csharp
         int[][] jaggedArray = new int[3][];
         jaggedArray[0] = new int[] { 1, 2 };
