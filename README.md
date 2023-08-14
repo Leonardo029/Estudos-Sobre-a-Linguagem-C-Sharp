@@ -396,3 +396,18 @@ ______________________
       ```
     
     * Os tipos ordinais definidos pelo usuário são uma forma conveniente e segura de representar um conjunto limitado de valores em C#, e eles ajudam a tornar o código mais legível e autodocumentado.
+
+  * **Tipos de array:**
+
+    * Array estático: Um array estático em C# é uma coleção de elementos do mesmo tipo com tamanho fixo, onde o tamanho precisa ser definido em tempo de compilação e não pode ser alterado durante a execução do programa.
+
+      ```csharp
+        int[] staticArray = new int[5]; // Cria um array estático de inteiros com tamanho 5.
+      ```
+
+    * Array heap-dinâmico: Em C#, os arrays são alocados no heap (memória gerenciada) e o tamanho do array pode ser definido em tempo de execução usando o construtor new.
+
+      ```csharp
+        int size = 3;
+        int[] dynamicArray = new int[size]; // Cria um array dinâmico de inteiros com tamanho definido em tempo de execução.
+      ```
