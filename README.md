@@ -608,12 +608,15 @@ ______________________
       * Em C# é possível realizar as seguintes ações com ponteiros:
 
         * **Declaração de Ponteiro:**
+
         Você pode declarar um ponteiro usando o tipo do valor que ele aponta, seguido pelo operador `*`.
 
         * **Atribuição de Endereço:**
+
         Você pode atribuir um endereço de memória a um ponteiro usando o operador de referência `&`.
 
         * **Desreferenciamento:**
+        
         Para acessar o valor apontado por um ponteiro, você usa o operador de desreferenciamento `*`.
 
         * **Atribuição de Valor:**
