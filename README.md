@@ -483,6 +483,69 @@ ______________________
       * Limitações:
         * Os arrays têm limitações, como tamanho fixo e ineficiência na inserção/remoção de elementos. Para casos onde a flexibilidade é mais importante, outras estruturas de dados, como listas, podem ser mais adequadas.
 
-      * Array Multidimensional e Jagged Arrays:
+      * **Array Multidimensional e Jagged Arrays:**
         * Arrays multidimensionais (matrizes) são implementados como arrays de arrays. Cada elemento do array principal contém um sub-array.
         * Jagged arrays (arrays de arrays) são arrays onde cada elemento é um array separado. Eles podem ter comprimentos diferentes para cada sub-array.
+
+  * **Registro:**
+
+    * Um registro em C# é uma classe ou um struct que fornece sintaxe e comportamento especiais para trabalhar com modelos de dados. O modificador `record` instrui o compilador a sintetizar membros que são úteis para tipos cuja função primária é armazenar dados. Esses membros incluem uma sobrecarga de ToString() e membros que dão suporte à igualdade de valor.
+
+    * Considere usar um registro no lugar de uma classe ou struct nos seguintes cenários:
+
+      * Você deseja definir um modelo de dados que depende da igualdade de valor.
+      * Você deseja definir um tipo para o qual os objetos são imutáveis.
+
+    * Igualdade de valor:
+
+      * Para registros, a igualdade de valor significa que duas variáveis de um tipo de registro são iguais se os tipos corresponderem e todos os valores de propriedade e de campo corresponderem. Para outros tipos de referência, como classes, igualdade significa igualdade de referência. Ou seja, duas variáveis de um tipo de classe são iguais quando se referem ao mesmo objeto. Métodos e operadores que determinam a igualdade de duas instâncias de registro usam igualdade de valor.
+
+    * Imutabilidade: 
+
+      * Um tipo imutável é aquele que impede que você altere qualquer propriedade ou valor de campo de um objeto após ser instanciado. A imutabilidade pode ser útil quando você precisa que um tipo seja thread-safe ou que um código hash permaneça o mesmo em uma tabela de hash. Os registros fornecem sintaxe concisa para criar e trabalhar com tipos imutáveis.
+    
+    * Diferenças: 
+
+      * A mesma sintaxe que declara e instancia classes ou structs pode ser usada com registros. Basta substituir a palavra-chave `class` por `record`, ou usar `record struct` em vez de `struct`. Da mesma forma, as classes de registro dão suporte à mesma sintaxe para expressar relações de herança. Os registros diferem das classes das seguintes maneiras:
+
+        * Você pode usar parâmetros posicionais em um construtor primário para criar e instanciar um tipo com propriedades imutáveis.
+        * Os mesmos métodos e operadores que indicam igualdade de referência ou desigualdade em classes (como Object.Equals(Object) e `==`), indicam igualdade de valor ou desigualdade nos registros.
+        * Você pode usar uma expressão with para criar uma cópia de um objeto imutável com novos valores em propriedades selecionadas.
+        * O método `ToString` de um registro cria uma cadeia de caracteres formatada que mostra o nome do tipo de um objeto e os nomes e valores de todas as propriedades públicas dele.
+        * Um registro pode herdar de outro registro. Um registro não pode herdar de uma classe, e uma classe não pode herdar de um registro.
+      
+      * Os structs de registro diferem dos structs, pois o compilador sintetiza os métodos de igualdade e `ToString`. O compilador sintetiza o método `Deconstruct` para structs de registro posicional.
+
+      * O compilador sintetiza uma propriedade public init-only para cada parâmetro de construtor primário em um `record class`. Em um `record struct`, o compilador sintetiza uma propriedade pública de leitura/gravação. O compilador não cria propriedades para parâmetros de construtor primário em tipos `class` e `struct` que não incluem modificador `record`.
+
+      * Exemplos:
+
+        O exemplo a seguir define um registro público que usa parâmetros posicionais para declarar e instanciar um registro. Em seguida, ele imprime o nome do tipo e os valores de propriedade:
+          ```csharp
+          public record Person(string FirstName, string LastName);
+
+          public static void Main()
+          {
+              Person person = new("Nancy", "Davolio");
+              Console.WriteLine(person);
+              // output: Person { FirstName = Nancy, LastName = Davolio }
+          }
+          ```
+        
+        O seguinte exemplo demonstra a igualdade de valor em registros:
+          ```csharp
+          public record Person(string FirstName, string LastName, string[] PhoneNumbers);
+
+          public static void Main()
+          {
+              var phoneNumbers = new string[2];
+              Person person1 = new("Nancy", "Davolio", phoneNumbers);
+              Person person2 = new("Nancy", "Davolio", phoneNumbers);
+              Console.WriteLine(person1 == person2); // output: True
+
+              person1.PhoneNumbers[0] = "555-1234";
+              Console.WriteLine(person1 == person2); // output: True
+
+              Console.WriteLine(ReferenceEquals(person1, person2)); // output: False
+          }
+          ```
