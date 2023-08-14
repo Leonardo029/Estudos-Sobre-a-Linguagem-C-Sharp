@@ -601,3 +601,17 @@ ______________________
         ```
 
       * A expressão *myVariable denota a variável int encontrada no endereço contido em myVariable.
+    
+    * Operadores:
+
+      | Operador/Instrução  |  Uso  |
+      | ----------- | ----------- |
+      |*  | Executa indireção de ponteiro|
+      |-> | Acessa um membro de um struct através de um ponteiro|
+      |[] | Indexa um ponteiro|
+      |&  | Obtém o endereço de uma variável|
+      |++ e --  | Incrementa e decrementa ponteiros|
+      |+ e -  | Executa aritmética de ponteiros|
+      |==, !=, <, >, <= e >=  | Compara ponteiros|
+      |stackalloc | Aloca memória na pilha|
+      |fixedinstrução | Corrige temporariamente uma variável para que seu endereço possa ser encontrado|
