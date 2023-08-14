@@ -458,29 +458,29 @@ ______________________
     
     * Informações sobre a implementação:
 
-      * Tipo Base:
+      * **Tipo Base:**  
         * Em C#, todos os tipos de arrays são derivados da classe base System.Array. Isso inclui arrays unidimensionais, multidimensionais e arrays de arrays (jagged arrays).
 
-      * Alocação de Memória:
+      * **Alocação de Memória:**
         * Quando você cria um array usando o operador new, a memória é alocada no heap (memória gerenciada). Isso é verdade mesmo para arrays primitivos, pois o C# trata todos os tipos como objetos.
         * A memória alocada é contígua e igual ao tamanho do array multiplicado pelo tamanho do tipo de elemento.
 
-      * Acesso aos Elementos:
+      * **Acesso aos Elementos:**
         * Os elementos de um array são acessados usando índices baseados em zero. Por exemplo, array[0] acessa o primeiro elemento do array.
         * O acesso direto aos elementos é rápido, pois os arrays mantêm informações sobre o tipo de elemento e a localização na memória, o que permite calcular rapidamente a posição do elemento.
 
-      * Tamanho Fixo:
+      * **Tamanho Fixo:**
         * Os arrays em C# têm tamanho fixo, o que significa que você precisa definir o tamanho do array no momento da criação e não pode alterá-lo posteriormente.
         * Se você precisar de uma coleção dinâmica, pode usar outras estruturas de dados como listas (List<T>) ou coleções genéricas.
 
-      * Performance:
+      * **Performance:**
         * Os arrays oferecem acesso rápido aos elementos, pois eles estão armazenados em memória contígua, permitindo um acesso direto e eficiente aos endereços de memória.
         * A busca e a modificação de elementos em arrays são operações O(1) (constante), desde que o índice seja conhecido.
         
-      * Comprimento do Array:
+      * **Comprimento do Array:**
         * O comprimento de um array (número de elementos) é armazenado como uma propriedade chamada Length. Essa propriedade é usada para iterar pelos elementos de um array.
       
-      * Limitações:
+      * **Limitações:**
         * Os arrays têm limitações, como tamanho fixo e ineficiência na inserção/remoção de elementos. Para casos onde a flexibilidade é mais importante, outras estruturas de dados, como listas, podem ser mais adequadas.
 
       * **Array Multidimensional e Jagged Arrays:**
@@ -498,11 +498,11 @@ ______________________
 
     * Igualdade de valor:
 
-      * Para registros, a igualdade de valor significa que duas variáveis de um tipo de registro são iguais se os tipos corresponderem e todos os valores de propriedade e de campo corresponderem. Para outros tipos de referência, como classes, igualdade significa igualdade de referência. Ou seja, duas variáveis de um tipo de classe são iguais quando se referem ao mesmo objeto. Métodos e operadores que determinam a igualdade de duas instâncias de registro usam igualdade de valor.
+      Para registros, a igualdade de valor significa que duas variáveis de um tipo de registro são iguais se os tipos corresponderem e todos os valores de propriedade e de campo corresponderem. Para outros tipos de referência, como classes, igualdade significa igualdade de referência. Ou seja, duas variáveis de um tipo de classe são iguais quando se referem ao mesmo objeto. Métodos e operadores que determinam a igualdade de duas instâncias de registro usam igualdade de valor.
 
     * Imutabilidade: 
 
-      * Um tipo imutável é aquele que impede que você altere qualquer propriedade ou valor de campo de um objeto após ser instanciado. A imutabilidade pode ser útil quando você precisa que um tipo seja thread-safe ou que um código hash permaneça o mesmo em uma tabela de hash. Os registros fornecem sintaxe concisa para criar e trabalhar com tipos imutáveis.
+      Um tipo imutável é aquele que impede que você altere qualquer propriedade ou valor de campo de um objeto após ser instanciado. A imutabilidade pode ser útil quando você precisa que um tipo seja thread-safe ou que um código hash permaneça o mesmo em uma tabela de hash. Os registros fornecem sintaxe concisa para criar e trabalhar com tipos imutáveis.
     
     * Diferenças: 
 
@@ -528,7 +528,7 @@ ______________________
           {
               Person person = new("Nancy", "Davolio");
               Console.WriteLine(person);
-              // output: Person { FirstName = Nancy, LastName = Davolio }
+              // saída: Person { FirstName = Nancy, LastName = Davolio }
           }
           ```
         
@@ -541,11 +541,13 @@ ______________________
               var phoneNumbers = new string[2];
               Person person1 = new("Nancy", "Davolio", phoneNumbers);
               Person person2 = new("Nancy", "Davolio", phoneNumbers);
-              Console.WriteLine(person1 == person2); // output: True
+              Console.WriteLine(person1 == person2); // saída: Verdadeiro
 
               person1.PhoneNumbers[0] = "555-1234";
-              Console.WriteLine(person1 == person2); // output: True
+              Console.WriteLine(person1 == person2); // saída: Verdadeiro
 
-              Console.WriteLine(ReferenceEquals(person1, person2)); // output: False
+              Console.WriteLine(ReferenceEquals(person1, person2)); // saída: Falso
           }
           ```
+
+  * **Ponteiro:**
