@@ -498,11 +498,11 @@ ______________________
 
     * Igualdade de valor:
 
-      Para registros, a igualdade de valor significa que duas variáveis de um tipo de registro são iguais se os tipos corresponderem e todos os valores de propriedade e de campo corresponderem. Para outros tipos de referência, como classes, igualdade significa igualdade de referência. Ou seja, duas variáveis de um tipo de classe são iguais quando se referem ao mesmo objeto. Métodos e operadores que determinam a igualdade de duas instâncias de registro usam igualdade de valor.
+      * Para registros, a igualdade de valor significa que duas variáveis de um tipo de registro são iguais se os tipos corresponderem e todos os valores de propriedade e de campo corresponderem. Para outros tipos de referência, como classes, igualdade significa igualdade de referência. Ou seja, duas variáveis de um tipo de classe são iguais quando se referem ao mesmo objeto. Métodos e operadores que determinam a igualdade de duas instâncias de registro usam igualdade de valor.
 
     * Imutabilidade: 
 
-      Um tipo imutável é aquele que impede que você altere qualquer propriedade ou valor de campo de um objeto após ser instanciado. A imutabilidade pode ser útil quando você precisa que um tipo seja thread-safe ou que um código hash permaneça o mesmo em uma tabela de hash. Os registros fornecem sintaxe concisa para criar e trabalhar com tipos imutáveis.
+      * Um tipo imutável é aquele que impede que você altere qualquer propriedade ou valor de campo de um objeto após ser instanciado. A imutabilidade pode ser útil quando você precisa que um tipo seja thread-safe ou que um código hash permaneça o mesmo em uma tabela de hash. Os registros fornecem sintaxe concisa para criar e trabalhar com tipos imutáveis.
     
     * Diferenças: 
 
