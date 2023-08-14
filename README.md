@@ -655,12 +655,12 @@ ______________________
 
     * Verificação de Tipo em Tempo de Compilação:
 
-      Durante o processo de compilação, o compilador C# verifica se as operações e atribuições estão sendo feitas com tipos compatíveis. Ele garante que você não esteja tentando fazer operações inválidas, como adicionar um número a uma string ou atribuir um tipo incompatível a uma variável. Isso ajuda a detectar erros de tipo antes mesmo de executar o programa.
+      * Durante o processo de compilação, o compilador C# verifica se as operações e atribuições estão sendo feitas com tipos compatíveis. Ele garante que você não esteja tentando fazer operações inválidas, como adicionar um número a uma string ou atribuir um tipo incompatível a uma variável. Isso ajuda a detectar erros de tipo antes mesmo de executar o programa.
 
     * Verificação de Tipo em Tempo de Execução:
 
-      Além da verificação em tempo de compilação, C# também faz verificações de tipo em tempo de execução. Isso é especialmente relevante quando se trabalha com polimorfismo, herança e tipos dinâmicos. Durante a execução, o Common Language Runtime (CLR) do .NET verifica se as chamadas de método e as operações de tipo são válidas, evitando erros e exceções relacionados a tipos incompatíveis.
+      * Além da verificação em tempo de compilação, C# também faz verificações de tipo em tempo de execução. Isso é especialmente relevante quando se trabalha com polimorfismo, herança e tipos dinâmicos. Durante a execução, o Common Language Runtime (CLR) do .NET verifica se as chamadas de método e as operações de tipo são válidas, evitando erros e exceções relacionados a tipos incompatíveis.
 
     * Verificação de Tipo para Segurança:
 
-      A verificação de tipo em C# também desempenha um papel fundamental na segurança. A linguagem é projetada para prevenir operações inseguras que poderiam levar a problemas de acesso à memória ou corrupção de dados. Isso é especialmente importante para prevenir vulnerabilidades como buffer overflows e vazamentos de memória.
+      * A verificação de tipo em C# também desempenha um papel fundamental na segurança. A linguagem é projetada para prevenir operações inseguras que poderiam levar a problemas de acesso à memória ou corrupção de dados. Isso é especialmente importante para prevenir vulnerabilidades como buffer overflows e vazamentos de memória.
