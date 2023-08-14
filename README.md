@@ -602,6 +602,32 @@ ______________________
 
       * A expressão *myVariable denota a variável int encontrada no endereço contido em myVariable.
     
+    
+    * Operações:
+
+      * Em C# é possível realizar as seguintes ações com ponteiros:
+
+        * **Declaração de Ponteiro:**
+        Você pode declarar um ponteiro usando o tipo do valor que ele aponta, seguido pelo operador `*`.
+
+        * **Atribuição de Endereço:**
+        Você pode atribuir um endereço de memória a um ponteiro usando o operador de referência `&`.
+
+        * **Desreferenciamento:**
+        Para acessar o valor apontado por um ponteiro, você usa o operador de desreferenciamento `*`.
+
+        * **Atribuição de Valor:**
+        Você pode atribuir um valor a um endereço apontado por um ponteiro.
+
+        * **Aritmética de Ponteiro:**
+        Em C#, a aritmética de ponteiro é restrita a adição e subtração de valores inteiros constantes.
+
+        * **Comparação de Ponteiro:**
+        Você pode comparar ponteiros usando os operadores de comparação (==, !=, <, <=, >, >=).
+
+        * **Uso com Arrays:**
+        Ponteiros podem ser usados para percorrer arrays.
+
     * Operadores:
 
       | Operador/Instrução  |  Uso  |
