@@ -1,6 +1,0 @@
-Slides feitos:
-- Aula02
-- Aula03
-- Aula06
-- Aula07
-- Aula08
