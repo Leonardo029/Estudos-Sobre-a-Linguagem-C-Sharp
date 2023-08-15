@@ -1017,7 +1017,7 @@ ______________________
       
       * As principais instruções de seleção de múltiplos caminhos são:
 
-        * Instrução switch: permite você avaliar um valor e executar diferentes blocos de código com base em diferentes casos. Ela é frequentemente usada para tomar decisões entre várias opções.
+        * Instrução `switch`: permite você avaliar um valor e executar diferentes blocos de código com base em diferentes casos. Ela é frequentemente usada para tomar decisões entre várias opções.
           ```csharp
           switch (expressao)
           {
