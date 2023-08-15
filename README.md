@@ -731,4 +731,5 @@ ______________________
       | `&&` | AND Lógico|
       | `\|\|` | OR Lógico|
       | `? :` | Operador condicional ternário|
+      |=, +=, -=, *=, /=, %=, &=, |=, ^=, <<=, >>= | Atribuição|
       | `,` | Operador de vírgula, usado para separar expressões|
