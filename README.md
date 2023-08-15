@@ -860,3 +860,29 @@ ______________________
         ```
 
       * Neste exemplo, o operador `+` é sobrecarregado para permitir a adição de dois números complexos. Isso permite que você use o operador `+` com objetos da classe **NumeroComplexo**, o que torna o código mais legível e intuitivo.
+
+  * Conversões de tipos:
+
+    * As conversões de tipo permitem que você converta um valor de um tipo para outro. Existem diferentes tipos de conversões disponíveis, dependendo das relações entre os tipos envolvidos. Aqui estão os principais tipos e formas de conversões de tipo em C#:
+
+      * Conversões Implícitas (Widening/Alargamento):
+
+        As conversões implícitas são realizadas automaticamente pelo compilador quando não há perda de dados ou rógica na conversão. Geralmente ocorrem entre tipos que têm uma hierarquia de subtipos ou entre tipos compatíveis.
+
+        Exemplo:
+
+          ```csharp
+          int numInteiro = 10;
+          double numReal = numInteiro; // Conversão implícita de int para double
+          ```
+      
+      * Conversões Explícitas (Narrowing/Estreitamento):
+
+        As conversões explícitas exigem uma operação explícita, como o operador de cast `(tipo)expressao`, e podem resultar em perda de dados ou precisão. O compilador exige que você indique que está ciente do risco de perda de dados.
+
+        Exemplo:
+
+          ```csharp
+          double numReal = 10.5;
+          int numInteiro = (int)numReal; // Conversão explícita de double para int
+          ```      
