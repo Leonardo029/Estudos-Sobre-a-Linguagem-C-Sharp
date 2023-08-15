@@ -972,4 +972,83 @@ ______________________
 
       * É importante entender como a avaliação de curto-circuito funciona para escrever código eficiente e evitar chamadas desnecessárias a funções ou avaliações que não terão impacto no resultado final.
 
-##  :video_game: Estruturas de Controle
+##  🕹️ Estruturas de Controle
+
+  * Sentenças de Seleção:
+
+    * Intrução de Controle:
+
+      * O termo "expressão de controle" se refere à expressão booleana usada em instruções de controle de fluxo, como instruções `if`, `else if`, `while`, `do-while`, `for`, `switch`, entre outras.
+
+      * Uma expressão de controle é uma condição que determina se um bloco de código será executado ou quantas vezes ele será executado. Por exemplo, em uma instrução if, a expressão de controle determina se o bloco de código dentro do if será executado com base na avaliação da condição. Em um loop while, a expressão de controle decide se o loop continuará a executar ou se será encerrado.
+
+    * Seleção de dois caminhos:
+
+      * Em C#, a principal instrução de seleção de dois caminhos é a estrutura `if - else`. Essa estrutura permite que você execute diferentes blocos de código com base em uma condição. Além disso, você pode usar a instrução if sozinha para criar uma seleção de dois caminhos sem um bloco de código else. Aqui estão os detalhes sobre essas instruções:
+
+        * Instrução `if`: permite que você execute um bloco de código se uma condição for verdadeira.
+          ```csharp
+          if (condicao)
+          {
+              // Bloco de código se a condição for verdadeira
+          }
+          ```
+        
+        *  Instrução `if - else`: permite executar um bloco de código se a condição for verdadeira e um bloco de código alternativo (dentro do else) se a condição for falsa.
+          ```csharp
+          if (condicao)
+          {
+              // Bloco de código se a condição for verdadeira
+          }
+          else
+          {
+              // Bloco de código se a condição for falsa
+          }
+          ```
+
+
+    * Seleção múltipla:
+
+      * Em C#, as instruções de seleção de múltiplos caminhos permitem escolher entre várias opções de execução com base em uma expressão ou valor.
+      
+      * As principais instruções de seleção de múltiplos caminhos são:
+
+        * Instrução switch: permite você avaliar um valor e executar diferentes blocos de código com base em diferentes casos. Ela é frequentemente usada para tomar decisões entre várias opções.
+          ```csharp
+          switch (expressao)
+          {
+              case valor1:
+                  // Bloco de código para caso valor1
+                  break;
+              case valor2:
+                  // Bloco de código para caso valor2
+                  break;
+              default:
+                  // Bloco de código para caso padrão (se nenhum caso corresponder)
+                  break;
+          }
+          ```
+
+        * Instrução `if - else if - else`: você pode usar várias instruções `else if` após a instrução `if` para verificar várias condições sequencialmente. O bloco de código dentro do primeiro bloco `if` ou `else if` que atende à condição será executado. O bloco `else` opcional será executado se nenhuma das condições anteriores for verdadeira.
+          ```csharp
+          if (condicao1)
+          {
+              // Bloco de código se a condição1 for verdadeira
+          }
+          else if (condicao2)
+          {
+              // Bloco de código se a condição2 for verdadeira
+          }
+          else
+          {
+              // Bloco de código se nenhuma das condições anteriores for verdadeira
+          }
+          ```
+      
+        * Operador Ternário (? :): é uma forma concisa de fazer seleções entre duas opções com base em uma expressão.
+          ```csharp
+          int idade = 18;
+          string categoria = (idade >= 18) ? "Adulto" : "Menor";
+          ```
+        
+      * Essas instruções de seleção de múltiplos caminhos são usadas para fazer escolhas entre várias opções de execução. Dependendo da complexidade das suas condições e do número de opções, você pode escolher a instrução que melhor atenda às suas necessidades.
