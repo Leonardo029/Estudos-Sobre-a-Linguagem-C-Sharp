@@ -801,7 +801,7 @@ ______________________
         var valorFinal = expressao ?? valorPadrao;
         ```
 
-      * **Operador `&&` e `||` (Operadores lógicos):*v Os operadores lógicos && (AND) e || (OR) são usados para avaliar expressões condicionais compostas.
+      * **Operador `&&` e `||` (Operadores lógicos):** Os operadores lógicos && (AND) e || (OR) são usados para avaliar expressões condicionais compostas.
         ```csharp
         if (condicao1 && condicao2)
         {
