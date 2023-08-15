@@ -681,27 +681,27 @@ ______________________
     *  **Operadores Binários:** operam em dois operandos.
       * Exemplos:
 
-        `+` (adição)
-        `-` (subtração)
-        `*` (multiplicação)
-        `/` (divisão)
-        `%` (módulo)
-        `==` (igual a)
-        `!=` (diferente de)
-        `<` (menor que)
-        `>` (maior que)
-        `<=` (menor ou igual a)
-        `>=` (maior ou igual a)
-        `&` (AND bit a bit)
-        `|` (OR bit a bit)
-        `^` (XOR bit a bit)
-        `&&` (AND lógico)
-        `||` (OR lógico)
-        `<<` (deslocamento de bits à esquerda)
-        `>>` (deslocamento de bits à direita)
+        * `+` (adição)
+        * `-` (subtração)
+        * `*` (multiplicação)
+        * `/` (divisão)
+        * `%` (módulo)
+        * `==` (igual a)
+        * `!=` (diferente de)
+        * `<` (menor que)
+        * `>` (maior que)
+        * `<=` (menor ou igual a)
+        * `>=` (maior ou igual a)
+        * `&` (AND bit a bit)
+        * `|` (OR bit a bit)
+        * `^` (XOR bit a bit)
+        * `&&` (AND lógico)
+        * `||` (OR lógico)
+        * `<<` (deslocamento de bits à esquerda)
+        * `>>` (deslocamento de bits à direita)
 
     *  **Operador Ternário:** só existe um operador ternário em C# e ele é usado para criar expressões condicionais.
 
       * Exemplo:
-      
-        `?` : (operador condicional ternário)
+
+        * `?` : (operador condicional ternário)
