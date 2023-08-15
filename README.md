@@ -933,4 +933,19 @@ ______________________
           {
               // Conversão bem-sucedida
           }
-          ```                 
+          ```
+
+  * Expressões relacionais:
+
+    * As expressões relacionais em C# são usadas para comparar valores e determinar as relações entre eles. Elas retornam um valor booleano (true ou false) com base na comparação dos operandos.
+
+    * Operadores relacionais:
+
+      * `==` (Igual a): verifica se dois valores são iguais.
+      * `!=` (Diferente de): verifica se dois valores são diferentes.
+      * `<` (Menor que): verifica se o valor da esquerda é menor que o valor da direita.
+      * `>` (Maior que): verifica se o valor da esquerda é maior que o valor da direita.
+      * `<=` (Menor ou igual a): verifica se o valor da esquerda é menor ou igual ao valor da direita.
+      * `>=` (Maior ou igual a): verifica se o valor da esquerda é maior ou igual ao valor da direita.
+
+        ** Essas expressões relacionais são usadas para comparar valores numéricos, caracteres, strings e outros tipos que suportam comparações. O resultado das expressões relacionais é sempre um valor booleano, indicando se a relação entre os operandos é verdadeira ou falsa. Elas são frequentemente usadas em estruturas de controle condicional, como as declarações if, else if e while, para tomar decisões com base nas comparações dos valores.         
