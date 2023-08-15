@@ -733,3 +733,28 @@ ______________________
       | `? :` | Operador condicional ternário| |
       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição| |
       | `,` | Operador de vírgula, usado para separar expressões| _**MENOR**_ |
+
+  * Associatividade:
+
+    * A associatividade dos operadores em C# determina a ordem em que operadores do mesmo nível de precedência são avaliados quando aparecem em sequência em uma expressão. Em C#, a maioria dos operadores binários tem associatividade da esquerda para a direita, o que significa que eles são avaliados da esquerda para a direita quando aparecem em sequência.
+
+    * No entanto, existem alguns operadores com associatividade da direita para a esquerda. Um exemplo notável é o operador de atribuição `=`. Isso significa que expressões como `a = b = c` são avaliadas da direita para a esquerda, atribuindo o valor de `c` a `b` primeiro e, em seguida, atribuindo o valor de `b` a `a`.
+
+    * Aqui estão alguns exemplos para ilustrar a associatividade dos operadores:
+
+      ```csharp
+      int a = 10, b = 5, c = 2;
+
+      // Associatividade da esquerda para a direita
+      int result1 = a + b + c;  // (a + b) + c = 10 + 5 + 2 = 17
+      int result2 = a * b * c;  // (a * b) * c = 10 * 5 * 2 = 100
+      int result3 = a && b && c;  // (a && b) && c = (true && true) && 2 = 2 (resultado é o valor do último operando)
+
+      // Associatividade da direita para a esquerda
+      int result4 = a = b = c;  // a = (b = c) = 2; b = 2, a = 2
+
+      // Expressões mistas
+      int result5 = a + b * c;  // a + (b * c) = 10 + (5 * 2) = 20
+      ```
+    
+    * Lembre-se de que, embora a maioria dos operadores binários tenha associatividade da esquerda para a direita, é uma boa prática usar parênteses para controlar explicitamente a ordem de avaliação quando necessário. Isso ajuda a evitar ambiguidades e a garantir que as expressões sejam avaliadas conforme o esperado.
