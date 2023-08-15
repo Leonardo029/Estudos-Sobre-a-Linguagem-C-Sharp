@@ -714,22 +714,22 @@ ______________________
 
     * A precedência de operadores em C# determina a ordem em que as operações são avaliadas em uma expressão. É importante entender a precedência dos operadores para garantir que as expressões sejam avaliadas da maneira correta. Aqui está uma lista dos operadores em C# ordenados por precedência, do mais alto ao mais baixo:
 
-      | Operador |  Significado  |
-      | ----------- | ----------- |
-      | `()`, `[]`, `->`, `.` | Acesso a membros|
-      | `++`, `--` | Incremento e Decremento|
-      | `+`, `-` | Operadores unários de sinal|
-      | `!`, `~` | Operadores de negação|
-      | `*`, `/`, `%` | Multiplicação, Divisão, Módulo|
-      | `+`, `-` | Adição, Subtração|
-      | `<<`, `>>` | Deslocamento de bits|
-      | `<`, `<=`, `>`, `>=` | Operadores de comparação|
-      | `==`, `!=` | Igualdade e Desigualdade|
-      | `&` | AND Bitwise|
-      | `^` | XOR Bitwise|
-      | `\|` | OR Bitwise|
-      | `&&` | AND Lógico|
-      | `\|\|` | OR Lógico|
-      | `? :` | Operador condicional ternário|
-      | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição|
-      | `,` | Operador de vírgula, usado para separar expressões|
+      | Operador |  Significado  | Precedência|
+      | ----------- | ----------- | ----------- | 
+      | `()`, `[]`, `->`, `.` | Acesso a membros| + |
+      | `++`, `--` | Incremento e Decremento| |
+      | `+`, `-` | Operadores unários de sinal| |
+      | `!`, `~` | Operadores de negação| |
+      | `*`, `/`, `%` | Multiplicação, Divisão, Módulo| |
+      | `+`, `-` | Adição, Subtração| |
+      | `<<`, `>>` | Deslocamento de bits| |
+      | `<`, `<=`, `>`, `>=` | Operadores de comparação| |
+      | `==`, `!=` | Igualdade e Desigualdade| |
+      | `&` | AND Bitwise| |
+      | `^` | XOR Bitwise| |
+      | `\|` | OR Bitwise| |
+      | `&&` | AND Lógico| |
+      | `\|\|` | OR Lógico| |
+      | `? :` | Operador condicional ternário| |
+      | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição| |
+      | `,` | Operador de vírgula, usado para separar expressões| - |
