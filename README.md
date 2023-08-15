@@ -727,9 +727,9 @@ ______________________
       | `==`, `!=` | Igualdade e Desigualdade|
       | `&` | AND Bitwise|
       | `^` | XOR Bitwise|
-      | `||` | OR Bitwise|
+      | `\|` | OR Bitwise|
       | `&&` | AND Lógico|
-      | || | OR Lógico|
+      | `\||` | OR Lógico|
       | `? :` | Operador condicional ternário|
       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `|=`, `^=`, `<<=`, `>>=` | Atribuição|
       | `,` | Operador de vírgula, usado para separar expressões|
