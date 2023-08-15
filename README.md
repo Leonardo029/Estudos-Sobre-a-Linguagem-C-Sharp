@@ -956,16 +956,18 @@ ______________________
       * `||` (OR Lógico): Retorna true se pelo menos uma das expressões for true.
       * `!` (NOT Lógico): Inverte o valor da expressão, transformando true em false e vice-versa.
 
-    * A avaliação de curto-circuito é uma característica presente em C# (e em muitas outras linguagens de programação) nos operadores lógicos && (AND) e || (OR). Isso significa que, em algumas situações, a avaliação das expressões envolvidas nos operadores lógicos é interrompida assim que o resultado final for determinado, sem a necessidade de avaliar todas as expressões.
+    * Curto-circuito:
 
-      * AND Lógico (`&&`):
+      * A avaliação de curto-circuito é uma característica presente em C# (e em muitas outras linguagens de programação) nos operadores lógicos `&&` (AND) e `||` (OR). Isso significa que, em algumas situações, a avaliação das expressões envolvidas nos operadores lógicos é interrompida assim que o resultado final for determinado, sem a necessidade de avaliar todas as expressões.
 
-        No operador &&, se a primeira expressão for avaliada como false, o resultado final já é garantido como false, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de falsidade.
+        * AND Lógico (`&&`):
 
-      * OR Lógico (`||`):
+          No operador &&, se a primeira expressão for avaliada como false, o resultado final já é garantido como false, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de falsidade.
 
-        No operador ||, se a primeira expressão for avaliada como true, o resultado final já é garantido como true, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de verdade.
-    
-    * O uso da avaliação de curto-circuito pode ser muito útil em situações em que a avaliação completa das expressões não é necessária e pode até economizar tempo de processamento, especialmente quando se lida com expressões que envolvem funções custosas em termos de tempo de execução.
+        * OR Lógico (`||`):
 
-    * É importante entender como a avaliação de curto-circuito funciona para escrever código eficiente e evitar chamadas desnecessárias a funções ou avaliações que não terão impacto no resultado final.
+          No operador ||, se a primeira expressão for avaliada como true, o resultado final já é garantido como true, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de verdade.
+      
+      * O uso da avaliação de curto-circuito pode ser muito útil em situações em que a avaliação completa das expressões não é necessária e pode até economizar tempo de processamento, especialmente quando se lida com expressões que envolvem funções custosas em termos de tempo de execução.
+
+      * É importante entender como a avaliação de curto-circuito funciona para escrever código eficiente e evitar chamadas desnecessárias a funções ou avaliações que não terão impacto no resultado final.
