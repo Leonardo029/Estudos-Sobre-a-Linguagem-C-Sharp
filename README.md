@@ -670,3 +670,38 @@ ______________________
     * A tipagem forte em C# significa que os tipos de dados são rigorosamente aplicados e verificados durante o desenvolvimento e a execução do programa. Isso implica que operações inválidas entre tipos diferentes não são permitidas, e todas as conversões de tipo devem ser feitas explicitamente. Essa abordagem ajuda a prevenir erros de tipo e promove a segurança e integridade do código.
 
 ##  :triangular_ruler: Expressões e Sentenças de Atribuição
+
+  * Operadores: 
+
+    * **Operadores Unários:** operam em um único operando.
+      * Exemplos:
+
+        `+` (positivo), `-` (negativo), `!` (negação lógica), `~` (complemento bit a bit), `++` (incremento), `--` (decremento)
+
+    *  **Operadores Binários:** operam em dois operandos.
+      * Exemplos:
+
+        `+` (adição)
+        `-` (subtração)
+        `*` (multiplicação)
+        `/` (divisão)
+        `%` (módulo)
+        `==` (igual a)
+        `!=` (diferente de)
+        `<` (menor que)
+        `>` (maior que)
+        `<=` (menor ou igual a)
+        `>=` (maior ou igual a)
+        `&` (AND bit a bit)
+        `|` (OR bit a bit)
+        `^` (XOR bit a bit)
+        `&&` (AND lógico)
+        `||` (OR lógico)
+        `<<` (deslocamento de bits à esquerda)
+        `>>` (deslocamento de bits à direita)
+
+    *  **Operador Ternário:** só existe um operador ternário em C# e ele é usado para criar expressões condicionais.
+
+      * Exemplo:
+      
+        `?` : (operador condicional ternário)
