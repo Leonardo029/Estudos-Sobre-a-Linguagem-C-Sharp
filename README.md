@@ -953,7 +953,7 @@ ______________________
     * Operadores booleanos:
 
       * `&&` (AND Lógico): Retorna true se ambas as expressões forem true.
-      * `\|\|` (OR Lógico): Retorna true se pelo menos uma das expressões for true.
+      * `||` (OR Lógico): Retorna true se pelo menos uma das expressões for true.
       * `!` (NOT Lógico): Inverte o valor da expressão, transformando true em false e vice-versa.
 
     * A avaliação de curto-circuito é uma característica presente em C# (e em muitas outras linguagens de programação) nos operadores lógicos && (AND) e || (OR). Isso significa que, em algumas situações, a avaliação das expressões envolvidas nos operadores lógicos é interrompida assim que o resultado final for determinado, sem a necessidade de avaliar todas as expressões.
@@ -962,7 +962,7 @@ ______________________
 
         No operador &&, se a primeira expressão for avaliada como false, o resultado final já é garantido como false, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de falsidade.
 
-      * OR Lógico (`\|\|`):
+      * OR Lógico (`||`):
 
         No operador ||, se a primeira expressão for avaliada como true, o resultado final já é garantido como true, independentemente das outras expressões. Nesse caso, as expressões subsequentes não são avaliadas, pois não influenciarão o resultado final. Isso é conhecido como curto-circuito de verdade.
     
