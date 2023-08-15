@@ -729,7 +729,7 @@ ______________________
       | `^` | XOR Bitwise|
       | `\|` | OR Bitwise|
       | `&&` | AND Lógico|
-      | `\\||` | OR Lógico|
+      | `\|\|` | OR Lógico|
       | `? :` | Operador condicional ternário|
       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `|=`, `^=`, `<<=`, `>>=` | Atribuição|
       | `,` | Operador de vírgula, usado para separar expressões|
