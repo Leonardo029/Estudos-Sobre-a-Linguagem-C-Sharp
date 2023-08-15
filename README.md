@@ -826,37 +826,37 @@ ______________________
 
       * Aqui está um exemplo de como você pode sobrecarregar o operador `+` para uma classe personalizada chamada NumeroComplexo:
 
-      ```csharp
-      public class NumeroComplexo
-      {
-          public double Real { get; set; }
-          public double Imaginario { get; set; }
+        ```csharp
+        public class NumeroComplexo
+        {
+            public double Real { get; set; }
+            public double Imaginario { get; set; }
 
-          public NumeroComplexo(double real, double imaginario)
-          {
-              Real = real;
-              Imaginario = imaginario;
-          }
+            public NumeroComplexo(double real, double imaginario)
+            {
+                Real = real;
+                Imaginario = imaginario;
+            }
 
-          // Sobrecarga do operador +
-          public static NumeroComplexo operator +(NumeroComplexo c1, NumeroComplexo c2)
-          {
-              return new NumeroComplexo(c1.Real + c2.Real, c1.Imaginario + c2.Imaginario);
-          }
-      }
+            // Sobrecarga do operador +
+            public static NumeroComplexo operator +(NumeroComplexo c1, NumeroComplexo c2)
+            {
+                return new NumeroComplexo(c1.Real + c2.Real, c1.Imaginario + c2.Imaginario);
+            }
+        }
 
-      class Program
-      {
-          static void Main()
-          {
-              NumeroComplexo complexo1 = new NumeroComplexo(2, 3);
-              NumeroComplexo complexo2 = new NumeroComplexo(4, 5);
+        class Program
+        {
+            static void Main()
+            {
+                NumeroComplexo complexo1 = new NumeroComplexo(2, 3);
+                NumeroComplexo complexo2 = new NumeroComplexo(4, 5);
 
-              NumeroComplexo soma = complexo1 + complexo2;
+                NumeroComplexo soma = complexo1 + complexo2;
 
-              Console.WriteLine($"Parte Real: {soma.Real}, Parte Imaginária: {soma.Imaginario}");
-          }
-      }
-      ```
+                Console.WriteLine($"Parte Real: {soma.Real}, Parte Imaginária: {soma.Imaginario}");
+            }
+        }
+        ```
 
       * Neste exemplo, o operador `+` é sobrecarregado para permitir a adição de dois números complexos. Isso permite que você use o operador `+` com objetos da classe **NumeroComplexo**, o que torna o código mais legível e intuitivo.
