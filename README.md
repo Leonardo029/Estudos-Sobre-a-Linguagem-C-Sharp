@@ -999,16 +999,16 @@ ______________________
           ```
         
         *  Instrução `if - else`: permite executar um bloco de código se a condição for verdadeira e um bloco de código alternativo (dentro do else) se a condição for falsa.
-          ```csharp
-          if (condicao)
-          {
-              // Bloco de código se a condição for verdadeira
-          }
-          else
-          {
-              // Bloco de código se a condição for falsa
-          }
-          ```
+            ```csharp
+            if (condicao)
+            {
+                // Bloco de código se a condição for verdadeira
+            }
+            else
+            {
+                // Bloco de código se a condição for falsa
+            }
+            ```
 
 
     * Seleção múltipla:
