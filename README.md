@@ -815,3 +815,48 @@ ______________________
         ```
       
       * Essas são algumas das principais expressões condicionais em C#. Elas são usadas para controlar o fluxo de execução do programa com base em condições booleanas e para tomar decisões dinâmicas no código.
+
+  * Sobrecarga de operadores:
+
+    * A sobrecarga de operadores em C# permite que você defina como os operadores padrão (como `+`, `-`, `*`, `/`, etc.) devem se comportar para tipos personalizados (ou seja, classes ou structs que você cria). Isso permite que você use operadores com objetos de maneira mais intuitiva, semelhante aos tipos nativos da linguagem.
+
+    * Para sobrecarregar um operador em C#, você precisa definir métodos especiais em sua classe ou struct, usando o nome do operador com a palavra-chave operator como um modificador. 
+
+    * Exemplo:
+
+      * Aqui está um exemplo de como você pode sobrecarregar o operador `+` para uma classe personalizada chamada NumeroComplexo:
+
+      ```csharp
+      public class NumeroComplexo
+      {
+          public double Real { get; set; }
+          public double Imaginario { get; set; }
+
+          public NumeroComplexo(double real, double imaginario)
+          {
+              Real = real;
+              Imaginario = imaginario;
+          }
+
+          // Sobrecarga do operador +
+          public static NumeroComplexo operator +(NumeroComplexo c1, NumeroComplexo c2)
+          {
+              return new NumeroComplexo(c1.Real + c2.Real, c1.Imaginario + c2.Imaginario);
+          }
+      }
+
+      class Program
+      {
+          static void Main()
+          {
+              NumeroComplexo complexo1 = new NumeroComplexo(2, 3);
+              NumeroComplexo complexo2 = new NumeroComplexo(4, 5);
+
+              NumeroComplexo soma = complexo1 + complexo2;
+
+              Console.WriteLine($"Parte Real: {soma.Real}, Parte Imaginária: {soma.Imaginario}");
+          }
+      }
+      ```
+
+      * Neste exemplo, o operador `+` é sobrecarregado para permitir a adição de dois números complexos. Isso permite que você use o operador `+` com objetos da classe **NumeroComplexo**, o que torna o código mais legível e intuitivo.
