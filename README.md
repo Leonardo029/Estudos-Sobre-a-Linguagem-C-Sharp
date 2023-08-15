@@ -668,3 +668,5 @@ ______________________
   * Tipagem Forte (Strong Typing):
 
     * A tipagem forte em C# significa que os tipos de dados são rigorosamente aplicados e verificados durante o desenvolvimento e a execução do programa. Isso implica que operações inválidas entre tipos diferentes não são permitidas, e todas as conversões de tipo devem ser feitas explicitamente. Essa abordagem ajuda a prevenir erros de tipo e promove a segurança e integridade do código.
+
+##  :triangular_ruler: Expressões e Sentenças de Atribuição
