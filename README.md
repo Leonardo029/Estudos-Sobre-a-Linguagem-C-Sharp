@@ -972,4 +972,4 @@ ______________________
 
       * É importante entender como a avaliação de curto-circuito funciona para escrever código eficiente e evitar chamadas desnecessárias a funções ou avaliações que não terão impacto no resultado final.
 
-##  🕹️ Estruturas de Controle
+##  :video_game: Estruturas de Controle
