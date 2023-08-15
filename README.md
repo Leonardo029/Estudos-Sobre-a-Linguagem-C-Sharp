@@ -716,7 +716,7 @@ ______________________
 
       | Operador |  Significado  | Precedência|
       | ----------- | ----------- | ----------- | 
-      | `()`, `[]`, `->`, `.` | Acesso a membros| **MAIOR** |
+      | `()`, `[]`, `->`, `.` | Acesso a membros| _**MAIOR**_ |
       | `++`, `--` | Incremento e Decremento| |
       | `+`, `-` | Operadores unários de sinal| |
       | `!`, `~` | Operadores de negação| |
@@ -732,4 +732,4 @@ ______________________
       | `\|\|` | OR Lógico| |
       | `? :` | Operador condicional ternário| |
       | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição| |
-      | `,` | Operador de vírgula, usado para separar expressões| **MENOR** |
+      | `,` | Operador de vírgula, usado para separar expressões| _**MENOR**_ |
