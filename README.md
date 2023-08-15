@@ -1049,7 +1049,7 @@ ______________________
           }
           ```
       
-        * Operador Ternário (? :): é uma forma concisa de fazer seleções entre duas opções com base em uma expressão.
+        * Operador Ternário (`? :`): é uma forma concisa de fazer seleções entre duas opções com base em uma expressão.
           ```csharp
           int idade = 18;
           string categoria = (idade >= 18) ? "Adulto" : "Menor";
@@ -1085,14 +1085,25 @@ ______________________
         }
         ```
 
-      * Loop `foreach`: o loop `foreach` é usado para iterar sobre elementos de uma coleção (como arrays ou listas).
-        ```csharp
-        foreach (tipo elemento in colecao)
-        {
-            // Bloco de código para processar cada elemento
-        }
-        ```
-
       * Loop `goto`: embora não seja recomendado devido à sua complexidade e possibilidade de causar código difícil de entender, o `goto` é uma instrução que pode ser usada para criar loops, mas é menos comum e geralmente evitada.
 
     * Lembre-se de que, ao usar sentenças iterativas, é importante garantir que a condição de término seja alcançada para evitar loops infinitos. Cada tipo de loop é adequado para diferentes situações, e a escolha depende das necessidades específicas do seu código.
+  
+  * Iteração Baseada em Estrutura de Dados:
+
+    * C# oferece a capacidade de realizar iterações baseadas em estruturas de dados usando a instrução `foreach`. A instrução `foreach` é uma forma simplificada de percorrer os elementos de uma coleção, como arrays, listas, dicionários e outras classes que implementam a interface IEnumerable.
+
+    * A iteração baseada em estrutura de dados usando `foreach` é uma maneira conveniente de percorrer todos os elementos de uma coleção sem a necessidade de controlar explicitamente um contador ou um índice.
+      ```csharp
+      foreach (tipo elemento in colecao)
+      {
+          // Bloco de código para processar cada elemento
+      }
+      ```
+    
+    * Onde:
+
+      * "tipo" é o tipo de dados dos elementos na coleção.
+      * "elemento" é uma variável que representa o elemento atual da iteração.
+      * "colecao" é a coleção de elementos que você deseja percorrer.
+      * A instrução `foreach` automaticamente percorre cada elemento da coleção e executa o bloco de código associado para cada elemento, atribuindo o * valor do elemento à variável "elemento".
