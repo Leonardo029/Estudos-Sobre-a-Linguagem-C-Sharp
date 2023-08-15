@@ -676,9 +676,14 @@ ______________________
     * **Operadores Unários:** operam em um único operando.
       * Exemplos:
 
-        `+` (positivo), `-` (negativo), `!` (negação lógica), `~` (complemento bit a bit), `++` (incremento), `--` (decremento)
+        * `+` (positivo)
+        * `-` (negativo)
+        * `!` (negação lógica)
+        * `~` (complemento bit a bit)
+        * `++` (incremento)
+        * `--` (decremento)
 
-    *  **Operadores Binários:** operam em dois operandos.
+    * **Operadores Binários:** operam em dois operandos.
       * Exemplos:
 
         * `+` (adição)
@@ -700,8 +705,7 @@ ______________________
         * `<<` (deslocamento de bits à esquerda)
         * `>>` (deslocamento de bits à direita)
 
-    *  **Operador Ternário:** só existe um operador ternário em C# e ele é usado para criar expressões condicionais.
-
+    * **Operador Ternário:** só existe um operador ternário em C# e ele é usado para criar expressões condicionais.
       * Exemplo:
 
         * `?` : (operador condicional ternário)
