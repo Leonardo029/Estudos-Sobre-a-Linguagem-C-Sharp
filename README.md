@@ -976,13 +976,15 @@ ______________________
 
   * Estruturas de controle são blocos de construção fundamentais em programação que permitem que os programas tomem decisões e controlem o fluxo de execução. Elas determinam a ordem em que as instruções são executadas, permitindo que você crie lógica condicional, itere sobre conjuntos de dados e execute ações específicas com base em condições ou critérios predefinidos. As estruturas de controle são essenciais para criar programas funcionais e adaptáveis, permitindo que você modele a lógica do seu software de acordo com as necessidades específicas do problema que está resolvendo.
 
+  * Expressão de Controle:
+
+    * O termo "expressão de controle" se refere à expressão booleana usada em instruções de controle de fluxo, como instruções `if`, `else if`, `while`, `do-while`, `for`, `switch`, entre outras.
+
+    * Uma expressão de controle é uma condição que determina se um bloco de código será executado ou quantas vezes ele será executado. Por exemplo, em uma instrução if, a expressão de controle determina se o bloco de código dentro do if será executado com base na avaliação da condição. Em um loop while, a expressão de controle decide se o loop continuará a executar ou se será encerrado.
+
   * Sentenças de Seleção:
 
-    * Expressão de Controle:
-
-      * O termo "expressão de controle" se refere à expressão booleana usada em instruções de controle de fluxo, como instruções `if`, `else if`, `while`, `do-while`, `for`, `switch`, entre outras.
-
-      * Uma expressão de controle é uma condição que determina se um bloco de código será executado ou quantas vezes ele será executado. Por exemplo, em uma instrução if, a expressão de controle determina se o bloco de código dentro do if será executado com base na avaliação da condição. Em um loop while, a expressão de controle decide se o loop continuará a executar ou se será encerrado.
+    * Sentenças de seleção são estruturas fundamentais na programação que permitem que um programa tome decisões com base em condições. Elas permitem que diferentes blocos de código sejam executados ou pulados com base na avaliação de uma expressão booleana. As sentenças de seleção são usadas para criar lógica condicional, permitindo que um programa escolha entre diferentes caminhos de execução com base nas circunstâncias ou valores presentes no momento da avaliação da condição.
 
     * Seleção de dois caminhos:
 
@@ -1054,3 +1056,43 @@ ______________________
           ```
         
       * Essas instruções de seleção de múltiplos caminhos são usadas para fazer escolhas entre várias opções de execução. Dependendo da complexidade das suas condições e do número de opções, você pode escolher a instrução que melhor atenda às suas necessidades.
+
+  * Sentenças Iterativas:
+
+    * As sentenças iterativas, também conhecidas como estruturas de repetição ou loops, são usadas em C# para repetir um bloco de código várias vezes, com base em uma condição ou contagem.
+
+      * Loop `while`: o loop `while` executa um bloco de código enquanto uma condição for verdadeira. A condição é verificada antes da execução do bloco.
+        ```csharp
+        while (condicao)
+        {
+            // Bloco de código a ser repetido enquanto a condição for verdadeira
+        }
+        ```
+
+      * Loop `do - while`: o loop `do - while` é semelhante ao `while`, mas a condição é verificada após a execução do bloco. Isso garante que o bloco seja executado pelo menos uma vez.
+        ```csharp
+        do
+        {
+            // Bloco de código a ser repetido
+        } while (condicao);
+        ```
+
+      * Loop `for`: o loop `for` é usado para executar um bloco de código repetidamente, especificando uma inicialização, uma condição de continuação e uma iteração.
+        ```csharp
+        for (inicializacao; condicao; iteracao)
+        {
+            // Bloco de código a ser repetido
+        }
+        ```
+
+      * Loop `foreach`: o loop `foreach` é usado para iterar sobre elementos de uma coleção (como arrays ou listas).
+        ```csharp
+        foreach (tipo elemento in colecao)
+        {
+            // Bloco de código para processar cada elemento
+        }
+        ```
+
+      * Loop `goto`: embora não seja recomendado devido à sua complexidade e possibilidade de causar código difícil de entender, o `goto` é uma instrução que pode ser usada para criar loops, mas é menos comum e geralmente evitada.
+
+    * Lembre-se de que, ao usar sentenças iterativas, é importante garantir que a condição de término seja alcançada para evitar loops infinitos. Cada tipo de loop é adequado para diferentes situações, e a escolha depende das necessidades específicas do seu código.
