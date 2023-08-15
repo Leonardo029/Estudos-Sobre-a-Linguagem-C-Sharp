@@ -758,3 +758,60 @@ ______________________
       ```
     
     * Lembre-se de que, embora a maioria dos operadores binários tenha associatividade da esquerda para a direita, é uma boa prática usar parênteses para controlar explicitamente a ordem de avaliação quando necessário. Isso ajuda a evitar ambiguidades e a garantir que as expressões sejam avaliadas conforme o esperado.
+
+  * Expressões Condicionais:
+
+    * Em C#, as expressões condicionais permitem que você execute diferentes blocos de código ou avalie diferentes valores com base em condições booleanas. As principais expressões condicionais em C# são:
+
+    * Declaração if: A declaração if é usada para executar um bloco de código se uma condição for verdadeira. Você também pode usar a cláusula else para especificar um bloco de código a ser executado quando a condição for falsa.
+      ```csharp
+      if (condicao)
+      {
+          // Bloco de código a ser executado se a condição for verdadeira
+      }
+      else
+      {
+          // Bloco de código a ser executado se a condição for falsa
+      }
+      ```
+
+    * Expressão ternária ? :: A expressão ternária é uma forma concisa de retornar um valor com base em uma condição.
+      ```csharp
+      var resultado = (condicao) ? valorSeVerdadeiro : valorSeFalso;
+      ```
+
+    * Declaração switch: A declaração switch é usada para selecionar um bloco de código a ser executado com base no valor de uma expressão.
+      ```csharp
+      switch (expressao)
+      {
+          case valor1:
+              // Bloco de código para valor1
+              break;
+          case valor2:
+              // Bloco de código para valor2
+              break;
+          default:
+              // Bloco de código para valores não correspondentes
+              break;
+      }
+      ```
+
+    * Operador ?? (Operador de coalescência nula): O operador de coalescência nula é usado para fornecer um valor padrão caso uma expressão seja nula.
+      ```csharp
+      var valorFinal = expressao ?? valorPadrao;
+      ```
+
+    * Operador && e || (Operadores lógicos): Os operadores lógicos && (AND) e || (OR) são usados para avaliar expressões condicionais compostas.
+      ```csharp
+      if (condicao1 && condicao2)
+      {
+          // Executado se ambas as condições forem verdadeiras
+      }
+
+      if (condicao1 || condicao2)
+      {
+          // Executado se pelo menos uma das condições for verdadeira
+      }
+      ```
+    
+    * Essas são algumas das principais expressões condicionais em C#. Elas são usadas para controlar o fluxo de execução do programa com base em condições booleanas e para tomar decisões dinâmicas no código.
