@@ -863,7 +863,7 @@ ______________________
 
   * Conversões de tipos:
 
-    * As conversões de tipo permitem que você converta um valor de um tipo para outro. Existem diferentes tipos de conversões disponíveis, dependendo das relações entre os tipos envolvidos. Aqui estão os principais tipos e formas de conversões de tipo em C#:
+    * As conversões de tipo permitem que você converta um valor de um tipo para outro. Existem diferentes tipos de conversões disponíveis, dependendo das relações entre os tipos envolvidos. Estes são os principais tipos e formas de conversões de tipo em C#:
 
       * Conversões Implícitas (Widening/Alargamento):
 
@@ -885,4 +885,52 @@ ______________________
           ```csharp
           double numReal = 10.5;
           int numInteiro = (int)numReal; // Conversão explícita de double para int
-          ```      
+          ```
+
+      * Conversões com Métodos de Conversão:
+
+        Você pode fornecer métodos especiais de conversão em suas classes ou structs usando os métodos de conversão `implicit` (implícito) ou `explicit` (explícito). Isso permite que você personalize como seus tipos são convertidos.
+
+        Exemplo:
+
+          ```csharp
+          public class MinhaClasse
+          {
+              public int Valor { get; set; }
+
+              public static implicit operator double(MinhaClasse mc)
+              {
+                  return mc.Valor * 1.5;
+              }
+          }
+
+          // Uso da conversão personalizada
+          MinhaClasse instancia = new MinhaClasse { Valor = 10 };
+          double valorReal = instancia; // Usa o método de conversão implícita
+          ```
+
+      * Conversões com `Convert` e `Convert.ToXxx`:
+
+        A classe `Convert` fornece métodos estáticos para realizar conversões entre tipos numéricos. Além disso, muitos tipos primitivos têm métodos estáticos `ToXxx` (por exemplo, ToInt32, ToDouble) para realizar conversões.
+
+        Exemplo:
+
+          ```csharp
+          string texto = "123";
+          int numero = Convert.ToInt32(texto);
+          ```
+
+      * Conversões com `Parse` e `TryParse`:
+
+        Muitos tipos têm métodos de instância `Parse` e `TryParse` para converter strings em valores desse tipo.
+
+        Exemplo:
+
+          ```csharp
+          string texto = "123";
+          int numero;
+          if (int.TryParse(texto, out numero))
+          {
+              // Conversão bem-sucedida
+          }
+          ```                 
