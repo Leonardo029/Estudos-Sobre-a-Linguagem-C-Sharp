@@ -974,9 +974,11 @@ ______________________
 
 ##  🕹️ Estruturas de Controle
 
+  * Estruturas de controle são blocos de construção fundamentais em programação que permitem que os programas tomem decisões e controlem o fluxo de execução. Elas determinam a ordem em que as instruções são executadas, permitindo que você crie lógica condicional, itere sobre conjuntos de dados e execute ações específicas com base em condições ou critérios predefinidos. As estruturas de controle são essenciais para criar programas funcionais e adaptáveis, permitindo que você modele a lógica do seu software de acordo com as necessidades específicas do problema que está resolvendo.
+
   * Sentenças de Seleção:
 
-    * Intrução de Controle:
+    * Expressão de Controle:
 
       * O termo "expressão de controle" se refere à expressão booleana usada em instruções de controle de fluxo, como instruções `if`, `else if`, `while`, `do-while`, `for`, `switch`, entre outras.
 
