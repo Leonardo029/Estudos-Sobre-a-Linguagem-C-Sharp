@@ -948,4 +948,4 @@ ______________________
       * `<=` (Menor ou igual a): verifica se o valor da esquerda é menor ou igual ao valor da direita.
       * `>=` (Maior ou igual a): verifica se o valor da esquerda é maior ou igual ao valor da direita.
 
-        ** Essas expressões relacionais são usadas para comparar valores numéricos, caracteres, strings e outros tipos que suportam comparações. O resultado das expressões relacionais é sempre um valor booleano, indicando se a relação entre os operandos é verdadeira ou falsa. Elas são frequentemente usadas em estruturas de controle condicional, como as declarações if, else if e while, para tomar decisões com base nas comparações dos valores.         
+        * Essas expressões relacionais são usadas para comparar valores numéricos, caracteres, strings e outros tipos que suportam comparações. O resultado das expressões relacionais é sempre um valor booleano, indicando se a relação entre os operandos é verdadeira ou falsa. Elas são frequentemente usadas em estruturas de controle condicional, como as declarações if, else if e while, para tomar decisões com base nas comparações dos valores.         
