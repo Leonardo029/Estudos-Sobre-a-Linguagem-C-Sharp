@@ -716,20 +716,20 @@ ______________________
 
       | Operador |  Significado  | Precedência|
       | ----------- | ----------- | ----------- | 
-      | `()`, `[]`, `->`, `.` | Acesso a membros| ⇑ |
-      | `++`, `--` | Incremento e Decremento| \| |
-      | `+`, `-` | Operadores unários de sinal| \| |
-      | `!`, `~` | Operadores de negação| \| |
-      | `*`, `/`, `%` | Multiplicação, Divisão, Módulo| \| |
-      | `+`, `-` | Adição, Subtração| \| |
-      | `<<`, `>>` | Deslocamento de bits| \| |
-      | `<`, `<=`, `>`, `>=` | Operadores de comparação| \| |
-      | `==`, `!=` | Igualdade e Desigualdade| \| |
-      | `&` | AND Bitwise| \| |
-      | `^` | XOR Bitwise| \| |
-      | `\|` | OR Bitwise| \| |
-      | `&&` | AND Lógico| \| |
-      | `\|\|` | OR Lógico| \| |
-      | `? :` | Operador condicional ternário| \| |
-      | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição| \| |
-      | `,` | Operador de vírgula, usado para separar expressões| ⇓ |
+      | `()`, `[]`, `->`, `.` | Acesso a membros| **MAIOR** |
+      | `++`, `--` | Incremento e Decremento| |
+      | `+`, `-` | Operadores unários de sinal| |
+      | `!`, `~` | Operadores de negação| |
+      | `*`, `/`, `%` | Multiplicação, Divisão, Módulo| |
+      | `+`, `-` | Adição, Subtração| |
+      | `<<`, `>>` | Deslocamento de bits| |
+      | `<`, `<=`, `>`, `>=` | Operadores de comparação| |
+      | `==`, `!=` | Igualdade e Desigualdade| |
+      | `&` | AND Bitwise| |
+      | `^` | XOR Bitwise| |
+      | `\|` | OR Bitwise| |
+      | `&&` | AND Lógico| |
+      | `\|\|` | OR Lógico| |
+      | `? :` | Operador condicional ternário| |
+      | `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `&=`, `\|=`, `^=`, `<<=`, `>>=` | Atribuição| |
+      | `,` | Operador de vírgula, usado para separar expressões| **MENOR** |
