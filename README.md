@@ -971,3 +971,5 @@ ______________________
       * O uso da avaliação de curto-circuito pode ser muito útil em situações em que a avaliação completa das expressões não é necessária e pode até economizar tempo de processamento, especialmente quando se lida com expressões que envolvem funções custosas em termos de tempo de execução.
 
       * É importante entender como a avaliação de curto-circuito funciona para escrever código eficiente e evitar chamadas desnecessárias a funções ou avaliações que não terão impacto no resultado final.
+
+##  :video_game: Estruturas de Controle
