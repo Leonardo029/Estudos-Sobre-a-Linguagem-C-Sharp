@@ -1392,3 +1392,34 @@ ______________________
         * Lembre-se de que a ordem das dimensões da matriz deve ser mantida ao passar a matriz como parâmetro. Se você estiver trabalhando com matrizes de diferentes dimensões, o método deve ser projetado para lidar com essas dimensões de maneira adequada.
 
         * Se você estiver trabalhando com matrizes de dimensões variáveis (jagged arrays), onde cada subarray pode ter um tamanho diferente, o processo é um pouco diferente. Você pode passar um array de arrays como parâmetro para lidar com matrizes de dimensões variáveis.
+  
+  * Subprograma como Parâmetros:
+
+    * É possível passar um subprograma (método) como parâmetro para outro subprograma em C#. Isso é conhecido como "passagem de delegados" e é uma característica poderosa da linguagem. Os delegados em C# permitem tratar um método como um objeto e passá-lo como argumento para outro método, permitindo que o método receptor chame o método passado de maneira dinâmica.
+
+      ```csharp
+      class Program
+      {
+          delegate void MeuDelegado();
+
+          static void MetodoA()
+          {
+              Console.WriteLine("Método A foi chamado.");
+          }
+
+          static void MetodoB(MeuDelegado delegateParam)
+          {
+              Console.WriteLine("Método B foi chamado.");
+              delegateParam(); // Chama o método passado como delegado
+          }
+
+          static void Main(string[] args)
+          {
+              MeuDelegado delegadoA = MetodoA;
+
+              MetodoB(delegadoA); // Passa o método A como parâmetro
+          }
+      }
+      ```
+
+##  :warning: Tratamento de Exceção
