@@ -1273,3 +1273,64 @@ ______________________
         * No exemplo acima, MetodoPrincipal contém um subprograma aninhado chamado MetodoAninhado. O subprograma aninhado tem acesso à variável valorExterno declarada no método pai.
 
         * No entanto, vale destacar que o uso excessivo de subprogramas aninhados pode tornar o código menos legível e mais complexo. Portanto, é importante encontrar um equilíbrio entre a modularização do código e a clareza da estrutura.
+
+  * Passagem de Parâmetros:
+
+    * Existem diferentes modelos de passagem de parâmetros que determinam como os valores dos argumentos são passados para os parâmetros de um método/subprograma. Cada modelo de passagem de parâmetros tem suas características e implicações.
+
+      * Passagem por Valor (Value Passing):
+        * Neste modelo, uma cópia do valor do argumento é passada para o parâmetro do método. Qualquer alteração feita ao parâmetro dentro do método não afetará o valor original do argumento fora do método.
+        ```csharp
+        void PassagemPorValor(int x)
+        {
+            x = x + 1; // A alteração não afeta o valor original
+        }
+        ```
+
+      * Passagem por Referência (Reference Passing):
+        * Neste modelo, a referência ao argumento é passada para o parâmetro do método. Isso significa que as alterações feitas ao parâmetro dentro do método afetarão o valor original do argumento fora do método.
+        ```csharp
+        void PassagemPorReferencia(ref int x)
+        {
+            x = x + 1; // A alteração afeta o valor original
+        }
+        ```
+
+      * Passagem por Valor de Saída (Out Parameter):
+        * Semelhante à passagem por referência, mas a variável passada como argumento não precisa ser inicializada antes de chamar o método. É comumente usado para retornar mais de um valor de um método.
+        ```csharp
+        void PassagemPorValorDeSaida(out int x)
+        {
+            x = 10; // Valor atribuído ao parâmetro de saída
+        }
+        ```
+
+      * Passagem por Valor Padronizado (Params):
+        * Usado para passar um número variável de argumentos do mesmo tipo para um método. Os argumentos são empacotados em uma matriz.
+        ```csharp
+        void PassagemPorValorPadronizado(params int[] numeros)
+        {
+            // Corpo do método
+        }
+        ```
+
+      * Passagem por Referência Padronizada (Ref):
+        * Similar à passagem por referência, mas a variável passada como argumento deve ser inicializada antes de chamar o método.
+        ```csharp
+        void PassagemPorReferenciaPadronizada(ref int x)
+        {
+            // Corpo do método
+        }
+        ```
+
+  * Genêricos:
+
+    * Os genéricos são uma maneira de criar classes, estruturas, interfaces e métodos que podem trabalhar com tipos diferentes, sem especificar o tipo real até o momento em que são usados. Eles permitem que você escreva código reutilizável e flexível, evitando repetição de código para diferentes tipos de dados.
+    
+    * Por exemplo, você pode criar uma lista genérica que pode conter elementos de qualquer tipo
+      ```csharp
+      List<int> numeros = new List<int>();
+      List<string> palavras = new List<string>();
+      ```
+      
+      * Nesse caso, a classe List<T> é genérica, onde T é um tipo que você especifica quando cria uma instância da lista.
