@@ -1433,6 +1433,7 @@ ______________________
   * Lançamento de Exceções:
 
     * Um erro ou uma condição excepcional pode ser identificado em um ponto específico do código usando a palavra-chave `throw`. Você pode lançar exceções padrão ou criar suas próprias exceções personalizadas.
+    
       ```csharp
       if (algumaCondicao)
       {
