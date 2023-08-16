@@ -1478,7 +1478,7 @@ ______________________
 
   * O tratamento de exceções permite que você lide com situações excepcionais que podem ocorrer durante a execução do programa. Uma exceção é uma ocorrência anormal que interrompe o fluxo normal do programa. O tratamento de exceções ajuda a lidar com erros e a manter a execução do programa controlada, evitando falhas inesperadas.
 
-  * Lançamento de Exceções:
+  * **Lançamento de Exceções:**
 
     * Um erro ou uma condição excepcional pode ser identificado em um ponto específico do código usando a palavra-chave `throw`. Você pode lançar exceções padrão ou criar suas próprias exceções personalizadas.
 
@@ -1489,7 +1489,7 @@ ______________________
       }
       ```
 
-  * Captura de Exceções:
+  * **Captura de Exceções:**
 
     * Para lidar com exceções lançadas, você pode usar blocos `try-catch`. Um bloco `try` envolve o código onde você espera que uma exceção possa ocorrer. Se uma exceção é lançada dentro do bloco `try`, ela é capturada por um bloco `catch` correspondente que trata a exceção.
 
@@ -1505,7 +1505,7 @@ ______________________
       }
       ```
 
-  * Blocos Finally:
+  * **Blocos Finally:**
 
     * Você pode usar um bloco `finally` opcional para definir um código que sempre será executado, independentemente de ocorrer uma exceção ou não. Isso é útil para tarefas de limpeza ou liberação de recursos.
 
@@ -1526,15 +1526,15 @@ ______________________
       }
       ```
   
-  * Hierarquia de Exceções:
+  * **Hierarquia de Exceções:**
     * As exceções em C# estão organizadas em uma hierarquia de classes. A classe base é _System.Exception_, e várias classes derivadas específicas, como _System.NullReferenceException_, representam tipos diferentes de exceções. Isso permite que você capture exceções específicas para tratá-las de maneira adequada.
   
-  * Exceções Personalizadas:
+  * **Exceções Personalizadas:**
     * Você pode criar suas próprias exceções personalizadas criando classes derivadas de _System.Exception_. Isso permite que você tenha exceções específicas para cenários particulares do seu programa.
   
   * O tratamento de erros em C# ajuda a criar programas mais confiáveis, uma vez que permite que você lide com situações excepcionais de forma controlada. No entanto, é importante usar exceções de forma sensata, capturando-as onde é necessário e não abusando do tratamento de exceções para controlar fluxos normais do programa.
 
-  * Exceções do Usuário:
+  * **Exceções do Usuário:**
     * Você pode criar suas próprias exceções personalizadas em C#. Isso permite que você crie exceções que se relacionem diretamente com os cenários e os requisitos do seu programa. Ao criar exceções do usuário, você herda da classe System.Exception ou de suas subclasses para criar tipos de exceções que são específicos para a lógica do seu programa.
     
       ```csharp
@@ -1549,7 +1549,7 @@ ______________________
       throw new MeuErroPersonalizadoException("Isso é um erro do usuário.");
       ```
 
-  * Exceções Pré-Definidas:
+  * **Exceções Pré-Definidas:**
     * C# já possui uma variedade de exceções pré-definidas que representam situações comuns de erro, como ArgumentNullException, FileNotFoundException, DivideByZeroException, entre outras. Essas exceções são organizadas em uma hierarquia de classes para lidar com diferentes tipos de erros.
     
       ```csharp
@@ -1564,7 +1564,7 @@ ______________________
       throw new MeuErroPersonalizadoException("Isso é um erro do usuário.");
       ```
 
-  * Desligar Exceções:
+  * **Desligar Exceções:**
       * Em circunstâncias especiais, é possível controlar o tratamento de exceções de forma a desligá-las temporariamente. Isso geralmente não é recomendado, pois pode resultar em comportamento inesperado ou erros não tratados que podem afetar a estabilidade do seu programa. Você pode usar o bloco try-catch para desativar temporariamente exceções, mas isso é uma prática incomum e deve ser usada com cautela.
     
         ```csharp
