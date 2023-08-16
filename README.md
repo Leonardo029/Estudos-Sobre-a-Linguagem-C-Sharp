@@ -1567,15 +1567,15 @@ ______________________
   * Desligar Exceções:
       * Em circunstâncias especiais, é possível controlar o tratamento de exceções de forma a desligá-las temporariamente. Isso geralmente não é recomendado, pois pode resultar em comportamento inesperado ou erros não tratados que podem afetar a estabilidade do seu programa. Você pode usar o bloco try-catch para desativar temporariamente exceções, mas isso é uma prática incomum e deve ser usada com cautela.
     
-      ```csharp
-      try
-      {
-          // Código onde exceções podem ocorrer
-      }
-      catch (Exception)
-      {
-          // Trata a exceção
-      }
-      ```
-      
+        ```csharp
+        try
+        {
+            // Código onde exceções podem ocorrer
+        }
+        catch (Exception)
+        {
+            // Trata a exceção
+        }
+        ```
+
   * Em resumo, C# permite criar exceções personalizadas do usuário para lidar com situações específicas, utiliza exceções pré-definidas para lidar com erros comuns e fornece mecanismos para controlar o tratamento de exceções. No entanto, é importante usar exceções de maneira sensata e não abusar do desligamento de exceções, pois isso pode comprometer a estabilidade do seu programa.
