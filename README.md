@@ -1535,7 +1535,7 @@ ______________________
   * O tratamento de erros em C# ajuda a criar programas mais confiáveis, uma vez que permite que você lide com situações excepcionais de forma controlada. No entanto, é importante usar exceções de forma sensata, capturando-as onde é necessário e não abusando do tratamento de exceções para controlar fluxos normais do programa.
 
   * **Exceções do Usuário:**
-    * Você pode criar suas próprias exceções personalizadas em C#. Isso permite que você crie exceções que se relacionem diretamente com os cenários e os requisitos do seu programa. Ao criar exceções do usuário, você herda da classe System.Exception ou de suas subclasses para criar tipos de exceções que são específicos para a lógica do seu programa.
+    * Você pode criar suas próprias exceções personalizadas em C#. Isso permite que você crie exceções que se relacionem diretamente com os cenários e os requisitos do seu programa. Ao criar exceções do usuário, você herda da classe _System.Exception_ ou de suas subclasses para criar tipos de exceções que são específicos para a lógica do seu programa.
     
       ```csharp
       public class MeuErroPersonalizadoException : Exception
@@ -1550,7 +1550,7 @@ ______________________
       ```
 
   * **Exceções Pré-Definidas:**
-    * C# já possui uma variedade de exceções pré-definidas que representam situações comuns de erro, como ArgumentNullException, FileNotFoundException, DivideByZeroException, entre outras. Essas exceções são organizadas em uma hierarquia de classes para lidar com diferentes tipos de erros.
+    * C# já possui uma variedade de exceções pré-definidas que representam situações comuns de erro, como _ArgumentNullException_, _FileNotFoundException_, _DivideByZeroException_, entre outras. Essas exceções são organizadas em uma hierarquia de classes para lidar com diferentes tipos de erros.
     
       ```csharp
       public class MeuErroPersonalizadoException : Exception
@@ -1565,7 +1565,7 @@ ______________________
       ```
 
   * **Desligar Exceções:**
-      * Em circunstâncias especiais, é possível controlar o tratamento de exceções de forma a desligá-las temporariamente. Isso geralmente não é recomendado, pois pode resultar em comportamento inesperado ou erros não tratados que podem afetar a estabilidade do seu programa. Você pode usar o bloco try-catch para desativar temporariamente exceções, mas isso é uma prática incomum e deve ser usada com cautela.
+      * Em circunstâncias especiais, é possível controlar o tratamento de exceções de forma a desligá-las temporariamente. Isso geralmente não é recomendado, pois pode resultar em comportamento inesperado ou erros não tratados que podem afetar a estabilidade do seu programa. Você pode usar o bloco `try-catch` para desativar temporariamente exceções, mas isso é uma prática incomum e deve ser usada com cautela.
     
         ```csharp
         try
