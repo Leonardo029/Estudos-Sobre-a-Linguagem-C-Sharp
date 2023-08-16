@@ -1427,3 +1427,58 @@ ______________________
         * No método Main, um delegado delegadoA é criado para representar o método MetodoA, e em seguida, o método MetodoB é chamado com o delegado delegadoA como argumento. Isso faz com que o método MetodoB chame o método MetodoA.
 
 ##  :warning: Tratamento de Exceção
+
+  * O tratamento de exceções permite que você lide com situações excepcionais que podem ocorrer durante a execução do programa. Uma exceção é uma ocorrência anormal que interrompe o fluxo normal do programa. O tratamento de exceções ajuda a lidar com erros e a manter a execução do programa controlada, evitando falhas inesperadas.
+
+  * Lançamento de Exceções:
+
+    * Um erro ou uma condição excepcional pode ser identificado em um ponto específico do código usando a palavra-chave `throw`. Você pode lançar exceções padrão ou criar suas próprias exceções personalizadas.
+      ```csharp
+      if (algumaCondicao)
+      {
+          throw new Exception("Ocorreu um erro!");
+      }
+      ```
+
+  * Captura de Exceções:
+
+    * Para lidar com exceções lançadas, você pode usar blocos `try-catch`. Um bloco `try` envolve o código onde você espera que uma exceção possa ocorrer. Se uma exceção é lançada dentro do bloco `try`, ela é capturada por um bloco `catch` correspondente que trata a exceção.
+      ```csharp
+      try
+      {
+          // Código que pode lançar uma exceção
+      }
+      catch (Exception ex)
+      {
+          // Lidar com a exceção
+          Console.WriteLine($"Ocorreu um erro: {ex.Message}");
+      }
+      ```
+
+  * Blocos Finally:
+
+    * Você pode usar um bloco `finally` opcional para definir um código que sempre será executado, independentemente de ocorrer uma exceção ou não. Isso é útil para tarefas de limpeza ou liberação de recursos.
+      ```csharp
+      try
+      {
+          // Código que pode lançar uma exceção
+      }
+      catch (Exception ex)
+      {
+          // Lidar com a exceção
+          Console.WriteLine($"Ocorreu um erro: {ex.Message}");
+      }
+      finally
+      {
+          // Código que sempre será executado
+          Console.WriteLine("Finalizando...");
+      }
+      ```
+  
+  * Hierarquia de Exceções:
+    * As exceções em C# estão organizadas em uma hierarquia de classes. A classe base é _System.Exception_, e várias classes derivadas específicas, como _System.NullReferenceException_, representam tipos diferentes de exceções. Isso permite que você capture exceções específicas para tratá-las de maneira adequada.
+  
+  * Exceções Personalizadas:
+    * Você pode criar suas próprias exceções personalizadas criando classes derivadas de _System.Exception_. Isso permite que você tenha exceções específicas para cenários particulares do seu programa.
+  
+  * O tratamento de erros em C# ajuda a criar programas mais confiáveis, uma vez que permite que você lide com situações excepcionais de forma controlada. No entanto, é importante usar exceções de forma sensata, capturando-as onde é necessário e não abusando do tratamento de exceções para controlar fluxos normais do programa.
