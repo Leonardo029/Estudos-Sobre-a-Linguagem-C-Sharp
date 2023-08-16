@@ -1254,22 +1254,22 @@ ______________________
   
   * Subprogramas Aninhados (Nested Subprograms):
 
-  * Subprogramas aninhados, também conhecidos como métodos aninhados, são métodos definidos dentro de outro método. Eles herdam o escopo do método pai e podem acessar variáveis locais do método pai. Subprogramas aninhados podem ser úteis para encapsular lógica específica dentro de um método maior, mantendo-a separada e organizada.
-    ```csharp
-    void MetodoPrincipal()
-    {
-        int valorExterno = 10;
+    * Subprogramas aninhados, também conhecidos como métodos aninhados, são métodos definidos dentro de outro método. Eles herdam o escopo do método pai e podem acessar variáveis locais do método pai. Subprogramas aninhados podem ser úteis para encapsular lógica específica dentro de um método maior, mantendo-a separada e organizada.
+      ```csharp
+      void MetodoPrincipal()
+      {
+          int valorExterno = 10;
 
-        void MetodoAninhado()
-        {
-            int valorInterno = valorExterno + 5;
-            Console.WriteLine(valorInterno);
-        }
+          void MetodoAninhado()
+          {
+              int valorInterno = valorExterno + 5;
+              Console.WriteLine(valorInterno);
+          }
 
-        MetodoAninhado();
-    }
-    ```
+          MetodoAninhado();
+      }
+      ```
 
-      * No exemplo acima, MetodoPrincipal contém um subprograma aninhado chamado MetodoAninhado. O subprograma aninhado tem acesso à variável valorExterno declarada no método pai.
+        * No exemplo acima, MetodoPrincipal contém um subprograma aninhado chamado MetodoAninhado. O subprograma aninhado tem acesso à variável valorExterno declarada no método pai.
 
-      * No entanto, vale destacar que o uso excessivo de subprogramas aninhados pode tornar o código menos legível e mais complexo. Portanto, é importante encontrar um equilíbrio entre a modularização do código e a clareza da estrutura.
+        * No entanto, vale destacar que o uso excessivo de subprogramas aninhados pode tornar o código menos legível e mais complexo. Portanto, é importante encontrar um equilíbrio entre a modularização do código e a clareza da estrutura.
