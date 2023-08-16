@@ -1164,3 +1164,28 @@ ______________________
     * A definição de subprograma é a implementação completa do método, incluindo seu corpo de código. Ela contém todas as instruções que o método deve executar quando for chamado. A definição inclui detalhes sobre como o método realiza suas operações e retorna um valor, se for o caso.
 
   * Em resumo, a declaração de um subprograma informa ao compilador que o método existe e como ele deve ser chamado, enquanto a definição de um subprograma fornece a implementação completa do método, incluindo o bloco de código real que é executado quando o método é chamado. Ao criar um programa em C#, você geralmente define seus métodos (subprogramas) usando uma declaração para informar ao compilador e, em seguida, fornece as definições completas para implementar as funcionalidades desejadas.
+
+  * Funções e Procedimentos: 
+
+    * Em C#, os termos "funções" e "procedimentos" são frequentemente usados de forma intercambiável para se referir a métodos, que são subprogramas que realizam tarefas específicas. No entanto, existe uma distinção técnica entre esses termos em alguns contextos.
+
+    * Funções: são métodos que retornam um valor após a execução. Elas podem aceitar parâmetros de entrada e, em seguida, calcular e retornar um valor resultante. O valor de retorno é especificado no tipo de retorno da função. As funções são usadas para calcular, processar e retornar resultados.
+      ```csharp
+      public int CalcularSoma(int numero1, int numero2)
+      {
+          int soma = numero1 + numero2;
+          return soma;
+      }
+      ```
+
+    * Procedimentos: são métodos que realizam tarefas, mas não retornam um valor específico. Eles podem executar ações, modificar o estado de objetos ou produzir efeitos colaterais, mas não retornam um valor calculado. Em C#, os procedimentos são frequentemente chamados de "métodos de retorno `void`".
+      ```csharp
+      public void ImprimirMensagem(string mensagem)
+      {
+          Console.WriteLine(mensagem);
+      }
+      ```
+    
+    * Embora os termos "funções" e "procedimentos" possam ser usados de maneira intercambiável em muitos contextos, é importante notar que a principal diferença está no retorno de valores. Funções retornam valores calculados, enquanto procedimentos não retornam um valor específico, mas podem realizar ações ou efeitos colaterais.
+
+    * Ambos os conceitos são partes essenciais da programação e permitem que você crie código modular, organizado e reutilizável, dividindo tarefas em subprogramas que podem ser chamados conforme necessário.
