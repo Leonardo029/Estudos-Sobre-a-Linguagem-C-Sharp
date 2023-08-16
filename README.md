@@ -1107,3 +1107,60 @@ ______________________
       * "elemento" é uma variável que representa o elemento atual da iteração.
       * "colecao" é a coleção de elementos que você deseja percorrer.
       * A instrução `foreach` automaticamente percorre cada elemento da coleção e executa o bloco de código associado para cada elemento, atribuindo o * valor do elemento à variável "elemento".
+
+##  :space_invader: Subprogramas
+
+  * Processo: refere-se a um programa em execução, juntamente com seu ambiente associado, recursos e fluxo de controle. Um processo é uma instância em execução de um programa de computador, e ele tem sua própria alocação de memória, contexto de sistema, identificador único e espaço de endereço.
+
+  * Dados: são representações simbólicas ou numéricas das informações que podem ser processadas, armazenadas, interpretadas ou transmitidas por computadores e sistemas de informação. Os dados são os blocos de construção fundamentais de todas as informações e conhecimentos que os sistemas de computador manipulam. Eles podem ser de vários tipos e formatos, incluindo números, texto, imagens, áudio, vídeo e muito mais.
+
+  * O cabeçalho de um subprograma é composto por três partes principais: o modificador de acesso, o tipo de retorno e o nome do método, seguido pelos parâmetros do método.
+    ```csharp
+    modificador tipoRetorno NomeDoMetodo(parametros)
+    ```
+
+  * Em C#, os subprogramas são chamados de "métodos". Métodos são blocos de código que executam uma tarefa específica e podem ser invocados (chamados) a partir de outras partes do código. Eles são uma forma fundamental de organizar e reutilizar o código em programas C#. Existem dois tipos principais de métodos em C#.
+
+  * Métodos Estáticos (Static Methods):
+    * Métodos estáticos pertencem à classe em vez de uma instância específica dessa classe. Eles são definidos com o modificador `static` e podem ser chamados diretamente usando o nome da classe, sem precisar criar uma instância dessa classe. Eles são frequentemente usados para funções utilitárias que não requerem estado específico.
+
+  * Métodos de Instância (Instance Methods):
+    * Métodos de instância pertencem a uma instância específica de uma classe. Eles são invocados através de uma instância da classe e podem acessar membros não estáticos da classe, como propriedades e campos de instância.
+
+  * Além disso, C# também suporta conceitos mais avançados relacionados a métodos, como sobrecarga de método (definir múltiplas versões de um método com parâmetros diferentes), métodos com parâmetros opcionais, métodos com valores de retorno, entre outros.
+
+  * Aqui está um exemplo de definição de métodos estáticos e de instância em C#:
+    ```csharp
+    public class Exemplo
+    {
+        // Método estático
+        public static void MetodoEstatico()
+        {
+            // Código do método estático
+        }
+
+        // Método de instância
+        public void MetodoDeInstancia()
+        {
+            // Código do método de instância
+        }
+    }
+    ```
+  
+  * Para invocar esses métodos, você usaria:
+    ```csharp
+    Exemplo.MetodoEstatico(); // Chamada ao método estático
+
+    Exemplo instancia = new Exemplo();
+    instancia.MetodoDeInstancia(); // Chamada ao método de instância
+    ```
+  
+  * Declaração de Subprograma:
+
+    Uma declaração de subprograma é uma forma de declarar a existência de um método, incluindo seu nome, tipo de retorno, parâmetros e possivelmente seu modificador de acesso. A declaração é uma promessa de que o método estará disponível, mas não inclui o corpo real do método (o bloco de código). Declarações são usadas quando você quer que outras partes do código saibam sobre a existência do método, mas não precisa fornecer a implementação completa naquele momento.
+  
+  * Definição de Subprograma:
+
+    A definição de subprograma é a implementação completa do método, incluindo seu corpo de código. Ela contém todas as instruções que o método deve executar quando for chamado. A definição inclui detalhes sobre como o método realiza suas operações e retorna um valor, se for o caso.
+
+  * Em resumo, a declaração de um subprograma informa ao compilador que o método existe e como ele deve ser chamado, enquanto a definição de um subprograma fornece a implementação completa do método, incluindo o bloco de código real que é executado quando o método é chamado. Ao criar um programa em C#, você geralmente define seus métodos (subprogramas) usando uma declaração para informar ao compilador e, em seguida, fornece as definições completas para implementar as funcionalidades desejadas.
