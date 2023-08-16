@@ -180,6 +180,7 @@ ______________________
         }
     }
     ```
+    
 * **Amarração de tipo:**
 
   * Estática
@@ -282,6 +283,7 @@ ______________________
         // Outros membros da classe
     }
     ```
+
     * Neste exemplo, MinhaConstante é uma constante nomeada que foi atribuída ao valor inteiro 42. O valor de uma constante definida com const é avaliado em tempo de compilação, e a constante é considerada uma constante literal. Isso significa que o valor deve ser conhecido em tempo de compilação e deve ser um tipo de dado primitivo ou uma string.
 
   * Constantes com a palavra-chave readonly:
@@ -417,26 +419,31 @@ ______________________
     * Inicialização:
 
       * **Inicialização direta:** você pode inicializar um array diretamente com os valores dos elementos entre chaves {}.
+
         ```csharp
         int[] numbers = { 1, 2, 3, 4, 5 };
         ```
 
       * **Usando o construtor new:** você pode usar o construtor new para criar um array e definir o tamanho explicitamente.
+
         ```csharp
         int[] dynamicArray = new int[3]; // Cria um array de inteiros com tamanho 3.
         ```      
       
       * **Inicialização com valores padrão:** um array é automaticamente preenchido com valores padrão (zero, no caso de inteiros) se você não definir valores para todos os elementos.
+
         ```csharp
         int[] uninitializedArray = new int[5]; // Todos os elementos serão 0.
         ```      
       
       * **Inicialização com valor único:** você pode inicializar todos os elementos do array com o mesmo valor usando Enumerable.Repeat().
+
         ```csharp
         int[] repeatedArray = Enumerable.Repeat(10, 5).ToArray(); // Cria um array com 5 elementos, todos com valor 10.
         ```
       
       * **Inicialização com array existente:** você pode inicializar um novo array com os elementos de um outro array já existente.
+
         ```csharp
         int[] sourceArray = { 1, 2, 3 };
         int[] newArray = new int[sourceArray.Length];
@@ -444,11 +451,13 @@ ______________________
         ```
       
       * **Array multidimensional:** além de arrays unidimensionais, você pode criar arrays multidimensionais (matrizes).
+
         ```csharp
         int[,] matrix = { { 1, 2 }, { 3, 4 } }; // Cria uma matriz 2x2.
         ```
 
       * **Array de arrays (jagged arrays):** você pode criar arrays que contêm outros arrays.
+
         ```csharp
         int[][] jaggedArray = new int[3][];
         jaggedArray[0] = new int[] { 1, 2 };
@@ -521,6 +530,7 @@ ______________________
       * Exemplos:
 
         O exemplo a seguir define um registro público que usa parâmetros posicionais para declarar e instanciar um registro. Em seguida, ele imprime o nome do tipo e os valores de propriedade:
+
           ```csharp
           public record Person(string FirstName, string LastName);
 
@@ -533,6 +543,7 @@ ______________________
           ```
         
         O seguinte exemplo demonstra a igualdade de valor em registros:
+
           ```csharp
           public record Person(string FirstName, string LastName, string[] PhoneNumbers);
 
@@ -569,6 +580,7 @@ ______________________
     * Tipos de Ponteiro:
 
       * Em um contexto não seguro, os tipos podem ser de ponteiro, além de tipo de valor ou tipo de referência. Uma declaração de tipo de ponteiro usa uma das seguintes formas:
+      
         ```csharp
         type* identifier;
         void* identifier; //permitido, mas não recomendado
@@ -579,6 +591,7 @@ ______________________
       * Os tipos de ponteiro não são herdados de object e não há conversão entre tipos de ponteiro e `object`. Além disso, as conversões boxing e unboxing não oferecem suporte a ponteiros. No entanto, você pode converter entre diferentes tipos de ponteiro e tipos de ponteiro e tipos integrais.
 
       * Ao declarar vários ponteiros na mesma declaração, você escreve o asterisco (`*`) juntamente com o tipo subjacente apenas. Ele não é usado como um prefixo para cada nome de ponteiro. Por exemplo:
+
         ```csharp
         int* p1, p2, p3;   // Ok
         int *p1, *p2, *p3;   // Inválido em C#
@@ -764,6 +777,7 @@ ______________________
     * Em C#, as expressões condicionais permitem que você execute diferentes blocos de código ou avalie diferentes valores com base em condições booleanas. As principais expressões condicionais em C# são:
 
       * **Declaração `if`:** A declaração if é usada para executar um bloco de código se uma condição for verdadeira. Você também pode usar a cláusula else para especificar um bloco de código a ser executado quando a condição for falsa.
+
         ```csharp
         if (condicao)
         {
@@ -776,11 +790,13 @@ ______________________
         ```
 
       * **Expressão ternária `? :`:** A expressão ternária é uma forma concisa de retornar um valor com base em uma condição.
+
         ```csharp
         var resultado = (condicao) ? valorSeVerdadeiro : valorSeFalso;
         ```
 
       * **Declaração `switch`:** A declaração switch é usada para selecionar um bloco de código a ser executado com base no valor de uma expressão.
+
         ```csharp
         switch (expressao)
         {
@@ -797,11 +813,13 @@ ______________________
         ```
 
       * **Operador `??` (Operador de coalescência nula):** O operador de coalescência nula é usado para fornecer um valor padrão caso uma expressão seja nula.
+
         ```csharp
         var valorFinal = expressao ?? valorPadrao;
         ```
 
       * **Operador `&&` e `||` (Operadores lógicos):** Os operadores lógicos && (AND) e || (OR) são usados para avaliar expressões condicionais compostas.
+
         ```csharp
         if (condicao1 && condicao2)
         {
@@ -991,6 +1009,7 @@ ______________________
       * Em C#, a principal instrução de seleção de dois caminhos é a estrutura `if - else`. Essa estrutura permite que você execute diferentes blocos de código com base em uma condição. Além disso, você pode usar a instrução if sozinha para criar uma seleção de dois caminhos sem um bloco de código else. Aqui estão os detalhes sobre essas instruções:
 
         * Instrução `if`: permite que você execute um bloco de código se uma condição for verdadeira.
+
           ```csharp
           if (condicao)
           {
@@ -999,6 +1018,7 @@ ______________________
           ```
         
         *  Instrução `if - else`: permite executar um bloco de código se a condição for verdadeira e um bloco de código alternativo (dentro do else) se a condição for falsa.
+
             ```csharp
             if (condicao)
             {
@@ -1018,6 +1038,7 @@ ______________________
       * As principais instruções de seleção de múltiplos caminhos são:
 
         * Instrução `switch`: permite você avaliar um valor e executar diferentes blocos de código com base em diferentes casos. Ela é frequentemente usada para tomar decisões entre várias opções.
+
           ```csharp
           switch (expressao)
           {
@@ -1034,6 +1055,7 @@ ______________________
           ```
 
         * Instrução `if - else if - else`: você pode usar várias instruções `else if` após a instrução `if` para verificar várias condições sequencialmente. O bloco de código dentro do primeiro bloco `if` ou `else if` que atende à condição será executado. O bloco `else` opcional será executado se nenhuma das condições anteriores for verdadeira.
+
           ```csharp
           if (condicao1)
           {
@@ -1050,6 +1072,7 @@ ______________________
           ```
       
         * Operador Ternário (`? :`): é uma forma concisa de fazer seleções entre duas opções com base em uma expressão.
+
           ```csharp
           int idade = 18;
           string categoria = (idade >= 18) ? "Adulto" : "Menor";
@@ -1062,6 +1085,7 @@ ______________________
     * As sentenças iterativas, também conhecidas como estruturas de repetição ou loops, são usadas em C# para repetir um bloco de código várias vezes, com base em uma condição ou contagem.
 
       * Loop `while`: o loop `while` executa um bloco de código enquanto uma condição for verdadeira. A condição é verificada antes da execução do bloco.
+
         ```csharp
         while (condicao)
         {
@@ -1070,6 +1094,7 @@ ______________________
         ```
 
       * Loop `do - while`: o loop `do - while` é semelhante ao `while`, mas a condição é verificada após a execução do bloco. Isso garante que o bloco seja executado pelo menos uma vez.
+
         ```csharp
         do
         {
@@ -1078,6 +1103,7 @@ ______________________
         ```
 
       * Loop `for`: o loop `for` é usado para executar um bloco de código repetidamente, especificando uma inicialização, uma condição de continuação e uma iteração.
+
         ```csharp
         for (inicializacao; condicao; iteracao)
         {
@@ -1094,6 +1120,7 @@ ______________________
     * C# oferece a capacidade de realizar iterações baseadas em estruturas de dados usando a instrução `foreach`. A instrução `foreach` é uma forma simplificada de percorrer os elementos de uma coleção, como arrays, listas, dicionários e outras classes que implementam a interface IEnumerable.
 
     * A iteração baseada em estrutura de dados usando `foreach` é uma maneira conveniente de percorrer todos os elementos de uma coleção sem a necessidade de controlar explicitamente um contador ou um índice.
+
       ```csharp
       foreach (tipo elemento in colecao)
       {
@@ -1115,6 +1142,7 @@ ______________________
   * Dados: são representações simbólicas ou numéricas das informações que podem ser processadas, armazenadas, interpretadas ou transmitidas por computadores e sistemas de informação. Os dados são os blocos de construção fundamentais de todas as informações e conhecimentos que os sistemas de computador manipulam. Eles podem ser de vários tipos e formatos, incluindo números, texto, imagens, áudio, vídeo e muito mais.
 
   * O cabeçalho de um subprograma é composto por três partes principais: o modificador de acesso, o tipo de retorno e o nome do método, seguido pelos parâmetros do método.
+
     ```csharp
     modificador tipoRetorno NomeDoMetodo(parametros)
     ```
@@ -1130,6 +1158,7 @@ ______________________
   * Além disso, C# também suporta conceitos mais avançados relacionados a métodos, como sobrecarga de método (definir múltiplas versões de um método com parâmetros diferentes), métodos com parâmetros opcionais, métodos com valores de retorno, entre outros.
 
   * Aqui está um exemplo de definição de métodos estáticos e de instância em C#:
+
     ```csharp
     public class Exemplo
     {
@@ -1148,6 +1177,7 @@ ______________________
     ```
   
   * Para invocar esses métodos, você usaria:
+
     ```csharp
     Exemplo.MetodoEstatico(); // Chamada ao método estático
 
@@ -1170,6 +1200,7 @@ ______________________
     * Em C#, os termos "funções" e "procedimentos" são frequentemente usados de forma intercambiável para se referir a métodos, que são subprogramas que realizam tarefas específicas. No entanto, existe uma distinção técnica entre esses termos em alguns contextos.
 
     * Funções: são métodos que retornam um valor após a execução. Elas podem aceitar parâmetros de entrada e, em seguida, calcular e retornar um valor resultante. O valor de retorno é especificado no tipo de retorno da função. As funções são usadas para calcular, processar e retornar resultados.
+
       ```csharp
       public int CalcularSoma(int numero1, int numero2)
       {
@@ -1179,6 +1210,7 @@ ______________________
       ```
 
     * Procedimentos: são métodos que realizam tarefas, mas não retornam um valor específico. Eles podem executar ações, modificar o estado de objetos ou produzir efeitos colaterais, mas não retornam um valor calculado. Em C#, os procedimentos são frequentemente chamados de "métodos de retorno `void`".
+
       ```csharp
       public void ImprimirMensagem(string mensagem)
       {
@@ -1195,6 +1227,7 @@ ______________________
     * Formais:
 
       * Parâmetros formais são os parâmetros que você declara na assinatura (cabeçalho) de um método. Eles representam os valores que o método espera receber quando for chamado. Parâmetros formais são os "espaços reservados" para os valores que você passará como argumentos ao chamar o método.
+
         ```csharp
         void ImprimirDetalhes(string nome, int idade)
         {
@@ -1206,6 +1239,7 @@ ______________________
     * Reais:
 
       * Parâmetros reais, ou argumentos, são os valores que você passa para um método específico ao chamá-lo. Esses valores são usados para preencher os parâmetros formais definidos na declaração do método. Os parâmetros reais representam os dados que o método irá processar.
+
         ```csharp
         ImprimirDetalhes("Alice", 30); // Parâmetros reais: "Alice" e 30
         ```
@@ -1213,6 +1247,7 @@ ______________________
     * Nomeados:
 
       * Parâmetros nomeados permitem que você chame um método, especificando os argumentos na ordem que você quiser, ao fornecer explicitamente o nome dos parâmetros. Isso é especialmente útil quando um método tem muitos parâmetros opcionais ou quando você deseja deixar claro quais valores estão sendo passados para quais parâmetros, independentemente da ordem.
+
         ```csharp
         void ImprimirDetalhes(string nome, int idade)
         {
@@ -1226,6 +1261,7 @@ ______________________
     * Variádicos:
 
       * Parâmetros variádicos, ou parâmetros params, permitem que você crie métodos que aceitem um número variável de argumentos do mesmo tipo, passados como uma lista separada por vírgulas. Isso é útil quando você não sabe quantos argumentos serão passados ao método.
+
         ```csharp
         int Somar(params int[] numeros)
         {
@@ -1244,6 +1280,7 @@ ______________________
   * Variáveis Locais:
 
     * Variáveis locais são declaradas dentro de um bloco de código, como um método, e têm um escopo limitado a esse bloco. Isso significa que elas só podem ser acessadas e usadas dentro do bloco onde foram declaradas. Variáveis locais são frequentemente usadas para armazenar valores temporários ou intermediários que são necessários apenas dentro de um contexto específico.
+
       ```csharp
       void MetodoExemplo()
       {
@@ -1255,6 +1292,7 @@ ______________________
   * Subprogramas Aninhados (Nested Subprograms):
 
     * Subprogramas aninhados, também conhecidos como métodos aninhados, são métodos definidos dentro de outro método. Eles herdam o escopo do método pai e podem acessar variáveis locais do método pai. Subprogramas aninhados podem ser úteis para encapsular lógica específica dentro de um método maior, mantendo-a separada e organizada.
+
       ```csharp
       void MetodoPrincipal()
       {
@@ -1280,6 +1318,7 @@ ______________________
 
       * Passagem por Valor (Value Passing):
         * Neste modelo, uma cópia do valor do argumento é passada para o parâmetro do método. Qualquer alteração feita ao parâmetro dentro do método não afetará o valor original do argumento fora do método.
+
           ```csharp
           void PassagemPorValor(int x)
           {
@@ -1289,6 +1328,7 @@ ______________________
 
       * Passagem por Referência (Reference Passing):
         * Neste modelo, a referência ao argumento é passada para o parâmetro do método. Isso significa que as alterações feitas ao parâmetro dentro do método afetarão o valor original do argumento fora do método.
+
           ```csharp
           void PassagemPorReferencia(ref int x)
           {
@@ -1298,6 +1338,7 @@ ______________________
 
       * Passagem por Valor de Saída (Out Parameter):
         * Semelhante à passagem por referência, mas a variável passada como argumento não precisa ser inicializada antes de chamar o método. É comumente usado para retornar mais de um valor de um método.
+
           ```csharp
           void PassagemPorValorDeSaida(out int x)
           {
@@ -1307,6 +1348,7 @@ ______________________
 
       * Passagem por Valor Padronizado (Params):
         * Usado para passar um número variável de argumentos do mesmo tipo para um método. Os argumentos são empacotados em uma matriz.
+
           ```csharp
           void PassagemPorValorPadronizado(params int[] numeros)
           {
@@ -1316,6 +1358,7 @@ ______________________
 
       * Passagem por Referência Padronizada (Ref):
         * Similar à passagem por referência, mas a variável passada como argumento deve ser inicializada antes de chamar o método.
+
           ```csharp
           void PassagemPorReferenciaPadronizada(ref int x)
           {
@@ -1328,6 +1371,7 @@ ______________________
     * Os genéricos são uma maneira de criar classes, estruturas, interfaces e métodos que podem trabalhar com tipos diferentes, sem especificar o tipo real até o momento em que são usados. Eles permitem que você escreva código reutilizável e flexível, evitando repetição de código para diferentes tipos de dados.
     
     * Por exemplo, você pode criar uma lista genérica que pode conter elementos de qualquer tipo
+
       ```csharp
       List<int> numeros = new List<int>();
       List<string> palavras = new List<string>();
@@ -1343,6 +1387,7 @@ ______________________
 
     * Verificação de Tipos de Parâmetros:
       * O compilador verifica se os tipos dos argumentos fornecidos correspondem aos tipos esperados dos parâmetros em um método.
+
         ```csharp
         void MetodoExemplo(int numero, string texto)
         {
@@ -1352,6 +1397,7 @@ ______________________
     
     * Verificação de Tipos de Variáveis:
       * O compilador verifica se as operações realizadas em variáveis estão de acordo com seus tipos.
+
         ```csharp
         int numero = 10;
         string texto = "Olá";
@@ -1362,6 +1408,7 @@ ______________________
     
     * Verificação de Tipos de Expressões:
       * O compilador verifica se as expressões são construídas de acordo com as regras de tipos.
+
         ```csharp
         int resultado = 10 + 5; // Verificação de tipo para a expressão 10 + 5
         ```
@@ -1369,6 +1416,7 @@ ______________________
   * Arrays Multidimensionais:
 
     * Em C#, você pode passar arrays multidimensionais como parâmetros para subprogramas (métodos). Isso permite que você trabalhe com matrizes de várias dimensões em diferentes partes do seu código. Ao passar uma matriz multidimensional como parâmetro, você deve especificar o tipo da matriz, o número de dimensões e o tamanho das dimensões.
+
       ```csharp
       void ImprimirMatriz(int[,] matriz)
       {
@@ -1433,7 +1481,7 @@ ______________________
   * Lançamento de Exceções:
 
     * Um erro ou uma condição excepcional pode ser identificado em um ponto específico do código usando a palavra-chave `throw`. Você pode lançar exceções padrão ou criar suas próprias exceções personalizadas.
-    
+
       ```csharp
       if (algumaCondicao)
       {
@@ -1444,6 +1492,7 @@ ______________________
   * Captura de Exceções:
 
     * Para lidar com exceções lançadas, você pode usar blocos `try-catch`. Um bloco `try` envolve o código onde você espera que uma exceção possa ocorrer. Se uma exceção é lançada dentro do bloco `try`, ela é capturada por um bloco `catch` correspondente que trata a exceção.
+
       ```csharp
       try
       {
@@ -1459,6 +1508,7 @@ ______________________
   * Blocos Finally:
 
     * Você pode usar um bloco `finally` opcional para definir um código que sempre será executado, independentemente de ocorrer uma exceção ou não. Isso é útil para tarefas de limpeza ou liberação de recursos.
+
       ```csharp
       try
       {
