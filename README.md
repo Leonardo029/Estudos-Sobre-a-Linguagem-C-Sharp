@@ -1190,56 +1190,56 @@ ______________________
 
     * Ambos os conceitos são partes essenciais da programação e permitem que você crie código modular, organizado e reutilizável, dividindo tarefas em subprogramas que podem ser chamados conforme necessário.
 
-    * Parâmetros: 
+  * Parâmetros: 
 
-      * Formais:
+    * Formais:
 
-        * Parâmetros formais são os parâmetros que você declara na assinatura (cabeçalho) de um método. Eles representam os valores que o método espera receber quando for chamado. Parâmetros formais são os "espaços reservados" para os valores que você passará como argumentos ao chamar o método.
-          ```csharp
-          void ImprimirDetalhes(string nome, int idade)
-          {
-              // Parâmetros formais: "string nome" e "int idade"
-              Console.WriteLine($"Nome: {nome}, Idade: {idade}");
-          }
-          ```        
-      
-      * Reais:
+      * Parâmetros formais são os parâmetros que você declara na assinatura (cabeçalho) de um método. Eles representam os valores que o método espera receber quando for chamado. Parâmetros formais são os "espaços reservados" para os valores que você passará como argumentos ao chamar o método.
+        ```csharp
+        void ImprimirDetalhes(string nome, int idade)
+        {
+            // Parâmetros formais: "string nome" e "int idade"
+            Console.WriteLine($"Nome: {nome}, Idade: {idade}");
+        }
+        ```        
+    
+    * Reais:
 
-        * Parâmetros reais, ou argumentos, são os valores que você passa para um método específico ao chamá-lo. Esses valores são usados para preencher os parâmetros formais definidos na declaração do método. Os parâmetros reais representam os dados que o método irá processar.
-          ```csharp
-          ImprimirDetalhes("Alice", 30); // Parâmetros reais: "Alice" e 30
-          ```
-      
-      * Nomeados:
+      * Parâmetros reais, ou argumentos, são os valores que você passa para um método específico ao chamá-lo. Esses valores são usados para preencher os parâmetros formais definidos na declaração do método. Os parâmetros reais representam os dados que o método irá processar.
+        ```csharp
+        ImprimirDetalhes("Alice", 30); // Parâmetros reais: "Alice" e 30
+        ```
+    
+    * Nomeados:
 
-        * Parâmetros nomeados permitem que você chame um método, especificando os argumentos na ordem que você quiser, ao fornecer explicitamente o nome dos parâmetros. Isso é especialmente útil quando um método tem muitos parâmetros opcionais ou quando você deseja deixar claro quais valores estão sendo passados para quais parâmetros, independentemente da ordem.
-          ```csharp
-          void ImprimirDetalhes(string nome, int idade)
-          {
-              Console.WriteLine($"Nome: {nome}, Idade: {idade}");
-          }
+      * Parâmetros nomeados permitem que você chame um método, especificando os argumentos na ordem que você quiser, ao fornecer explicitamente o nome dos parâmetros. Isso é especialmente útil quando um método tem muitos parâmetros opcionais ou quando você deseja deixar claro quais valores estão sendo passados para quais parâmetros, independentemente da ordem.
+        ```csharp
+        void ImprimirDetalhes(string nome, int idade)
+        {
+            Console.WriteLine($"Nome: {nome}, Idade: {idade}");
+        }
 
-          // Chamada usando parâmetros nomeados
-          ImprimirDetalhes(idade: 30, nome: "Alice");
-          ```
-      
-      * Variádicos:
+        // Chamada usando parâmetros nomeados
+        ImprimirDetalhes(idade: 30, nome: "Alice");
+        ```
+    
+    * Variádicos:
 
-        * Parâmetros variádicos, ou parâmetros params, permitem que você crie métodos que aceitem um número variável de argumentos do mesmo tipo, passados como uma lista separada por vírgulas. Isso é útil quando você não sabe quantos argumentos serão passados ao método.
-          ```csharp
-          int Somar(params int[] numeros)
-          {
-              int soma = 0;
-              foreach (int num in numeros)
-              {
-                  soma += num;
-              }
-              return soma;
-          }
+      * Parâmetros variádicos, ou parâmetros params, permitem que você crie métodos que aceitem um número variável de argumentos do mesmo tipo, passados como uma lista separada por vírgulas. Isso é útil quando você não sabe quantos argumentos serão passados ao método.
+        ```csharp
+        int Somar(params int[] numeros)
+        {
+            int soma = 0;
+            foreach (int num in numeros)
+            {
+                soma += num;
+            }
+            return soma;
+        }
 
-          // Chamada usando parâmetros variádicos
-          int resultado = Somar(2, 4, 6, 8);
-          ```
+        // Chamada usando parâmetros variádicos
+        int resultado = Somar(2, 4, 6, 8);
+        ```
     
   * Variáveis Locais:
 
