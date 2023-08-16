@@ -1157,10 +1157,10 @@ ______________________
   
   * Declaração de Subprograma:
 
-    Uma declaração de subprograma é uma forma de declarar a existência de um método, incluindo seu nome, tipo de retorno, parâmetros e possivelmente seu modificador de acesso. A declaração é uma promessa de que o método estará disponível, mas não inclui o corpo real do método (o bloco de código). Declarações são usadas quando você quer que outras partes do código saibam sobre a existência do método, mas não precisa fornecer a implementação completa naquele momento.
+    * Uma declaração de subprograma é uma forma de declarar a existência de um método, incluindo seu nome, tipo de retorno, parâmetros e possivelmente seu modificador de acesso. A declaração é uma promessa de que o método estará disponível, mas não inclui o corpo real do método (o bloco de código). Declarações são usadas quando você quer que outras partes do código saibam sobre a existência do método, mas não precisa fornecer a implementação completa naquele momento.
   
   * Definição de Subprograma:
 
-    A definição de subprograma é a implementação completa do método, incluindo seu corpo de código. Ela contém todas as instruções que o método deve executar quando for chamado. A definição inclui detalhes sobre como o método realiza suas operações e retorna um valor, se for o caso.
+    * A definição de subprograma é a implementação completa do método, incluindo seu corpo de código. Ela contém todas as instruções que o método deve executar quando for chamado. A definição inclui detalhes sobre como o método realiza suas operações e retorna um valor, se for o caso.
 
   * Em resumo, a declaração de um subprograma informa ao compilador que o método existe e como ele deve ser chamado, enquanto a definição de um subprograma fornece a implementação completa do método, incluindo o bloco de código real que é executado quando o método é chamado. Ao criar um programa em C#, você geralmente define seus métodos (subprogramas) usando uma declaração para informar ao compilador e, em seguida, fornece as definições completas para implementar as funcionalidades desejadas.
