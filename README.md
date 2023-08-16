@@ -1334,3 +1334,61 @@ ______________________
       ```
 
       * Nesse caso, a classe List<T> é genérica, onde T é um tipo que você especifica quando cria uma instância da lista.
+  
+  * Verificação de Tipo:
+
+    * Dentro dos subprogramas, a verificação de tipo é realizada pelo próprio compilador durante a compilação do código. O compilador verifica se as operações sendo realizadas em variáveis, parâmetros e expressões são compatíveis com os tipos de dados envolvidos. Isso ajuda a evitar erros de tipo que poderiam ocorrer durante a execução do programa.
+
+    * A verificação de tipo acontece de acordo com as regras de tipagem estática do C#. Isso significa que o tipo de uma variável ou expressão é determinado em tempo de compilação e não pode ser alterado durante a execução do programa.
+
+    * Verificação de Tipos de Parâmetros:
+      * O compilador verifica se os tipos dos argumentos fornecidos correspondem aos tipos esperados dos parâmetros em um método.
+        ```csharp
+        void MetodoExemplo(int numero, string texto)
+        {
+            // Verificação de tipo para 'numero' e 'texto'
+        }
+        ```
+    
+    * Verificação de Tipos de Variáveis:
+      * O compilador verifica se as operações realizadas em variáveis estão de acordo com seus tipos.
+        ```csharp
+        int numero = 10;
+        string texto = "Olá";
+
+        int resultado = numero + 5; // Verificação de tipo para soma
+        string resultadoTexto = texto + " Mundo"; // Verificação de tipo para concatenação
+        ```
+    
+    * Verificação de Tipos de Expressões:
+      * O compilador verifica se as expressões são construídas de acordo com as regras de tipos.
+        ```csharp
+        int resultado = 10 + 5; // Verificação de tipo para a expressão 10 + 5
+        ```
+
+  * Arrays Multidimensionais:
+
+    * Em C#, você pode passar arrays multidimensionais como parâmetros para subprogramas (métodos). Isso permite que você trabalhe com matrizes de várias dimensões em diferentes partes do seu código. Ao passar uma matriz multidimensional como parâmetro, você deve especificar o tipo da matriz, o número de dimensões e o tamanho das dimensões.
+      ```csharp
+      void ImprimirMatriz(int[,] matriz)
+      {
+          for (int i = 0; i < matriz.GetLength(0); i++)
+          {
+              for (int j = 0; j < matriz.GetLength(1); j++)
+              {
+                  Console.Write(matriz[i, j] + " ");
+              }
+              Console.WriteLine();
+          }
+      }
+
+      // Exemplo de chamada do método com uma matriz 2x3
+      int[,] minhaMatriz = new int[,] { { 1, 2, 3 }, { 4, 5, 6 } };
+      ImprimirMatriz(minhaMatriz);
+      ```
+
+        * Neste exemplo, o método ImprimirMatriz aceita um array multidimensional int[,] como parâmetro e imprime os valores da matriz em linhas e colunas. A matriz minhaMatriz é criada e, em seguida, passada como argumento para o método.
+
+        * Lembre-se de que a ordem das dimensões da matriz deve ser mantida ao passar a matriz como parâmetro. Se você estiver trabalhando com matrizes de diferentes dimensões, o método deve ser projetado para lidar com essas dimensões de maneira adequada.
+
+        * Se você estiver trabalhando com matrizes de dimensões variáveis (jagged arrays), onde cada subarray pode ter um tamanho diferente, o processo é um pouco diferente. Você pode passar um array de arrays como parâmetro para lidar com matrizes de dimensões variáveis.
