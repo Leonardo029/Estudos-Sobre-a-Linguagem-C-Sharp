@@ -1422,4 +1422,8 @@ ______________________
       }
       ```
 
+        * Neste exemplo, o método MetodoA e o método MetodoB são definidos. O delegado MeuDelegado é criado para representar um método que não possui parâmetros e não retorna nenhum valor. O método MetodoB recebe um delegado como parâmetro e chama o método representado pelo delegado.
+
+        * No método Main, um delegado delegadoA é criado para representar o método MetodoA, e em seguida, o método MetodoB é chamado com o delegado delegadoA como argumento. Isso faz com que o método MetodoB chame o método MetodoA.
+
 ##  :warning: Tratamento de Exceção
