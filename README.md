@@ -1137,9 +1137,11 @@ ______________________
 
 ##  :space_invader: Subprogramas
 
-  * Processo: refere-se a um programa em execução, juntamente com seu ambiente associado, recursos e fluxo de controle. Um processo é uma instância em execução de um programa de computador, e ele tem sua própria alocação de memória, contexto de sistema, identificador único e espaço de endereço.
+  * **Processo:** 
+    * Refere-se a um programa em execução, juntamente com seu ambiente associado, recursos e fluxo de controle. Um processo é uma instância em execução de um programa de computador, e ele tem sua própria alocação de memória, contexto de sistema, identificador único e espaço de endereço.
 
-  * Dados: são representações simbólicas ou numéricas das informações que podem ser processadas, armazenadas, interpretadas ou transmitidas por computadores e sistemas de informação. Os dados são os blocos de construção fundamentais de todas as informações e conhecimentos que os sistemas de computador manipulam. Eles podem ser de vários tipos e formatos, incluindo números, texto, imagens, áudio, vídeo e muito mais.
+  * **Dados:** 
+    * São representações simbólicas ou numéricas das informações que podem ser processadas, armazenadas, interpretadas ou transmitidas por computadores e sistemas de informação. Os dados são os blocos de construção fundamentais de todas as informações e conhecimentos que os sistemas de computador manipulam. Eles podem ser de vários tipos e formatos, incluindo números, texto, imagens, áudio, vídeo e muito mais.
 
   * O cabeçalho de um subprograma é composto por três partes principais: o modificador de acesso, o tipo de retorno e o nome do método, seguido pelos parâmetros do método.
 
@@ -1149,10 +1151,10 @@ ______________________
 
   * Em C#, os subprogramas são chamados de "métodos". Métodos são blocos de código que executam uma tarefa específica e podem ser invocados (chamados) a partir de outras partes do código. Eles são uma forma fundamental de organizar e reutilizar o código em programas C#. Existem dois tipos principais de métodos em C#.
 
-  * Métodos Estáticos (Static Methods):
+  * **Métodos Estáticos (Static Methods):**
     * Métodos estáticos pertencem à classe em vez de uma instância específica dessa classe. Eles são definidos com o modificador `static` e podem ser chamados diretamente usando o nome da classe, sem precisar criar uma instância dessa classe. Eles são frequentemente usados para funções utilitárias que não requerem estado específico.
 
-  * Métodos de Instância (Instance Methods):
+  * **Métodos de Instância (Instance Methods)**:
     * Métodos de instância pertencem a uma instância específica de uma classe. Eles são invocados através de uma instância da classe e podem acessar membros não estáticos da classe, como propriedades e campos de instância.
 
   * Além disso, C# também suporta conceitos mais avançados relacionados a métodos, como sobrecarga de método (definir múltiplas versões de um método com parâmetros diferentes), métodos com parâmetros opcionais, métodos com valores de retorno, entre outros.
@@ -1185,17 +1187,17 @@ ______________________
     instancia.MetodoDeInstancia(); // Chamada ao método de instância
     ```
   
-  * Declaração de Subprograma:
+  * **Declaração de Subprograma:**
 
     * Uma declaração de subprograma é uma forma de declarar a existência de um método, incluindo seu nome, tipo de retorno, parâmetros e possivelmente seu modificador de acesso. A declaração é uma promessa de que o método estará disponível, mas não inclui o corpo real do método (o bloco de código). Declarações são usadas quando você quer que outras partes do código saibam sobre a existência do método, mas não precisa fornecer a implementação completa naquele momento.
   
-  * Definição de Subprograma:
+  * **Definição de Subprograma:**
 
     * A definição de subprograma é a implementação completa do método, incluindo seu corpo de código. Ela contém todas as instruções que o método deve executar quando for chamado. A definição inclui detalhes sobre como o método realiza suas operações e retorna um valor, se for o caso.
 
   * Em resumo, a declaração de um subprograma informa ao compilador que o método existe e como ele deve ser chamado, enquanto a definição de um subprograma fornece a implementação completa do método, incluindo o bloco de código real que é executado quando o método é chamado. Ao criar um programa em C#, você geralmente define seus métodos (subprogramas) usando uma declaração para informar ao compilador e, em seguida, fornece as definições completas para implementar as funcionalidades desejadas.
 
-  * Funções e Procedimentos: 
+  * **Funções e Procedimentos:**
 
     * Em C#, os termos "funções" e "procedimentos" são frequentemente usados de forma intercambiável para se referir a métodos, que são subprogramas que realizam tarefas específicas. No entanto, existe uma distinção técnica entre esses termos em alguns contextos.
 
@@ -1222,7 +1224,7 @@ ______________________
 
     * Ambos os conceitos são partes essenciais da programação e permitem que você crie código modular, organizado e reutilizável, dividindo tarefas em subprogramas que podem ser chamados conforme necessário.
 
-  * Parâmetros: 
+  * **Parâmetros:** 
 
     * Formais:
 
@@ -1277,7 +1279,7 @@ ______________________
         int resultado = Somar(2, 4, 6, 8);
         ```
     
-  * Variáveis Locais:
+  * **Variáveis Locais:**
 
     * Variáveis locais são declaradas dentro de um bloco de código, como um método, e têm um escopo limitado a esse bloco. Isso significa que elas só podem ser acessadas e usadas dentro do bloco onde foram declaradas. Variáveis locais são frequentemente usadas para armazenar valores temporários ou intermediários que são necessários apenas dentro de um contexto específico.
 
@@ -1289,7 +1291,7 @@ ______________________
       }
       ```
   
-  * Subprogramas Aninhados (Nested Subprograms):
+  * **Subprogramas Aninhados (Nested Subprograms):**
 
     * Subprogramas aninhados, também conhecidos como métodos aninhados, são métodos definidos dentro de outro método. Eles herdam o escopo do método pai e podem acessar variáveis locais do método pai. Subprogramas aninhados podem ser úteis para encapsular lógica específica dentro de um método maior, mantendo-a separada e organizada.
 
@@ -1312,7 +1314,7 @@ ______________________
 
         * No entanto, vale destacar que o uso excessivo de subprogramas aninhados pode tornar o código menos legível e mais complexo. Portanto, é importante encontrar um equilíbrio entre a modularização do código e a clareza da estrutura.
 
-  * Passagem de Parâmetros:
+  * **Passagem de Parâmetros:**
 
     * Existem diferentes modelos de passagem de parâmetros que determinam como os valores dos argumentos são passados para os parâmetros de um método/subprograma. Cada modelo de passagem de parâmetros tem suas características e implicações.
 
@@ -1366,7 +1368,7 @@ ______________________
           }
           ```
 
-  * Genêricos:
+  * **Genêricos:**
 
     * Os genéricos são uma maneira de criar classes, estruturas, interfaces e métodos que podem trabalhar com tipos diferentes, sem especificar o tipo real até o momento em que são usados. Eles permitem que você escreva código reutilizável e flexível, evitando repetição de código para diferentes tipos de dados.
     
@@ -1379,7 +1381,7 @@ ______________________
 
       * Nesse caso, a classe List<T> é genérica, onde T é um tipo que você especifica quando cria uma instância da lista.
   
-  * Verificação de Tipo:
+  * **Verificação de Tipo:**
 
     * Dentro dos subprogramas, a verificação de tipo é realizada pelo próprio compilador durante a compilação do código. O compilador verifica se as operações sendo realizadas em variáveis, parâmetros e expressões são compatíveis com os tipos de dados envolvidos. Isso ajuda a evitar erros de tipo que poderiam ocorrer durante a execução do programa.
 
@@ -1395,7 +1397,7 @@ ______________________
         }
         ```
     
-    * Verificação de Tipos de Variáveis:
+    * **Verificação de Tipos de Variáveis:**
       * O compilador verifica se as operações realizadas em variáveis estão de acordo com seus tipos.
 
         ```csharp
@@ -1413,7 +1415,7 @@ ______________________
         int resultado = 10 + 5; // Verificação de tipo para a expressão 10 + 5
         ```
 
-  * Arrays Multidimensionais:
+  * **Arrays Multidimensionais:**
 
     * Em C#, você pode passar arrays multidimensionais como parâmetros para subprogramas (métodos). Isso permite que você trabalhe com matrizes de várias dimensões em diferentes partes do seu código. Ao passar uma matriz multidimensional como parâmetro, você deve especificar o tipo da matriz, o número de dimensões e o tamanho das dimensões.
 
@@ -1441,7 +1443,7 @@ ______________________
 
         * Se você estiver trabalhando com matrizes de dimensões variáveis (jagged arrays), onde cada subarray pode ter um tamanho diferente, o processo é um pouco diferente. Você pode passar um array de arrays como parâmetro para lidar com matrizes de dimensões variáveis.
   
-  * Subprograma como Parâmetros:
+  * **Subprograma como Parâmetros:**
 
     * É possível passar um subprograma (método) como parâmetro para outro subprograma em C#. Isso é conhecido como "passagem de delegados" e é uma característica poderosa da linguagem. Os delegados em C# permitem tratar um método como um objeto e passá-lo como argumento para outro método, permitindo que o método receptor chame o método passado de maneira dinâmica.
 
